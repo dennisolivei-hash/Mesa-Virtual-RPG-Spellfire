@@ -133,6 +133,7 @@
   }
   .cartaMesa img { width:100%; height:100%; object-fit:cover; border-radius:6px; display:block; pointer-events:none; }
   .cartaMesa.girada img { transform:rotate(90deg); }
+  .miniCarta.paisagem, .cartaMao.paisagem, .cartaMesa.paisagem { aspect-ratio: 7/5; }
   .cartaMesa.arrastando { cursor:grabbing; z-index:20; }
   .cartaMesa:hover { box-shadow:0 0 0 2px var(--cyan), 0 4px 14px rgba(0,0,0,0.6); }
 
@@ -348,6 +349,14 @@
   let estadoAtual = { jogadores:{}, mesa:{} };
   let chatAberto = false;
 
+  function aplicarOrientacao(el, img){
+    function checar(){
+      if(img.naturalWidth && img.naturalWidth > img.naturalHeight) el.classList.add('paisagem');
+    }
+    if(img.complete && img.naturalWidth) checar();
+    else img.addEventListener('load', checar);
+  }
+
   // ---------------- Tela inicial ----------------
   enterBtn.addEventListener('click', () => {
     myName = nameInput.value.trim() || 'Visitante';
@@ -420,6 +429,7 @@
       img.src = 'images/thumbs/' + arquivo;
       img.loading = 'lazy';
       div.appendChild(img);
+      aplicarOrientacao(div, img);
       div.addEventListener('click', () => {
         if(selecionadas.has(arquivo)){
           selecionadas.delete(arquivo);
@@ -476,6 +486,7 @@
       const img = document.createElement('img');
       img.src = 'images/cartas/' + arquivo;
       div.appendChild(img);
+      aplicarOrientacao(div, img);
       div.addEventListener('click', () => {
         const x = 35 + Math.random()*30;
         const y = 35 + Math.random()*30;
@@ -502,6 +513,7 @@
         const img = document.createElement('img');
         img.src = 'images/cartas/' + carta.img;
         el.appendChild(img);
+        aplicarOrientacao(el, img);
         el.addEventListener('pointerdown', (e) => iniciarArraste(e, el, id));
         mesa.appendChild(el);
       }
