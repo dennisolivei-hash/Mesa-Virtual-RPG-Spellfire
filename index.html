@@ -25,7 +25,12 @@
   body {
     margin: 0;
     font-family: 'Inter', system-ui, sans-serif;
-    background: var(--bg);
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(10,13,22,0.85), rgba(10,13,22,0.85)), url('images/dungeons_and_dragons_fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--text);
     display: flex;
     justify-content: center;
@@ -371,9 +376,12 @@
   </div>
 
   <header>
-    <div>
-      <h1>🃏 Mesa Virtual — Spellfire</h1>
-      <p>Clique numa carta da sua mão pra jogar. Clique nas cartas da mesa pra ver as ações.</p>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <img src="images/Logo_mesa_cartãs.png" alt="Spellfire" style="width:56px; height:56px; object-fit:contain; border-radius:8px; flex-shrink:0;" onerror="this.style.display='none';" />
+      <div>
+        <h1>🃏 Mesa Virtual — Spellfire</h1>
+        <p>Clique numa carta da sua mão pra jogar. Clique nas cartas da mesa pra ver as ações.</p>
+      </div>
     </div>
     <div id="headerControls">
       <div id="statusBadge" class="chamfer">🎮 Jogando</div>
@@ -434,6 +442,7 @@
 </div>
 
 <script>
+
 (function(){
   // ======================= CONFIGURAÇÃO =======================
   async function buscarServerUrl(){
@@ -1404,6 +1413,7 @@
     location.reload();
   });
 })();
+
 </script>
 </body>
 </html>
