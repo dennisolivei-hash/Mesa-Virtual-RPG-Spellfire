@@ -11,7 +11,7 @@ const app = express();
 // ======================= CONFIGURAÇÃO =======================
 // Troque pela URL real do seu site na Vercel (pode ter mais de uma na lista)
 const ALLOWED_ORIGINS = [
-  'https://SEU-PROJETO.vercel.app',
+  'https://mesa-virtual-rpg-spellfire.vercel.app',
   'http://localhost:5500',
 ];
 // ===============================================================
