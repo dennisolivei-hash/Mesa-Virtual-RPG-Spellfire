@@ -219,6 +219,22 @@
   #painelZonaGrid { display:grid; grid-template-columns:repeat(auto-fill, minmax(64px,1fr)); gap:6px; max-height:50vh; overflow-y:auto; }
   #painelZonaGrid img { width:100%; aspect-ratio:5/7; object-fit:cover; border-radius:4px; }
 
+  #cartaZoomOverlay .box { max-width:440px; max-height:90vh; overflow-y:auto; }
+  #zoomImgWrap { text-align:center; margin-bottom:12px; }
+  #zoomImg { max-width:100%; max-height:46vh; border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.5); }
+  #zoomInfo { text-align:left; font-size:12px; margin-bottom:14px; }
+  #zoomInfo .zoomNome { font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:16px; margin-bottom:4px; color:var(--text); }
+  #zoomInfo .zoomTag { color:var(--cyan); font-size:11px; margin-bottom:8px; font-family:'Space Grotesk', sans-serif; }
+  #zoomInfo .zoomTexto { color:var(--text-dim); line-height:1.5; }
+  #zoomAcoes { display:flex; flex-direction:column; gap:6px; margin-bottom:10px; }
+  #zoomAcoes button {
+    background:#0e1524; border:2px solid var(--panel-border); color:var(--text);
+    text-align:left; padding:9px 12px; border-radius:6px; cursor:pointer;
+    font-family:'Inter', sans-serif; font-size:12px;
+  }
+  #zoomAcoes button:hover { background:rgba(63,208,255,0.12); }
+  #zoomAcoes button:disabled { opacity:0.35; cursor:not-allowed; }
+
   .painelInferior { display:flex; gap:14px; margin-top:14px; align-items:flex-end; flex-wrap:wrap; }
   #baralhoPilha {
     flex-shrink:0; width:76px; cursor:pointer; text-align:center;
@@ -339,6 +355,17 @@
       <div id="painelZonaGrid"></div>
       <div style="display:flex; gap:8px; margin-top:12px;">
         <button id="fecharPainelZonaBtn" class="btn-game" style="background:var(--panel); border:2px solid var(--panel-border); color:var(--text-dim); margin-left:auto;">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cartaZoomOverlay" class="overlay" style="display:none;">
+    <div class="box chamfer">
+      <div id="zoomImgWrap"><img id="zoomImg" src="" alt="Carta" /></div>
+      <div id="zoomInfo"></div>
+      <div id="zoomAcoes"></div>
+      <div style="display:flex; gap:8px;">
+        <button id="fecharZoomBtn" class="btn-game" style="background:var(--panel); border:2px solid var(--panel-border); color:var(--text-dim); margin-left:auto;">Fechar</button>
       </div>
     </div>
   </div>
@@ -481,6 +508,12 @@
   const painelZonaTitulo = document.getElementById('painelZonaTitulo');
   const painelZonaGrid = document.getElementById('painelZonaGrid');
   const fecharPainelZonaBtn = document.getElementById('fecharPainelZonaBtn');
+
+  const cartaZoomOverlay = document.getElementById('cartaZoomOverlay');
+  const zoomImg = document.getElementById('zoomImg');
+  const zoomInfo = document.getElementById('zoomInfo');
+  const zoomAcoes = document.getElementById('zoomAcoes');
+  const fecharZoomBtn = document.getElementById('fecharZoomBtn');
 
   const headerControls = document.getElementById('headerControls');
   const statusBadge = document.getElementById('statusBadge');
@@ -750,6 +783,72 @@
   }
   fecharPainelZonaBtn.addEventListener('click', () => { painelZonaOverlay.style.display = 'none'; });
 
+  // ---------------- Zoom da carta (visualização grande + descrição + ações) ----------------
+  function renderZoomAcoes(itens){
+    zoomAcoes.innerHTML = '';
+    for(const item of (itens || [])){
+      const btn = document.createElement('button');
+      btn.textContent = item.label;
+      btn.disabled = !!item.disabled;
+      btn.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        item.onClick && item.onClick();
+      });
+      zoomAcoes.appendChild(btn);
+    }
+  }
+  function abrirZoomCarta(arquivo, itens){
+    const meta = metaDaCarta(arquivo);
+    zoomImg.src = 'images/cartas/' + arquivo;
+    let info = '<div class="zoomNome">' + (meta.nome ? meta.nome : 'Carta não identificada') + '</div>';
+    const tags = [meta.tipo, meta.mundo].filter(Boolean);
+    if(tags.length) info += '<div class="zoomTag">' + tags.join(' · ') + '</div>';
+    info += '<div class="zoomTexto">' + (meta.texto ? meta.texto : 'Descrição ainda não identificada no nosso banco de dados — dá uma olhada na própria imagem da carta.') + '</div>';
+    zoomInfo.innerHTML = info;
+    renderZoomAcoes(itens);
+    cartaZoomOverlay.style.display = 'flex';
+  }
+  function fecharZoom(){ cartaZoomOverlay.style.display = 'none'; }
+  fecharZoomBtn.addEventListener('click', fecharZoom);
+
+  function abrirMenuJogarCartaZoom(indice, arquivo){
+    const meta = metaDaCarta(arquivo);
+    const ehReinoConhecido = meta.tipo === 'Reino';
+    const itens = [];
+    if(ehReinoConhecido || !meta.tipo){
+      itens.push({ label: '▸ Jogar como Reino em...', onClick: () => mostrarPosicoesNoZoom(indice, arquivo, 'reino') });
+    }
+    if(!ehReinoConhecido){
+      itens.push({ label: '▸ Jogar como Fortaleza em...', onClick: () => mostrarPosicoesNoZoom(indice, arquivo, 'fortaleza') });
+      itens.push({ label: 'Colocar no Poço', onClick: () => { socket.emit('jogar-no-poco', { indiceMao: indice }); fecharZoom(); } });
+      itens.push({ label: 'Jogar Carta-regra', onClick: () => { socket.emit('jogar-carta-regra', { indiceMao: indice }); fecharZoom(); } });
+    }
+    itens.push({ label: 'Descartar', onClick: () => { socket.emit('descartar-da-mao', { indice }); fecharZoom(); } });
+    abrirZoomCarta(arquivo, itens);
+  }
+
+  function mostrarPosicoesNoZoom(indice, arquivo, tipoJogada){
+    const eu = estadoAtual.jogadores[socket.id];
+    const itens = POSICOES.map(pos => {
+      const slot = eu && eu.formacao ? eu.formacao[pos] : null;
+      let habilitado = true, motivo = '';
+      if(tipoJogada === 'reino'){
+        if(slot && slot.reino && !slot.arrasada){ habilitado = false; motivo = ' (ocupada)'; }
+        else if(!posicaoLiberadaClient(eu && eu.formacao, pos)){ habilitado = false; motivo = ' (preencha antes)'; }
+      } else {
+        if(!slot || !slot.reino || slot.arrasada){ habilitado = false; motivo = ' (sem reino)'; }
+        else if(slot.fortaleza){ habilitado = false; motivo = ' (já tem fortaleza)'; }
+      }
+      return { label: 'Posição ' + pos + motivo, disabled: !habilitado, onClick: () => {
+        if(tipoJogada === 'reino') socket.emit('jogar-reino', { indiceMao: indice, posicao: pos });
+        else socket.emit('jogar-fortaleza', { indiceMao: indice, posicao: pos });
+        fecharZoom();
+      }};
+    });
+    itens.push({ label: '‹ Voltar', onClick: () => abrirMenuJogarCartaZoom(indice, arquivo) });
+    renderZoomAcoes(itens);
+  }
+
   // ---------------- Modo de seleção na mão (pra reconstruir reino) ----------------
   function iniciarModoSelecao(tipo, extra, textoInstrucao, quantidadeNecessaria){
     modoSelecao = { tipo, extra, indices: new Set(), quantidade: quantidadeNecessaria };
@@ -802,8 +901,8 @@
       div.addEventListener('click', (e) => {
         e.stopPropagation();
         const souDono = carta.dono === socket.id;
-        abrirAcaoMenu(e.clientX, e.clientY, metaDaCarta(carta.img).nome, [
-          { label:'Descartar (vai pro Abismo)', disabled: !souDono, onClick: () => socket.emit('descartar-carta-regra', { id: carta.id }) },
+        abrirZoomCarta(carta.img, [
+          { label:'Descartar (vai pro Abismo)', disabled: !souDono, onClick: () => { socket.emit('descartar-carta-regra', { id: carta.id }); fecharZoom(); } },
         ]);
       });
       cartasRegraArea.appendChild(div);
@@ -859,15 +958,17 @@
           slotEl.appendChild(img);
           slotEl.addEventListener('click', (e) => {
             e.stopPropagation();
-            if(!souEu) return;
-            const meta = metaDaCarta(slotData.reino);
+            if(!souEu){
+              abrirZoomCarta(slotData.reino, []);
+              return;
+            }
             if(slotData.arrasada){
-              abrirAcaoMenu(e.clientX, e.clientY, (meta.nome||'Reino') + ' (arrasado)', [
-                { label:'Reconstruir (descartar 3 cartas da mão)', onClick: () => iniciarModoSelecao('reconstruir', { posicao: pos }, 'Escolha 3 cartas da mão pra reconstruir o reino ' + pos, 3) },
+              abrirZoomCarta(slotData.reino, [
+                { label:'Reconstruir (descartar 3 cartas da mão)', onClick: () => { fecharZoom(); iniciarModoSelecao('reconstruir', { posicao: pos }, 'Escolha 3 cartas da mão pra reconstruir o reino ' + pos, 3); } },
               ]);
             } else {
-              abrirAcaoMenu(e.clientX, e.clientY, meta.nome || 'Reino', [
-                { label:'Arrasar reino', onClick: () => socket.emit('arrasar-reino', { posicao: pos }) },
+              abrirZoomCarta(slotData.reino, [
+                { label:'Arrasar reino', onClick: () => { socket.emit('arrasar-reino', { posicao: pos }); fecharZoom(); } },
               ]);
             }
           });
@@ -879,9 +980,12 @@
             badge.appendChild(bimg);
             badge.addEventListener('click', (e) => {
               e.stopPropagation();
-              if(!souEu) return;
-              abrirAcaoMenu(e.clientX, e.clientY, metaDaCarta(slotData.fortaleza).nome || 'Fortaleza', [
-                { label:'Descartar fortaleza', onClick: () => socket.emit('descartar-fortaleza', { posicao: pos }) },
+              if(!souEu){
+                abrirZoomCarta(slotData.fortaleza, []);
+                return;
+              }
+              abrirZoomCarta(slotData.fortaleza, [
+                { label:'Descartar fortaleza', onClick: () => { socket.emit('descartar-fortaleza', { posicao: pos }); fecharZoom(); } },
               ]);
             });
             slotEl.appendChild(badge);
@@ -922,16 +1026,16 @@
         el.addEventListener('click', (e) => {
           e.stopPropagation();
           if(!souEu){
-            abrirAcaoMenu(e.clientX, e.clientY, metaDaCarta(carta.img).nome || 'Carta no poço', [{label:'(carta de outro jogador)', disabled:true}]);
+            abrirZoomCarta(carta.img, []);
             return;
           }
-          abrirAcaoMenu(e.clientX, e.clientY, metaDaCarta(carta.img).nome || 'Carta no poço', [
-            { label:'Girar', onClick: () => socket.emit('girar-carta-poco', { pocoId: carta.id }) },
-            { label:'Anexar carta da mão...', onClick: () => iniciarAnexacao(carta.id) },
-            { label:'Mover pra Limbo', onClick: () => moverCartaZona('poco', carta.id, 'limbo') },
-            { label:'Mover pra Abismo', onClick: () => moverCartaZona('poco', carta.id, 'abismo') },
-            { label:'Mover pra Descarte', onClick: () => moverCartaZona('poco', carta.id, 'descarte') },
-            { label:'Devolver pra mão', onClick: () => moverCartaZona('poco', carta.id, 'mao') },
+          abrirZoomCarta(carta.img, [
+            { label:'Girar', onClick: () => { socket.emit('girar-carta-poco', { pocoId: carta.id }); fecharZoom(); } },
+            { label:'Anexar carta da mão...', onClick: () => { fecharZoom(); iniciarAnexacao(carta.id); } },
+            { label:'Mover pra Limbo', onClick: () => { moverCartaZona('poco', carta.id, 'limbo'); fecharZoom(); } },
+            { label:'Mover pra Abismo', onClick: () => { moverCartaZona('poco', carta.id, 'abismo'); fecharZoom(); } },
+            { label:'Mover pra Descarte', onClick: () => { moverCartaZona('poco', carta.id, 'descarte'); fecharZoom(); } },
+            { label:'Devolver pra mão', onClick: () => { moverCartaZona('poco', carta.id, 'mao'); fecharZoom(); } },
           ]);
         });
         pocoStrip.appendChild(el);
@@ -991,14 +1095,14 @@
       img.style.cursor = 'pointer';
       img.title = 'Clique pra mover essa carta';
       img.addEventListener('click', () => {
-        abrirAcaoMenu(window.innerWidth/2 - 90, window.innerHeight/2, metaDaCarta(c.img).nome || titulo, [
-          { label:'Mover pra Poço', onClick: () => moverCartaZona(zona, c.id, 'poco') },
-          { label:'Mover pra Limbo', onClick: () => moverCartaZona(zona, c.id, 'limbo') },
-          { label:'Mover pra Abismo', onClick: () => moverCartaZona(zona, c.id, 'abismo') },
-          { label:'Mover pra Descarte', onClick: () => moverCartaZona(zona, c.id, 'descarte') },
-          { label:'Devolver pra mão', onClick: () => moverCartaZona(zona, c.id, 'mao') },
-        ]);
         painelZonaOverlay.style.display = 'none';
+        abrirZoomCarta(c.img, [
+          { label:'Mover pra Poço', onClick: () => { moverCartaZona(zona, c.id, 'poco'); fecharZoom(); } },
+          { label:'Mover pra Limbo', onClick: () => { moverCartaZona(zona, c.id, 'limbo'); fecharZoom(); } },
+          { label:'Mover pra Abismo', onClick: () => { moverCartaZona(zona, c.id, 'abismo'); fecharZoom(); } },
+          { label:'Mover pra Descarte', onClick: () => { moverCartaZona(zona, c.id, 'descarte'); fecharZoom(); } },
+          { label:'Devolver pra mão', onClick: () => { moverCartaZona(zona, c.id, 'mao'); fecharZoom(); } },
+        ]);
       });
       wrap.appendChild(img);
       painelZonaGrid.appendChild(wrap);
@@ -1055,7 +1159,7 @@
           cancelarModoSelecao();
           return;
         }
-        abrirMenuJogarCarta(e, indice, arquivo);
+        abrirMenuJogarCartaZoom(indice, arquivo);
       });
       minhaMaoEl.appendChild(div);
     });
