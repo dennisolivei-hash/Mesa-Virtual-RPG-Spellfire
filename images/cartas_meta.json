@@ -1,0 +1,2977 @@
+{
+"carta_001.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Qualquer campedo pode usar feiticos x",
+"confiavel": false,
+"numeroImpresso": 1
+},
+"carta_002.jpg": {
+"tipo": "Fortaleza",
+"mundo": "Greyhawk",
+"nome": "Fortificação: Muro Externo",
+"confiavel": true,
+"numeroImpresso": null
+},
+"carta_003.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ae eee ss CS!",
+"confiavel": false,
+"numeroImpresso": 100
+},
+"carta_004.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "s Ataque Surpresa",
+"confiavel": false,
+"numeroImpresso": 101
+},
+"carta_005.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "- Estandarte do",
+"confiavel": false,
+"numeroImpresso": 102
+},
+"carta_006.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Mao da Vibora",
+"confiavel": false,
+"numeroImpresso": 103
+},
+"carta_007.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Esfera do",
+"confiavel": false,
+"numeroImpresso": 104
+},
+"carta_008.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Cajado da 7",
+"confiavel": false,
+"numeroImpresso": 105
+},
+"carta_009.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "| sien do",
+"confiavel": false,
+"numeroImpresso": 106
+},
+"carta_010.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "¢ : Porto Seguro!",
+"confiavel": false,
+"numeroImpresso": 107
+},
+"carta_011.jpg": {
+"tipo": "Evento",
+"mundo": "AD&D",
+"nome": "Ato Heróico",
+"confiavel": true,
+"numeroImpresso": 108
+},
+"carta_012.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "[So Vareta da Luz",
+"confiavel": false,
+"numeroImpresso": 109
+},
+"carta_013.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "HRY Ravens Bluff <",
+"confiavel": false,
+"numeroImpresso": 11
+},
+"carta_014.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": ". Ro  Galeao Elfo ®",
+"confiavel": false,
+"numeroImpresso": 110
+},
+"carta_015.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "el SSS An ees",
+"confiavel": false,
+"numeroImpresso": 111
+},
+"carta_016.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "a D PX. OPENS |: Fone re ene Oe",
+"confiavel": false,
+"numeroImpresso": 112
+},
+"carta_017.jpg": {
+"tipo": "Reino",
+"mundo": "Greyhawk",
+"nome": "Sterich",
+"confiavel": true,
+"numeroImpresso": 13
+},
+"carta_018.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Oe og 7 SSS Princesa do Mar",
+"confiavel": false,
+"numeroImpresso": 114
+},
+"carta_019.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "i TaN SN OR NF",
+"confiavel": false,
+"numeroImpresso": 115
+},
+"carta_020.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "a! Sy ey",
+"confiavel": false,
+"numeroImpresso": 116
+},
+"carta_021.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": ": re Pag eee VPN Oe",
+"confiavel": false,
+"numeroImpresso": 117
+},
+"carta_022.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "\\ \\ een hee dee tae ak",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_023.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "tag {yy hie a are",
+"confiavel": false,
+"numeroImpresso": 119
+},
+"carta_024.jpg": {
+"tipo": "Fortaleza",
+"mundo": "Greyhawk",
+"nome": "Fortificação: Muro Externo",
+"confiavel": true,
+"numeroImpresso": 12
+},
+"carta_025.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": null,
+"confiavel": false,
+"numeroImpresso": 120
+},
+"carta_026.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "4H Qualquer campedo defendendo Veluna pode —",
+"confiavel": false,
+"numeroImpresso": 121
+},
+"carta_027.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "“4 . WP ORCYHAWK Furyon",
+"confiavel": false,
+"numeroImpresso": 122
+},
+"carta_028.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "\\ Mortos-vivos nado podem atacar o Bs",
+"confiavel": false,
+"numeroImpresso": 123
+},
+"carta_029.jpg": {
+"tipo": "Reino",
+"mundo": "Greyhawk",
+"nome": "Templo da Maldade Elemental",
+"confiavel": true,
+"numeroImpresso": 124
+},
+"carta_030.jpg": {
+"tipo": "Reino",
+"mundo": "Greyhawk",
+"nome": "Ruinas de Greyhawk",
+"confiavel": true,
+"numeroImpresso": 125
+},
+"carta_031.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "aa wee = ll CK]",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_032.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Ta ON ENS | ee.",
+"confiavel": false,
+"numeroImpresso": 127
+},
+"carta_033.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Ag ene line",
+"confiavel": false,
+"numeroImpresso": 128
+},
+"carta_034.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Ce lan Of OUNCE",
+"confiavel": false,
+"numeroImpresso": 129
+},
+"carta_035.jpg": {
+"tipo": "Reino",
+"mundo": "Forgotten Realms",
+"nome": "Myth Drannor",
+"confiavel": true,
+"numeroImpresso": 13
+},
+"carta_036.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Fa pe Seg ge",
+"confiavel": false,
+"numeroImpresso": 130
+},
+"carta_037.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "i N\\ . SF ON e.CtCN",
+"confiavel": false,
+"numeroImpresso": 131
+},
+"carta_038.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "eS O-Omcdo te",
+"confiavel": false,
+"numeroImpresso": 132
+},
+"carta_039.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "at ee |",
+"confiavel": false,
+"numeroImpresso": 133
+},
+"carta_040.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "VF OY Oe",
+"confiavel": false,
+"numeroImpresso": 134
+},
+"carta_041.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Fm Oe ee",
+"confiavel": false,
+"numeroImpresso": 135
+},
+"carta_042.jpg": {
+"tipo": "Reino",
+"mundo": "Greyhawk",
+"nome": "Sterich",
+"confiavel": true,
+"numeroImpresso": 136
+},
+"carta_043.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "ee ee",
+"confiavel": false,
+"numeroImpresso": 137
+},
+"carta_044.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "a a ee TN UPN. UN UL",
+"confiavel": false,
+"numeroImpresso": 138
+},
+"carta_045.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Dp WON PO La SL NE /",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_046.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "2 ol ARSE Rie ae Vaasa",
+"confiavel": false,
+"numeroImpresso": 14
+},
+"carta_047.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Floresta Burneal",
+"confiavel": false,
+"numeroImpresso": 140
+},
+"carta_048.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Qualquer campedo e¢ aliados defendendo o :",
+"confiavel": false,
+"numeroImpresso": 141
+},
+"carta_049.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "— en Ao qememeniinnns",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_050.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Tracas de Livros",
+"confiavel": false,
+"numeroImpresso": 143
+},
+"carta_051.jpg": {
+"tipo": "Reino",
+"mundo": "Dark Sun",
+"nome": "Shault",
+"confiavel": true,
+"numeroImpresso": 144
+},
+"carta_052.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ere Grande Reino",
+"confiavel": false,
+"numeroImpresso": 145
+},
+"carta_053.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "er SS ee",
+"confiavel": false,
+"numeroImpresso": 146
+},
+"carta_054.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "5 me ers =e. Gas",
+"confiavel": false,
+"numeroImpresso": 147
+},
+"carta_055.jpg": {
+"tipo": "Reino",
+"mundo": "Greyhawk",
+"nome": "Sterich",
+"confiavel": true,
+"numeroImpresso": 148
+},
+"carta_056.jpg": {
+"tipo": "Reino",
+"mundo": "DragonLance",
+"nome": "Terras Sintilantes",
+"confiavel": true,
+"numeroImpresso": 149
+},
+"carta_057.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Pee ap eo Rae 5 A LM ete” 1,",
+"confiavel": false,
+"numeroImpresso": 15
+},
+"carta_058.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "pase oes) Cerco!",
+"confiavel": false,
+"numeroImpresso": 150
+},
+"carta_059.jpg": {
+"tipo": "Item Mágico",
+"mundo": "AD&D",
+"nome": "Estandarte da Guerra",
+"confiavel": true,
+"numeroImpresso": 151
+},
+"carta_060.jpg": {
+"tipo": "Artefato",
+"mundo": "Greyhawk",
+"nome": "Codex dos Planos Infinitos",
+"confiavel": true,
+"numeroImpresso": 152
+},
+"carta_061.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "(ois Cristal do tbanof",
+"confiavel": false,
+"numeroImpresso": 153
+},
+"carta_062.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "re Se ve Hordas do",
+"confiavel": false,
+"numeroImpresso": 154
+},
+"carta_063.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "SATE Esqueletos",
+"confiavel": false,
+"numeroImpresso": 155
+},
+"carta_064.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Mao e Olho",
+"confiavel": false,
+"numeroImpresso": 156
+},
+"carta_065.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ES Esfera dos",
+"confiavel": false,
+"numeroImpresso": 157
+},
+"carta_066.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "(ERSTE Cabana da",
+"confiavel": false,
+"numeroImpresso": 158
+},
+"carta_067.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ES Carruagem E",
+"confiavel": false,
+"numeroImpresso": 159
+},
+"carta_068.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Sy NLS AACR ARI eh A OAL",
+"confiavel": false,
+"numeroImpresso": 16
+},
+"carta_069.jpg": {
+"tipo": "Artefato",
+"mundo": "Greyhawk",
+"nome": "Taça do Al'Akbar",
+"confiavel": true,
+"numeroImpresso": 160
+},
+"carta_070.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "“ (RSVR = Rary, o Traidor",
+"confiavel": false,
+"numeroImpresso": 161
+},
+"carta_071.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "coat WA ai vi",
+"confiavel": false,
+"numeroImpresso": 162
+},
+"carta_072.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee 6 A ee",
+"confiavel": false,
+"numeroImpresso": 163
+},
+"carta_073.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "GEASS Z",
+"confiavel": false,
+"numeroImpresso": 164
+},
+"carta_074.jpg": {
+"tipo": "Mago",
+"mundo": "Greyhawk",
+"nome": "Mika o Nômade Lobo",
+"confiavel": true,
+"numeroImpresso": 165
+},
+"carta_075.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "eas Lloth, a Rainha §",
+"confiavel": false,
+"numeroImpresso": 166
+},
+"carta_076.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "(eeevieaye luz, o Maligno",
+"confiavel": false,
+"numeroImpresso": 167
+},
+"carta_077.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "- poses yt!",
+"confiavel": false,
+"numeroImpresso": 168
+},
+"carta_078.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "1) eee OR",
+"confiavel": false,
+"numeroImpresso": 169
+},
+"carta_079.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "pm] Cost",
+"confiavel": false,
+"numeroImpresso": 17
+},
+"carta_080.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "; Voador. E",
+"confiavel": false,
+"numeroImpresso": 170
+},
+"carta_081.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ee eee",
+"confiavel": false,
+"numeroImpresso": 171
+},
+"carta_082.jpg": {
+"tipo": "Herói",
+"mundo": "Greyhawk",
+"nome": "Hettman Tsurin",
+"confiavel": true,
+"numeroImpresso": 172
+},
+"carta_083.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Grifo",
+"confiavel": false,
+"numeroImpresso": 173
+},
+"carta_084.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Zumbi do Mar",
+"confiavel": false,
+"numeroImpresso": 174
+},
+"carta_085.jpg": {
+"tipo": "Evento",
+"mundo": "AD&D",
+"nome": "Zona Anti-Magia",
+"confiavel": true,
+"numeroImpresso": 175
+},
+"carta_086.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": null,
+"confiavel": false,
+"numeroImpresso": 176
+},
+"carta_087.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ARES 0 Dragao",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_088.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Pergaminho do",
+"confiavel": false,
+"numeroImpresso": 178
+},
+"carta_089.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Assassino",
+"confiavel": false,
+"numeroImpresso": 179
+},
+"carta_090.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "aaa Arsh",
+"confiavel": false,
+"numeroImpresso": 18
+},
+"carta_091.jpg": {
+"tipo": "Reino",
+"mundo": "Greyhawk",
+"nome": "Ruinas de Greyhawk",
+"confiavel": true,
+"numeroImpresso": 180
+},
+"carta_092.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Os Nomades ganham 2 niveis se Mika estiver",
+"confiavel": false,
+"numeroImpresso": 181
+},
+"carta_093.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "[  Pergaminho &",
+"confiavel": false,
+"numeroImpresso": 182
+},
+"carta_094.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "es we",
+"confiavel": false,
+"numeroImpresso": 183
+},
+"carta_095.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "- i. Trystan",
+"confiavel": false,
+"numeroImpresso": 184
+},
+"carta_096.jpg": {
+"tipo": "Herói",
+"mundo": "Greyhawk",
+"nome": "Thorvid",
+"confiavel": true,
+"numeroImpresso": 185
+},
+"carta_097.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Loucura das",
+"confiavel": false,
+"numeroImpresso": 186
+},
+"carta_098.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": null,
+"confiavel": false,
+"numeroImpresso": 187
+},
+"carta_099.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "- Voador. © Dragéo Dourado pode usar",
+"confiavel": false,
+"numeroImpresso": 188
+},
+"carta_100.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Se apenas um Arquidruida estiver em jogo,",
+"confiavel": false,
+"numeroImpresso": 189
+},
+"carta_101.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "ae Sea / tt even SORT Impiltur B",
+"confiavel": false,
+"numeroImpresso": 19
+},
+"carta_102.jpg": {
+"tipo": "Aliado",
+"mundo": "AD&D",
+"nome": "Cão do Inferno",
+"confiavel": true,
+"numeroImpresso": 190
+},
+"carta_103.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "‘ea eel",
+"confiavel": false,
+"numeroImpresso": 191
+},
+"carta_104.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Esqueleto",
+"confiavel": false,
+"numeroImpresso": 192
+},
+"carta_105.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "rr” ez",
+"confiavel": false,
+"numeroImpresso": 193
+},
+"carta_106.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "IGREYHGWK Horror Alado",
+"confiavel": false,
+"numeroImpresso": 194
+},
+"carta_107.jpg": {
+"tipo": "Aliado",
+"mundo": "AD&D",
+"nome": "Entes de Grandwood",
+"confiavel": true,
+"numeroImpresso": 195
+},
+"carta_108.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "V2 ADVENTURES dos Espinhos",
+"confiavel": false,
+"numeroImpresso": 196
+},
+"carta_109.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "> te detearn ¢",
+"confiavel": false,
+"numeroImpresso": 197
+},
+"carta_110.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Fort da f",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_111.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "| Bola de Cristal",
+"confiavel": false,
+"numeroImpresso": 199
+},
+"carta_112.jpg": {
+"tipo": "Reino",
+"mundo": "Forgotten Realms",
+"nome": "Menzoberranzan",
+"confiavel": true,
+"numeroImpresso": 2
+},
+"carta_113.jpg": {
+"tipo": "Reino",
+"mundo": "Forgotten Realms",
+"nome": "Icewind Dale",
+"confiavel": true,
+"numeroImpresso": 20
+},
+"carta_114.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Pe ee SS Estatueta dos",
+"confiavel": false,
+"numeroImpresso": 200
+},
+"carta_115.jpg": {
+"tipo": "Evento",
+"mundo": "AD&D",
+"nome": "Renovação!",
+"confiavel": true,
+"numeroImpresso": 201
+},
+"carta_116.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Cre es — Escravizado!",
+"confiavel": false,
+"numeroImpresso": 202
+},
+"carta_117.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Dungeons ragons Cerco",
+"confiavel": false,
+"numeroImpresso": 203
+},
+"carta_118.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "a Suborno!",
+"confiavel": false,
+"numeroImpresso": 794
+},
+"carta_119.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee ee ee ee",
+"confiavel": false,
+"numeroImpresso": 205
+},
+"carta_120.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Se Espada Magica §",
+"confiavel": false,
+"numeroImpresso": 206
+},
+"carta_121.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Aumentar",
+"confiavel": false,
+"numeroImpresso": 207
+},
+"carta_122.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Anel das Estrelas",
+"confiavel": false,
+"numeroImpresso": 208
+},
+"carta_123.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "JOSSerGM YS Brasao",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_124.jpg": {
+"tipo": "Reino",
+"mundo": "Greyhawk",
+"nome": "Sterich",
+"confiavel": true,
+"numeroImpresso": 21
+},
+"carta_125.jpg": {
+"tipo": "Evento",
+"mundo": "AD&D",
+"nome": "Levando na Conversa!",
+"confiavel": true,
+"numeroImpresso": 319
+},
+"carta_126.jpg": {
+"tipo": "Feitiço de Clérigo",
+"mundo": "AD&D",
+"nome": "Andar sob os ventos",
+"confiavel": true,
+"numeroImpresso": 211
+},
+"carta_127.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "1 Transformagao =",
+"confiavel": false,
+"numeroImpresso": 212
+},
+"carta_128.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "to ane ine a",
+"confiavel": false,
+"numeroImpresso": 213
+},
+"carta_129.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Frota",
+"confiavel": false,
+"numeroImpresso": 214
+},
+"carta_130.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "aos en Pocdo do",
+"confiavel": false,
+"numeroImpresso": 215
+},
+"carta_131.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "xd USI Shield Lands",
+"confiavel": false,
+"numeroImpresso": 216
+},
+"carta_132.jpg": {
+"tipo": "Item Mágico",
+"mundo": "AD&D",
+"nome": "Rede do Aprisionamento",
+"confiavel": true,
+"numeroImpresso": 217
+},
+"carta_133.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ponte Arco-lris",
+"confiavel": false,
+"numeroImpresso": 718
+},
+"carta_134.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "J am i",
+"confiavel": false,
+"numeroImpresso": 219
+},
+"carta_135.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "SEE See Ne",
+"confiavel": false,
+"numeroImpresso": 22
+},
+"carta_136.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "i _ Bastao de\\",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_137.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Eevee as “Ne r",
+"confiavel": false,
+"numeroImpresso": 221
+},
+"carta_138.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "RE seat Se ee",
+"confiavel": false,
+"numeroImpresso": 222
+},
+"carta_139.jpg": {
+"tipo": "Reino",
+"mundo": "Dark Sun",
+"nome": "Urik",
+"confiavel": true,
+"numeroImpresso": 323
+},
+"carta_140.jpg": {
+"tipo": "Reino",
+"mundo": "Dark Sun",
+"nome": "Tyr",
+"confiavel": true,
+"numeroImpresso": 924
+},
+"carta_141.jpg": {
+"tipo": "Reino",
+"mundo": "Dark Sun",
+"nome": "Gulg",
+"confiavel": true,
+"numeroImpresso": 325
+},
+"carta_142.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Beale ‘",
+"confiavel": false,
+"numeroImpresso": 226
+},
+"carta_143.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "<5 - 3 seeeenee te",
+"confiavel": false,
+"numeroImpresso": 227
+},
+"carta_144.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "2 aia: O Palacio.",
+"confiavel": false,
+"numeroImpresso": 228
+},
+"carta_145.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee ehonk .",
+"confiavel": false,
+"numeroImpresso": 229
+},
+"carta_146.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "We Matt ees _ ee",
+"confiavel": false,
+"numeroImpresso": 23
+},
+"carta_147.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Leger * pode",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_148.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "~ Qualquer campedo defendendo o reinoem",
+"confiavel": false,
+"numeroImpresso": 231
+},
+"carta_149.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ye en ee",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_150.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Bete k Pe",
+"confiavel": false,
+"numeroImpresso": 233
+},
+"carta_151.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "~ Makla adiciona 1 nivel a todos os defensores \\",
+"confiavel": false,
+"numeroImpresso": 234
+},
+"carta_152.jpg": {
+"tipo": "Reino",
+"mundo": "Greyhawk",
+"nome": "Sterich",
+"confiavel": true,
+"numeroImpresso": 235
+},
+"carta_153.jpg": {
+"tipo": "Fortaleza",
+"mundo": "Dark Sun",
+"nome": "Arkhold",
+"confiavel": true,
+"numeroImpresso": 236
+},
+"carta_154.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "me _ : Salt View ©",
+"confiavel": false,
+"numeroImpresso": 237
+},
+"carta_155.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Esau do",
+"confiavel": false,
+"numeroImpresso": 238
+},
+"carta_156.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ME OO ES Pe ee",
+"confiavel": false,
+"numeroImpresso": 339
+},
+"carta_157.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "acer Ch ererte = OT TERN",
+"confiavel": false,
+"numeroImpresso": 24
+},
+"carta_158.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "e eee ,",
+"confiavel": false,
+"numeroImpresso": 240
+},
+"carta_159.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "oo ma.",
+"confiavel": false,
+"numeroImpresso": 341
+},
+"carta_160.jpg": {
+"tipo": "Fortaleza",
+"mundo": "Dark Sun",
+"nome": "Oasis Perdido",
+"confiavel": true,
+"numeroImpresso": 49
+},
+"carta_161.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "i. a Lagoa de Grak }",
+"confiavel": false,
+"numeroImpresso": 243
+},
+"carta_162.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "kK oe : Silver Spring",
+"confiavel": false,
+"numeroImpresso": 44
+},
+"carta_163.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ba hee",
+"confiavel": false,
+"numeroImpresso": 245
+},
+"carta_164.jpg": {
+"tipo": "Fortaleza",
+"mundo": "Dark Sun",
+"nome": "Águas Negras",
+"confiavel": true,
+"numeroImpresso": 246
+},
+"carta_165.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "jae “Forte Melidor",
+"confiavel": false,
+"numeroImpresso": 247
+},
+"carta_166.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "saat",
+"confiavel": false,
+"numeroImpresso": 248
+},
+"carta_167.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ie FSR) NAS VIB BBY - a aaa ae",
+"confiavel": false,
+"numeroImpresso": 249
+},
+"carta_168.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Sait",
+"confiavel": false,
+"numeroImpresso": 25
+},
+"carta_169.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "__  Oreino em anexo pode lancar feitigos",
+"confiavel": false,
+"numeroImpresso": 250
+},
+"carta_170.jpg": {
+"tipo": "Aliado",
+"mundo": "AD&D",
+"nome": "As Hordas de Mogadisho",
+"confiavel": true,
+"numeroImpresso": 251
+},
+"carta_171.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Assassinos",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_172.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "So Bete aly Mercendarios",
+"confiavel": false,
+"numeroImpresso": 253
+},
+"carta_173.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Bando de",
+"confiavel": false,
+"numeroImpresso": 254
+},
+"carta_174.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Lt al Lanceiros Kank",
+"confiavel": false,
+"numeroImpresso": 255
+},
+"carta_175.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Wekenicion",
+"confiavel": false,
+"numeroImpresso": 256
+},
+"carta_176.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Se Gladiadores",
+"confiavel": false,
+"numeroImpresso": 257
+},
+"carta_177.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "____Rikus pode atacar duas vezes; se vencero",
+"confiavel": false,
+"numeroImpresso": 258
+},
+"carta_178.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": null,
+"confiavel": false,
+"numeroImpresso": 259
+},
+"carta_179.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "X ae SEs eR",
+"confiavel": false,
+"numeroImpresso": 26
+},
+"carta_180.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee ee BO eee",
+"confiavel": false,
+"numeroImpresso": 260
+},
+"carta_181.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Quando atacando, pode destruir psiquica-",
+"confiavel": false,
+"numeroImpresso": 261
+},
+"carta_182.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "oo ae iM We Gee NN",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_183.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "iS Vaerhirmana ©",
+"confiavel": false,
+"numeroImpresso": 263
+},
+"carta_184.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "}. tel = Herminard",
+"confiavel": false,
+"numeroImpresso": 264
+},
+"carta_185.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "eS ot",
+"confiavel": false,
+"numeroImpresso": 265
+},
+"carta_186.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": null,
+"confiavel": false,
+"numeroImpresso": 266
+},
+"carta_187.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Sabotador",
+"confiavel": false,
+"numeroImpresso": 267
+},
+"carta_188.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "\\ S alee or A mente",
+"confiavel": false,
+"numeroImpresso": 268
+},
+"carta_189.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "eget =",
+"confiavel": false,
+"numeroImpresso": 269
+},
+"carta_190.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "ra ie TRL, ey eA",
+"confiavel": false,
+"numeroImpresso": 27
+},
+"carta_191.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ae A LDL 4) Ys",
+"confiavel": false,
+"numeroImpresso": 270
+},
+"carta_192.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Be ST MY ER |",
+"confiavel": false,
+"numeroImpresso": 271
+},
+"carta_193.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ba aly",
+"confiavel": false,
+"numeroImpresso": 272
+},
+"carta_194.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "fe Ka Cha",
+"confiavel": false,
+"numeroImpresso": 273
+},
+"carta_195.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "fom Gale",
+"confiavel": false,
+"numeroImpresso": 274
+},
+"carta_196.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Fae SN Ee ee",
+"confiavel": false,
+"numeroImpresso": 275
+},
+"carta_197.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ie ei ee",
+"confiavel": false,
+"numeroImpresso": 276
+},
+"carta_198.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Méos Prateadas —",
+"confiavel": false,
+"numeroImpresso": 277
+},
+"carta_199.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Cantores",
+"confiavel": false,
+"numeroImpresso": 278
+},
+"carta_200.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Cacadores _",
+"confiavel": false,
+"numeroImpresso": 279
+},
+"carta_201.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "pon S15 AON INA i “a",
+"confiavel": false,
+"numeroImpresso": 28
+},
+"carta_202.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "2 eel XY",
+"confiavel": false,
+"numeroImpresso": 280
+},
+"carta_203.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "SSS A ek,",
+"confiavel": false,
+"numeroImpresso": 281
+},
+"carta_204.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ill Deménio da",
+"confiavel": false,
+"numeroImpresso": 282
+},
+"carta_205.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "PREBBLE eee",
+"confiavel": false,
+"numeroImpresso": 283
+},
+"carta_206.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": ": ia == Mul Selvagem",
+"confiavel": false,
+"numeroImpresso": 284
+},
+"carta_207.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "GG! yo ate Inumano",
+"confiavel": false,
+"numeroImpresso": 285
+},
+"carta_208.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee ND eA NS",
+"confiavel": false,
+"numeroImpresso": 286
+},
+"carta_209.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Cee ; rm",
+"confiavel": false,
+"numeroImpresso": 287
+},
+"carta_210.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Espirito da Terra",
+"confiavel": false,
+"numeroImpresso": 288
+},
+"carta_211.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "y Thri-kreen “%",
+"confiavel": false,
+"numeroImpresso": 289
+},
+"carta_212.jpg": {
+"tipo": "Reino",
+"mundo": "Forgotten Realms",
+"nome": "Evermeet",
+"confiavel": true,
+"numeroImpresso": 29
+},
+"carta_213.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "pee Wijon §",
+"confiavel": false,
+"numeroImpresso": 290
+},
+"carta_214.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "; maT Mikor",
+"confiavel": false,
+"numeroImpresso": 291
+},
+"carta_215.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Salicia",
+"confiavel": false,
+"numeroImpresso": 292
+},
+"carta_216.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "rs Zurn",
+"confiavel": false,
+"numeroImpresso": 293
+},
+"carta_217.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "DungeonspDragons) Powel @",
+"confiavel": false,
+"numeroImpresso": 294
+},
+"carta_218.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": null,
+"confiavel": false,
+"numeroImpresso": 295
+},
+"carta_219.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "aed Sarr] Vi 2",
+"confiavel": false,
+"numeroImpresso": 296
+},
+"carta_220.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "' RE Ne ee ie oC.",
+"confiavel": false,
+"numeroImpresso": 297
+},
+"carta_221.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "— Stef’fa Naf’ski",
+"confiavel": false,
+"numeroImpresso": 298
+},
+"carta_222.jpg": {
+"tipo": "Herói",
+"mundo": "Dark Sun",
+"nome": "Capitão Kazhal",
+"confiavel": true,
+"numeroImpresso": 299
+},
+"carta_223.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Sh ot eS",
+"confiavel": false,
+"numeroImpresso": 3
+},
+"carta_224.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "oy Pere i",
+"confiavel": false,
+"numeroImpresso": 30
+},
+"carta_225.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "pis ae Dlasva",
+"confiavel": false,
+"numeroImpresso": 300
+},
+"carta_226.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ne A ee ,",
+"confiavel": false,
+"numeroImpresso": 301
+},
+"carta_227.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Verrasi",
+"confiavel": false,
+"numeroImpresso": 302
+},
+"carta_228.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "eta drirhans “jt 2",
+"confiavel": false,
+"numeroImpresso": 303
+},
+"carta_229.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "— Rei Dragao",
+"confiavel": false,
+"numeroImpresso": 304
+},
+"carta_230.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "— Borys",
+"confiavel": false,
+"numeroImpresso": 305
+},
+"carta_231.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "_Jenades en",
+"confiavel": false,
+"numeroImpresso": 306
+},
+"carta_232.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Carrasco",
+"confiavel": false,
+"numeroImpresso": 307
+},
+"carta_233.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Se ie Gith!",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_234.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": null,
+"confiavel": false,
+"numeroImpresso": 309
+},
+"carta_235.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": ") See Sine Berdusk",
+"confiavel": false,
+"numeroImpresso": 31
+},
+"carta_236.jpg": {
+"tipo": "Item Mágico",
+"mundo": "AD&D",
+"nome": "Orbe do Poder",
+"confiavel": true,
+"numeroImpresso": 310
+},
+"carta_237.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "fii Anel dell",
+"confiavel": false,
+"numeroImpresso": 311
+},
+"carta_238.jpg": {
+"tipo": "Evento",
+"mundo": "AD&D",
+"nome": "Tesouro",
+"confiavel": true,
+"numeroImpresso": 312
+},
+"carta_239.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "re Escudo da",
+"confiavel": false,
+"numeroImpresso": 313
+},
+"carta_240.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Escudo da",
+"confiavel": false,
+"numeroImpresso": 314
+},
+"carta_241.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Escudo da",
+"confiavel": false,
+"numeroImpresso": 315
+},
+"carta_242.jpg": {
+"tipo": "Item Mágico",
+"mundo": "AD&D",
+"nome": "Escudo da Perversidade",
+"confiavel": true,
+"numeroImpresso": 316
+},
+"carta_243.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Escudo de Gore",
+"confiavel": false,
+"numeroImpresso": 317
+},
+"carta_244.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "| be a ee",
+"confiavel": false,
+"numeroImpresso": 318
+},
+"carta_245.jpg": {
+"tipo": "Evento",
+"mundo": "AD&D",
+"nome": "A Caravana",
+"confiavel": true,
+"numeroImpresso": 319
+},
+"carta_246.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Tatas}",
+"confiavel": false,
+"numeroImpresso": 32
+},
+"carta_247.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "es ~ OColarh",
+"confiavel": false,
+"numeroImpresso": 320
+},
+"carta_248.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "“ a . Clerigo",
+"confiavel": false,
+"numeroImpresso": 321
+},
+"carta_249.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Arqueiro Elfo",
+"confiavel": false,
+"numeroImpresso": 322
+},
+"carta_250.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "| ilies O Paria *",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_251.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Assaltantes",
+"confiavel": false,
+"numeroImpresso": 324
+},
+"carta_252.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "~. piece aA 2 us",
+"confiavel": false,
+"numeroImpresso": 325
+},
+"carta_253.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "7 PE a ay",
+"confiavel": false,
+"numeroImpresso": 326
+},
+"carta_254.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "x os ; Guerreiro do |",
+"confiavel": false,
+"numeroImpresso": 327
+},
+"carta_255.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee £ FF oe Vee",
+"confiavel": false,
+"numeroImpresso": 328
+},
+"carta_256.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Besouros Shaqat",
+"confiavel": false,
+"numeroImpresso": 329
+},
+"carta_257.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "BENNO STL Ae",
+"confiavel": false,
+"numeroImpresso": 33
+},
+"carta_258.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ill Tembo",
+"confiavel": false,
+"numeroImpresso": 330
+},
+"carta_259.jpg": {
+"tipo": "Feitiço de Mago",
+"mundo": "AD&D",
+"nome": "Bola de Fogo",
+"confiavel": true,
+"numeroImpresso": 331
+},
+"carta_260.jpg": {
+"tipo": "Feitiço de Mago",
+"mundo": "AD&D",
+"nome": "Relâmpago",
+"confiavel": true,
+"numeroImpresso": 332
+},
+"carta_261.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Paralisar",
+"confiavel": false,
+"numeroImpresso": 333
+},
+"carta_262.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "| ae ATF, Projétil Magico",
+"confiavel": false,
+"numeroImpresso": 334
+},
+"carta_263.jpg": {
+"tipo": "Feitiço de Mago",
+"mundo": "AD&D",
+"nome": "Parede de Fogo",
+"confiavel": true,
+"numeroImpresso": 335
+},
+"carta_264.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "[DungeonsPragons Muralha de",
+"confiavel": false,
+"numeroImpresso": 336
+},
+"carta_265.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Muralha de",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_266.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "-Muralha de &",
+"confiavel": false,
+"numeroImpresso": 338
+},
+"carta_267.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Espadachim —",
+"confiavel": false,
+"numeroImpresso": 339
+},
+"carta_268.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "I Le. VANS SALE NAO MEN Tee as!",
+"confiavel": false,
+"numeroImpresso": 34
+},
+"carta_269.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ges Cone de Frio",
+"confiavel": false,
+"numeroImpresso": 340
+},
+"carta_270.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Adormecer",
+"confiavel": false,
+"numeroImpresso": 341
+},
+"carta_271.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "es Escudo",
+"confiavel": false,
+"numeroImpresso": 342
+},
+"carta_272.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Um campedo ou aliado torna-se voador.",
+"confiavel": false,
+"numeroImpresso": 343
+},
+"carta_273.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "- Pe ae ee",
+"confiavel": false,
+"numeroImpresso": 344
+},
+"carta_274.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Batt Mistico",
+"confiavel": false,
+"numeroImpresso": 345
+},
+"carta_275.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "J AEE Ea",
+"confiavel": false,
+"numeroImpresso": 346
+},
+"carta_276.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "es Forca-Fantasma §",
+"confiavel": false,
+"numeroImpresso": 347
+},
+"carta_277.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "~ Esta carta é anexada a qualquer campedo inimigo 4",
+"confiavel": false,
+"numeroImpresso": 348
+},
+"carta_278.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "rece a ooo",
+"confiavel": false,
+"numeroImpresso": 349
+},
+"carta_279.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee eae",
+"confiavel": false,
+"numeroImpresso": 35
+},
+"carta_280.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "a Ferimentos Graves ¥",
+"confiavel": false,
+"numeroImpresso": 350
+},
+"carta_281.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "De Bastées Para",
+"confiavel": false,
+"numeroImpresso": 351
+},
+"carta_282.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Barreira de",
+"confiavel": false,
+"numeroImpresso": 359
+},
+"carta_283.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Bencao",
+"confiavel": false,
+"numeroImpresso": 353
+},
+"carta_284.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Bae OB Ee eee",
+"confiavel": false,
+"numeroImpresso": 354
+},
+"carta_285.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "(ces Caminhar",
+"confiavel": false,
+"numeroImpresso": 355
+},
+"carta_286.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "0S (hE EN",
+"confiavel": false,
+"numeroImpresso": 356
+},
+"carta_287.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "re Encantar",
+"confiavel": false,
+"numeroImpresso": 357
+},
+"carta_288.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "wan  TtlCU",
+"confiavel": false,
+"numeroImpresso": 358
+},
+"carta_289.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "cores © Eseuridao",
+"confiavel": false,
+"numeroImpresso": 359
+},
+"carta_290.jpg": {
+"tipo": "Reino",
+"mundo": "Forgotten Realms",
+"nome": "Ruínas de Zentil Keep",
+"confiavel": true,
+"numeroImpresso": 36
+},
+"carta_291.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "- Protecdo",
+"confiavel": false,
+"numeroImpresso": 360
+},
+"carta_292.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ae Carruagem",
+"confiavel": false,
+"numeroImpresso": 361
+},
+"carta_293.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "a Raio de Sol '",
+"confiavel": false,
+"numeroImpresso": 362
+},
+"carta_294.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Muralha de |",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_295.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "AS aes eee",
+"confiavel": false,
+"numeroImpresso": 4
+},
+"carta_296.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Palavra Sagrada",
+"confiavel": false,
+"numeroImpresso": 365
+},
+"carta_297.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "me “SS ewe",
+"confiavel": false,
+"numeroImpresso": 366
+},
+"carta_298.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Dungeonbrasors: re Ataque",
+"confiavel": false,
+"numeroImpresso": 367
+},
+"carta_299.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Protecdo contra -",
+"confiavel": false,
+"numeroImpresso": 368
+},
+"carta_300.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee eed Or a FS a",
+"confiavel": false,
+"numeroImpresso": 369
+},
+"carta_301.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Fortificacées",
+"confiavel": false,
+"numeroImpresso": 37
+},
+"carta_302.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Sere PE Se SS SC",
+"confiavel": false,
+"numeroImpresso": 370
+},
+"carta_303.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": ": Muralha",
+"confiavel": false,
+"numeroImpresso": 371
+},
+"carta_304.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Esquecimento",
+"confiavel": false,
+"numeroImpresso": 372
+},
+"carta_305.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "eel AT a.",
+"confiavel": false,
+"numeroImpresso": 373
+},
+"carta_306.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Piscar de Olhos",
+"confiavel": false,
+"numeroImpresso": 374
+},
+"carta_307.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "| Paralisar |",
+"confiavel": false,
+"numeroImpresso": 375
+},
+"carta_308.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Encantar",
+"confiavel": false,
+"numeroImpresso": 376
+},
+"carta_309.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee . TM",
+"confiavel": false,
+"numeroImpresso": 377
+},
+"carta_310.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "= ee es Tentaculos =",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_311.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "| Escudo de Fogo",
+"confiavel": false,
+"numeroImpresso": 379
+},
+"carta_312.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Fortificacoes",
+"confiavel": false,
+"numeroImpresso": 38
+},
+"carta_313.jpg": {
+"tipo": "Evento",
+"mundo": "AD&D",
+"nome": "Tempestade de Gelo",
+"confiavel": true,
+"numeroImpresso": 380
+},
+"carta_314.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Moeda da",
+"confiavel": false,
+"numeroImpresso": 381
+},
+"carta_315.jpg": {
+"tipo": "Evento",
+"mundo": "AD&D",
+"nome": "Névoa Sólida",
+"confiavel": true,
+"numeroImpresso": 382
+},
+"carta_316.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ge os Animar Mortos",
+"confiavel": false,
+"numeroImpresso": 383
+},
+"carta_317.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "'  Nuvem",
+"confiavel": false,
+"numeroImpresso": 384
+},
+"carta_318.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "hs . Sea",
+"confiavel": false,
+"numeroImpresso": 385
+},
+"carta_319.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "eS Recipiente",
+"confiavel": false,
+"numeroImpresso": 386
+},
+"carta_320.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Se pen ;",
+"confiavel": false,
+"numeroImpresso": 387
+},
+"carta_321.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Passa-Muralha",
+"confiavel": false,
+"numeroImpresso": 388
+},
+"carta_322.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": ". ce De Rocha",
+"confiavel": false,
+"numeroImpresso": 389
+},
+"carta_323.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "pes ge",
+"confiavel": false,
+"numeroImpresso": 39
+},
+"carta_324.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Dungeons Dragons) Corrente de",
+"confiavel": false,
+"numeroImpresso": 390
+},
+"carta_325.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Dungeons Dragons) Neblina Mortal &",
+"confiavel": false,
+"numeroImpresso": 391
+},
+"carta_326.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "aX Maley Feitico Mortal",
+"confiavel": false,
+"numeroImpresso": 392
+},
+"carta_327.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "= es Desintegrar",
+"confiavel": false,
+"numeroImpresso": 393
+},
+"carta_328.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": ". aes ll ee ee",
+"confiavel": false,
+"numeroImpresso": 394
+},
+"carta_329.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "teers &",
+"confiavel": false,
+"numeroImpresso": 395
+},
+"carta_330.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "K Controlar",
+"confiavel": false,
+"numeroImpresso": 396
+},
+"carta_331.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ae es Dedo da Morte",
+"confiavel": false,
+"numeroImpresso": 397
+},
+"carta_332.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "aes Contra-Feitico",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_333.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "pine",
+"confiavel": false,
+"numeroImpresso": 399
+},
+"carta_334.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Pn or Shadowdale %",
+"confiavel": false,
+"numeroImpresso": 4
+},
+"carta_335.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Milicia",
+"confiavel": false,
+"numeroImpresso": 40
+},
+"carta_336.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "afer Serenidade ,*",
+"confiavel": false,
+"numeroImpresso": 400
+},
+"carta_337.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Alias, a Mercendria",
+"confiavel": false,
+"numeroImpresso": 41
+},
+"carta_338.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "a Rei Azoun IV >",
+"confiavel": false,
+"numeroImpresso": 42
+},
+"carta_339.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Maligor, o",
+"confiavel": false,
+"numeroImpresso": 43
+},
+"carta_340.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "gio OR a aime: rome",
+"confiavel": false,
+"numeroImpresso": 44
+},
+"carta_341.jpg": {
+"tipo": "Herói",
+"mundo": "Forgotten Realms",
+"nome": "Drizzt Do'Urden",
+"confiavel": true,
+"numeroImpresso": 45
+},
+"carta_342.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Pinson Gna: Deusa da Magia",
+"confiavel": false,
+"numeroImpresso": 46
+},
+"carta_343.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "—~ = Senhor do Ferro §",
+"confiavel": false,
+"numeroImpresso": 47
+},
+"carta_344.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "© Pareghost",
+"confiavel": false,
+"numeroImpresso": 48
+},
+"carta_345.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "oS ea Bruenor @",
+"confiavel": false,
+"numeroImpresso": 49
+},
+"carta_346.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "CPU DGS CEE ARE",
+"confiavel": false,
+"numeroImpresso": 5
+},
+"carta_347.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Maco Vol",
+"confiavel": false,
+"numeroImpresso": 50
+},
+"carta_348.jpg": {
+"tipo": "Herói",
+"mundo": "Forgotten Realms",
+"nome": "Os Harpistas",
+"confiavel": true,
+"numeroImpresso": 51
+},
+"carta_349.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Gnomes de",
+"confiavel": false,
+"numeroImpresso": 52
+},
+"carta_350.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Aventureiros! ;",
+"confiavel": false,
+"numeroImpresso": 53
+},
+"carta_351.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Pree Sos Grupo de Guerra",
+"confiavel": false,
+"numeroImpresso": 54
+},
+"carta_352.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "» eee ee",
+"confiavel": false,
+"numeroImpresso": 55
+},
+"carta_353.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ee ee CU eee",
+"confiavel": false,
+"numeroImpresso": 56
+},
+"carta_354.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "na aE",
+"confiavel": false,
+"numeroImpresso": 57
+},
+"carta_355.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "pe os ee = Exército de",
+"confiavel": false,
+"numeroImpresso": 58
+},
+"carta_356.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "oS Se) a",
+"confiavel": false,
+"numeroImpresso": 59
+},
+"carta_357.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "IATCNIVUON |",
+"confiavel": false,
+"numeroImpresso": 6
+},
+"carta_358.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "LEAS Tenhammer",
+"confiavel": false,
+"numeroImpresso": 60
+},
+"carta_359.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Guerreiros",
+"confiavel": false,
+"numeroImpresso": 61
+},
+"carta_360.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "© Arcano",
+"confiavel": false,
+"numeroImpresso": 62
+},
+"carta_361.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee a ee Shaman —",
+"confiavel": false,
+"numeroImpresso": 63
+},
+"carta_362.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Rei Halvor 1!",
+"confiavel": false,
+"numeroImpresso": 64
+},
+"carta_363.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "® a See",
+"confiavel": false,
+"numeroImpresso": 65
+},
+"carta_364.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ss Gorgossauro :",
+"confiavel": false,
+"numeroImpresso": 66
+},
+"carta_365.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "> Grande Fey",
+"confiavel": false,
+"numeroImpresso": 67
+},
+"carta_366.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "DS El",
+"confiavel": false,
+"numeroImpresso": 68
+},
+"carta_367.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "2 PAS Te Nee",
+"confiavel": false,
+"numeroImpresso": 69
+},
+"carta_368.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "ale SSS a",
+"confiavel": false,
+"numeroImpresso": 7
+},
+"carta_369.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Clériga de Mask",
+"confiavel": false,
+"numeroImpresso": 70
+},
+"carta_370.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "*. ie Tae",
+"confiavel": false,
+"numeroImpresso": 71
+},
+"carta_371.jpg": {
+"tipo": "Monstro",
+"mundo": "Forgotten Realms",
+"nome": "Dracolich",
+"confiavel": true,
+"numeroImpresso": 72
+},
+"carta_372.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Vasos ganha 3 niveis ao lutar contra um",
+"confiavel": false,
+"numeroImpresso": 73
+},
+"carta_373.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "a ae UMA",
+"confiavel": false,
+"numeroImpresso": 74
+},
+"carta_374.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": ". eet eT ea Saurio",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_375.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Worden Punho E",
+"confiavel": false,
+"numeroImpresso": 76
+},
+"carta_376.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "CN See OE lle | :",
+"confiavel": false,
+"numeroImpresso": 77
+},
+"carta_377.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Joliet, o",
+"confiavel": false,
+"numeroImpresso": 78
+},
+"carta_378.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ana de",
+"confiavel": false,
+"numeroImpresso": 79
+},
+"carta_379.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "Z ay, t AS Go See",
+"confiavel": false,
+"numeroImpresso": 8
+},
+"carta_380.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "O Andarilho",
+"confiavel": false,
+"numeroImpresso": 80
+},
+"carta_381.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ounoamcti Chifres",
+"confiavel": false,
+"numeroImpresso": 81
+},
+"carta_382.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": null,
+"confiavel": false,
+"numeroImpresso": 82
+},
+"carta_383.jpg": {
+"tipo": "Aliado",
+"mundo": "AD&D",
+"nome": "Devorador de Mentes",
+"confiavel": true,
+"numeroImpresso": 83
+},
+"carta_384.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Nobre Djinn",
+"confiavel": false,
+"numeroImpresso": 84
+},
+"carta_385.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "a a eer",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_386.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Pree es Devorador de",
+"confiavel": false,
+"numeroImpresso": 86
+},
+"carta_387.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Shands",
+"confiavel": false,
+"numeroImpresso": 87
+},
+"carta_388.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ji Mile",
+"confiavel": false,
+"numeroImpresso": 88
+},
+"carta_389.jpg": {
+"tipo": "Clérigo",
+"mundo": "Forgotten Realms",
+"nome": "Clerigos de Malar",
+"confiavel": true,
+"numeroImpresso": 89
+},
+"carta_390.jpg": {
+"tipo": "Reino",
+"mundo": null,
+"nome": "igang? Calimshan",
+"confiavel": false,
+"numeroImpresso": 9
+},
+"carta_391.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "[DungeonsfDragons Barco Voador",
+"confiavel": false,
+"numeroImpresso": 90
+},
+"carta_392.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "pL) ae",
+"confiavel": false,
+"numeroImpresso": 91
+},
+"carta_393.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Bons Pressdgios",
+"confiavel": false,
+"numeroImpresso": 92
+},
+"carta_394.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "bast",
+"confiavel": false,
+"numeroImpresso": 93
+},
+"carta_395.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": ". ma OS",
+"confiavel": false,
+"numeroImpresso": 94
+},
+"carta_396.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "‘ Cajado de",
+"confiavel": false,
+"numeroImpresso": 95
+},
+"carta_397.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Horrores d’O",
+"confiavel": false,
+"numeroImpresso": 96
+},
+"carta_398.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ms OU \\ SAS 8 ee",
+"confiavel": false,
+"numeroImpresso": 97
+},
+"carta_399.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Pe es Estatueta do Poder",
+"confiavel": false,
+"numeroImpresso": 98
+},
+"carta_400.jpg": {
+"tipo": "Evento",
+"mundo": "AD&D",
+"nome": "Cataclisma!",
+"confiavel": true,
+"numeroImpresso": 99
+},
+"carta_401.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": ". Cee os Sakornia —",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_402.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Delsenora",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_403.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "> Pe os Gib Evets",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_404.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Sana: 2VE meses ATT AK =",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_405.jpg": {
+"tipo": "Monstro",
+"mundo": "Forgotten Realms",
+"nome": "O Olho Tirano",
+"confiavel": true,
+"numeroImpresso": null
+},
+"carta_406.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Pra t*=*S",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_407.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Aurum, 0",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_408.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "= hr = vw flU SSS OTF",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_409.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "eo Stryck",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_410.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "fi os Alicia *",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_411.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ee Zeb, o Vermelho",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_412.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Edormira, 0",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_413.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Avatar",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_414.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "[Dungeons Dragons Smolder, o",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_415.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "fi poe os Adoravel Colleen —",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_416.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "oe os Ember, o",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_417.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "[DanegeonsbDragors) Andra, a Sabia",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_418.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ce os | ey",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_419.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee i i",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_420.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Dung Ob palsy",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_421.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Ee Rs ah Neirgral, o |",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_422.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "joes Dagaronzie, o",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_423.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "2S eae te)",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_424.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "Furia do",
+"confiavel": false,
+"numeroImpresso": null
+},
+"carta_425.jpg": {
+"tipo": null,
+"mundo": null,
+"nome": "ee ee BY »",
+"confiavel": false,
+"numeroImpresso": null
+}
+}
