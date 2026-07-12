@@ -297,7 +297,15 @@
 (function(){
   // ======================= CONFIGURAÃ‡ÃƒO =======================
   // IMPORTANTE: troque pelo endereÃ§o do seu servidor (mesmo esquema do EscritÃ³rio Virtual)
-  const SERVER_URL = "https://census-activation-feed-spouse.trycloudflare.com";
+  async function buscarServerUrl(){
+  try {
+    const resp = await fetch('./config.json', { cache: 'no-store' });
+    const data = await resp.json();
+    return data.serverUrl || null;
+  } catch(e){
+    return null;
+  }
+}
   // ===============================================================
 
   const entryOverlay = document.getElementById('entryOverlay');
@@ -352,7 +360,15 @@
     enterBtn.disabled = true;
     enterBtn.textContent = 'Conectando...';
 
-    socket = io(SERVER_URL, { transports: ['websocket', 'polling'], timeout: 8000 });
+    const serverUrl = await buscarServerUrl();
+    if(!serverUrl){
+      entryError.textContent = '?? Não foi possível obter o endereço do servidor. Tente novamente em instantes.';
+      entryError.classList.add('show');
+      enterBtn.disabled = false;
+      enterBtn.textContent = 'Entrar';
+      return;
+    }
+    socket = io(serverUrl, { transports: ['websocket', 'polling'], timeout: 8000 });
 
     socket.on('connect', async () => {
       entryOverlay.style.display = 'none';
