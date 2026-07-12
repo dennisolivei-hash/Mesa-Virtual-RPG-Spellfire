@@ -3,6 +3,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Qualquer campedo pode usar feiticos x",
+"texto": "Qualquer campedo pode usar feiticos x de mago ao defender Waterdeep. C",
 "confiavel": false,
 "numeroImpresso": 1
 },
@@ -10,6 +11,7 @@
 "tipo": "Fortaleza",
 "mundo": "Greyhawk",
 "nome": "Fortificação: Muro Externo",
+"texto": "Somente voadores podem atacar o reino anexado.",
 "confiavel": true,
 "numeroImpresso": null
 },
@@ -17,6 +19,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ae eee ss CS!",
+"texto": "ae eee ss CS! Boa Sortes O jogador desta carta pode sacar cinco cartas | imediatamente.",
 "confiavel": false,
 "numeroImpresso": 100
 },
@@ -24,6 +27,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "s Ataque Surpresa",
+"texto": "s Ataque Surpresa __ Este campedo e seus aliados dobram seus © niveis durante 1 round de batalha.",
 "confiavel": false,
 "numeroImpresso": 101
 },
@@ -31,6 +35,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "- Estandarte do",
+"texto": "- Estandarte do Deus Ciclope | Hi Todos os aliados deste campeao ganham 1 nivel.",
 "confiavel": false,
 "numeroImpresso": 102
 },
@@ -38,6 +43,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Mao da Vibora",
+"texto": "Mao da Vibora Qualquer campeao com a Mao da Vibora pode lancar feiticos de mago. (Def)",
 "confiavel": false,
 "numeroImpresso": 103
 },
@@ -45,6 +51,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Esfera do",
+"texto": "Esfera do intel Destino",
 "confiavel": false,
 "numeroImpresso": 104
 },
@@ -52,6 +59,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Cajado da 7",
+"texto": "Cajado da 7 ial Conjuragao (Ofe)",
 "confiavel": false,
 "numeroImpresso": 105
 },
@@ -59,6 +67,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "| sien do",
+"texto": "| sien do u Horror Distorme Lancado contra um campedo adversario para reduzi-lo em 3 niveis. O feitico permanece até | ser dispersado. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 106
 },
@@ -66,6 +75,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "¢ : Porto Seguro!",
+"texto": "¢ : Porto Seguro! t Cada jogador pode reconstruir um reino P destruido.",
 "confiavel": false,
 "numeroImpresso": 107
 },
@@ -73,6 +83,7 @@
 "tipo": "Evento",
 "mundo": "AD&D",
 "nome": "Ato Heróico",
+"texto": "Um reino arrazado é reconstruído por um campeão do poço desse jogador; o campeão é descartado. (Benéfico)",
 "confiavel": true,
 "numeroImpresso": 108
 },
@@ -80,6 +91,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "[So Vareta da Luz",
+"texto": "[So Vareta da Luz (Ofe)",
 "confiavel": false,
 "numeroImpresso": 109
 },
@@ -87,6 +99,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "HRY Ravens Bluff <",
+"texto": "HRY Ravens Bluff < a 2 Qualquer campedo pode usar feiticgos de magol we ao defender Ravens Bluff. > Hiet",
 "confiavel": false,
 "numeroImpresso": 11
 },
@@ -94,6 +107,7 @@
 "tipo": null,
 "mundo": null,
 "nome": ". Ro  Galeao Elfo ®",
+"texto": ". Ro  Galeao Elfo ®",
 "confiavel": false,
 "numeroImpresso": 110
 },
@@ -101,6 +115,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "el SSS An ees",
+"texto": "el SSS An ees | 2) 7 (ERENT. A Cidade Live < —EE de Greyhawk ei > Qualquer campedo defendendo Greyhawk aT » \\ \\ pode lancar feiticos de mago e de clérigo.",
 "confiavel": false,
 "numeroImpresso": 111
 },
@@ -108,6 +123,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "a D PX. OPENS |: Fone re ene Oe",
+"texto": "a D PX. OPENS |: Fone re ene Oe \\/ \\ Re reEyR As Terras de luz \\ Qualquer campedo defendendo as Terras de luz ox <_ pode lancar feitigos de mago. Todos os defensores { \\ ganham 3 niveis se aquilligine aid jogador tiver luz em jogo.",
 "confiavel": false,
 "numeroImpresso": 112
 },
@@ -115,6 +131,7 @@
 "tipo": "Reino",
 "mundo": "Greyhawk",
 "nome": "Sterich",
+"texto": "Qualquer monstro defendendo Sterich ganha 5 níveis.",
 "confiavel": true,
 "numeroImpresso": 13
 },
@@ -122,6 +139,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Oe og 7 SSS Princesa do Mar",
+"texto": "Oe og 7 SSS Princesa do Mar 4 e/ \\ Este reine pode defender a si mesmo como um F campedo de nivel 1.",
 "confiavel": false,
 "numeroImpresso": 114
 },
@@ -129,6 +147,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "i TaN SN OR NF",
+"texto": "i TaN SN OR NF",
 "confiavel": false,
 "numeroImpresso": 115
 },
@@ -136,6 +155,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "a! Sy ey",
+"texto": "a! Sy ey CES Che Nae Todos os artefatos ¢ itens magicos defendendo . < 0 Charco Negro ganham 2 niveis.",
 "confiavel": false,
 "numeroImpresso": 116
 },
@@ -143,6 +163,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": ": re Pag eee VPN Oe",
+"texto": ": re Pag eee VPN Oe 3 \\—~ ESE A Sociedade dos a \\ : Chifres",
 "confiavel": false,
 "numeroImpresso": 117
 },
@@ -150,6 +171,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "\\ \\ een hee dee tae ak",
+"texto": "\\ \\ een hee dee tae ak » Os Nomades- <",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -157,6 +179,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "tag {yy hie a are",
+"texto": "tag {yy hie a are Cae aa or Ser <<STP : ? W@ = eSS Es Sterich Dax {/ ae VYOULURES as rm ) * Qualquer monstro defendendo Sterich ganha 4",
 "confiavel": false,
 "numeroImpresso": 119
 },
@@ -164,6 +187,7 @@
 "tipo": "Fortaleza",
 "mundo": "Greyhawk",
 "nome": "Fortificação: Muro Externo",
+"texto": "Somente voadores podem atacar o reino anexado.",
 "confiavel": true,
 "numeroImpresso": 12
 },
@@ -171,6 +195,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": null,
+"texto": null,
 "confiavel": false,
 "numeroImpresso": 120
 },
@@ -178,6 +203,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "4H Qualquer campedo defendendo Veluna pode —",
+"texto": ") Cys 4H Qualquer campedo defendendo Veluna pode — (| Ee langar feitigos de clérigo. uy TY) le Sl",
 "confiavel": false,
 "numeroImpresso": 121
 },
@@ -185,6 +211,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "“4 . WP ORCYHAWK Furyon",
+"texto": "“4 . WP ORCYHAWK Furyon",
 "confiavel": false,
 "numeroImpresso": 122
 },
@@ -192,6 +219,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "\\ Mortos-vivos nado podem atacar o Bs",
+"texto": "\\ Mortos-vivos nado podem atacar o Bs Grande Reino. A mao maxima do jogador é —",
 "confiavel": false,
 "numeroImpresso": 123
 },
@@ -199,6 +227,7 @@
 "tipo": "Reino",
 "mundo": "Greyhawk",
 "nome": "Templo da Maldade Elemental",
+"texto": "Compre três cartas imediatamente quando o Templo for jogado.",
 "confiavel": true,
 "numeroImpresso": 124
 },
@@ -206,6 +235,7 @@
 "tipo": "Reino",
 "mundo": "Greyhawk",
 "nome": "Ruinas de Greyhawk",
+"texto": "Todos os campeões de Greyhawk deste jogador ganham 2 níveis.",
 "confiavel": true,
 "numeroImpresso": 125
 },
@@ -213,6 +243,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "aa wee = ll CK]",
+"texto": "aa wee = ll CK] a wn GRE YHAWEE Perrenland & K XN Fi Pe oe 3 Dee NAR eae > ANE ON ATEN BA",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -220,6 +251,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Ta ON ENS | ee.",
+"texto": "Ta ON ENS | ee. 0G RIS Kenan Lg Sipe",
 "confiavel": false,
 "numeroImpresso": 127
 },
@@ -227,6 +259,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Ag ene line",
+"texto": "Ag ene line eeAT ei Ss",
 "confiavel": false,
 "numeroImpresso": 128
 },
@@ -234,6 +267,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Ce lan Of OUNCE",
+"texto": "Ce lan Of OUNCE Feira O Deserto ten DT TT Brilhante Nao pode ser atacado por herdis.",
 "confiavel": false,
 "numeroImpresso": 129
 },
@@ -241,6 +275,7 @@
 "tipo": "Reino",
 "mundo": "Forgotten Realms",
 "nome": "Myth Drannor",
+"texto": "Qualquer campeão pode usar feitiços de mago ao defender Myth Drannor. Aumenta em 1 o número máximo de cartas que o jogador pode ter na mão.",
 "confiavel": true,
 "numeroImpresso": 13
 },
@@ -248,6 +283,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Fa pe Seg ge",
+"texto": "Fa pe Seg ge FOREX HAWES Theocracia de | CEPTS Pala",
 "confiavel": false,
 "numeroImpresso": 130
 },
@@ -255,6 +291,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "i N\\ . SF ON e.CtCN",
+"texto": "i N\\ . SF ON e.CtCN aa TE . Osso Herdis nado podem ser usados em defesa deste reino.",
 "confiavel": false,
 "numeroImpresso": 131
 },
@@ -262,6 +299,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "eS O-Omcdo te",
+"texto": "eS O-Omcdo te / SS Urnst (fi Y Ae",
 "confiavel": false,
 "numeroImpresso": 132
 },
@@ -269,6 +307,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "at ee |",
+"texto": "at ee | C rar Mar J) Qualquer fortaleza unida a este reino se apli- 4 e ; ca também ao Grande Reino.",
 "confiavel": false,
 "numeroImpresso": 133
 },
@@ -276,6 +315,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "VF OY Oe",
+"texto": "VF OY Oe Qualquer campedo pode usar feitigos de cleri- go ao defender Bissel.",
 "confiavel": false,
 "numeroImpresso": 134
 },
@@ -283,6 +323,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Fm Oe ee",
+"texto": "Fm Oe ee EER A Irmandade GET) Escarlate Este jogador pode eliminar um campedo de qualquer mesa no inicio de seu turno. Este reino ¢ destruido.",
 "confiavel": false,
 "numeroImpresso": 135
 },
@@ -290,6 +331,7 @@
 "tipo": "Reino",
 "mundo": "Greyhawk",
 "nome": "Sterich",
+"texto": "Qualquer monstro defendendo Sterich ganha 5 níveis.",
 "confiavel": true,
 "numeroImpresso": 136
 },
@@ -297,6 +339,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "ee ee",
+"texto": "ee ee : - Ee Principado de mesic Ulek",
 "confiavel": false,
 "numeroImpresso": 137
 },
@@ -304,6 +347,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "a a ee TN UPN. UN UL",
+"texto": "a a ee TN UPN. UN UL CH GRE ome MINE",
 "confiavel": false,
 "numeroImpresso": 138
 },
@@ -311,6 +355,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Dp WON PO La SL NE /",
+"texto": "Dp WON PO La SL NE / He OS Ducado de Tenh &",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -318,6 +363,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "2 ol ARSE Rie ae Vaasa",
+"texto": "2 ol ARSE Rie ae Vaasa n inne :",
 "confiavel": false,
 "numeroImpresso": 14
 },
@@ -325,6 +371,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Floresta Burneal",
+"texto": "Floresta Burneal Rare",
 "confiavel": false,
 "numeroImpresso": 140
 },
@@ -332,6 +379,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Qualquer campedo e¢ aliados defendendo o :",
+"texto": "Qualquer campedo e¢ aliados defendendo o : Castelo Hart ganham 2 niveis.",
 "confiavel": false,
 "numeroImpresso": 141
 },
@@ -339,6 +387,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "— en Ao qememeniinnns",
+"texto": "— en Ao qememeniinnns : aaa Brasdao \"| EMMIS) §— Sociedade do Chifre O reino em anexo pode defender a si mesmo como um herdi de nivel 5.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -346,6 +395,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Tracas de Livros",
+"texto": "Tracas de Livros Deve ser jogado contra um jogador que, entdo, nao podera jogar qualquer carta de feitico até o final de seul proximo turno.",
 "confiavel": false,
 "numeroImpresso": 143
 },
@@ -353,6 +403,7 @@
 "tipo": "Reino",
 "mundo": "Dark Sun",
 "nome": "Shault",
+"texto": "Shault só pode ser atacado por monstros ou voadores. O reino pode se defender como um campeão de nível 6 de qualquer tipo, escolhido por este jogador quando atacado.",
 "confiavel": true,
 "numeroImpresso": 144
 },
@@ -360,6 +411,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ere Grande Reino",
+"texto": "Ere Grande Reino R Todos os aliados mortos-vivos deste jogador : dobram de nivel, atacando ou defendendo.",
 "confiavel": false,
 "numeroImpresso": 145
 },
@@ -367,6 +419,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "er SS ee",
+"texto": "er SS ee eee de Furyondy = Oreino em anexo nao pode ser afetado A por eventos.",
 "confiavel": false,
 "numeroImpresso": 146
 },
@@ -374,6 +427,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "5 me ers =e. Gas",
+"texto": "5 me ers =e. Gas ; Monstros nao podem atacar o reino em anexo.",
 "confiavel": false,
 "numeroImpresso": 147
 },
@@ -381,6 +435,7 @@
 "tipo": "Reino",
 "mundo": "Greyhawk",
 "nome": "Sterich",
+"texto": "Qualquer monstro defendendo Sterich ganha 5 níveis.",
 "confiavel": true,
 "numeroImpresso": 148
 },
@@ -388,6 +443,7 @@
 "tipo": "Reino",
 "mundo": "DragonLance",
 "nome": "Terras Sintilantes",
+"texto": "Só pode ser atacado por voadores ou cavadores. O reino e seus defensores são imunes a feitiços ofensivos.",
 "confiavel": true,
 "numeroImpresso": 149
 },
@@ -395,6 +451,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Pee ap eo Rae 5 A LM ete” 1,",
+"texto": "Pee ap eo Rae 5 A LM ete” 1, r SPs. Ss ae tas / on, Ho tees eas Selvas de Chult © 4g gies ey As Selvas de Chult podem defender a si mes- \\» s ey mas como um monstro de nivel 5. Fr gee Sc",
 "confiavel": false,
 "numeroImpresso": 15
 },
@@ -402,6 +459,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "pase oes) Cerco!",
+"texto": "pase oes) Cerco! Destrua o primeiro reino de qualquer jogador, inde- — pendente de seus poderes especiais; se o primeiro = reino ja estiver destruido, ignore este evento.",
 "confiavel": false,
 "numeroImpresso": 150
 },
@@ -409,6 +467,7 @@
 "tipo": "Item Mágico",
 "mundo": "AD&D",
 "nome": "Estandarte da Guerra",
+"texto": "Cada campeão e aliado deste jogador ganha 1 nível. (Def)",
 "confiavel": true,
 "numeroImpresso": 151
 },
@@ -416,6 +475,7 @@
 "tipo": "Artefato",
 "mundo": "Greyhawk",
 "nome": "Codex dos Planos Infinitos",
+"texto": "Todos os campeões deste jogador são imunes a itens mágicos ofensivos e feitiços ofensivos.",
 "confiavel": true,
 "numeroImpresso": 152
 },
@@ -423,6 +483,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "(ois Cristal do tbanof",
+"texto": "(ois Cristal do tbanof a Flamejante™ O campedo que tiver o cristal deve atacar em seu turno ou ser descartado. (Ofe)",
 "confiavel": false,
 "numeroImpresso": 153
 },
@@ -430,6 +491,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "re Se ve Hordas do",
+"texto": "re Se ve Hordas do Ye Ces Castelo Greyhawk",
 "confiavel": false,
 "numeroImpresso": 154
 },
@@ -437,6 +499,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "SATE Esqueletos",
+"texto": "SATE Esqueletos Mortos-vivos.",
 "confiavel": false,
 "numeroImpresso": 155
 },
@@ -444,6 +507,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Mao e Olho",
+"texto": "Mao e Olho Nee TT Seay de ve AO campedo em anexo ganha 5 niveis quando atacando, e 2 quando defendendo. a",
 "confiavel": false,
 "numeroImpresso": 156
 },
@@ -451,6 +515,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ES Esfera dos",
+"texto": "ES Esfera dos ea Dragoes © Os reinos de GREYHAWK deste jogador¢ jy seus defensores nao podem ser atacados por _ -  dragdes ou monstros.",
 "confiavel": false,
 "numeroImpresso": 157
 },
@@ -458,6 +523,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "(ERSTE Cabana da",
+"texto": "(ERSTE Cabana da J eRe) Vovo Yaga O campedo em anexo e seus aliados sao considerados voadores.",
 "confiavel": false,
 "numeroImpresso": 158
 },
@@ -465,6 +531,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ES Carruagem E",
+"texto": "ES Carruagem E | ERSTE de Lyrx _“ ‘ O campedo unido ganha 3 niveis e “ ’ torna-se voador; todos os seus aliados 4 } tambem podem voar.",
 "confiavel": false,
 "numeroImpresso": 159
 },
@@ -472,6 +539,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Sy NLS AACR ARI eh A OAL",
+"texto": "Sy NLS AACR ARI eh A OAL RI AEN se i SRD ieemeuememmmg: A Floresta Alta SEE Sa Seema h oe",
 "confiavel": false,
 "numeroImpresso": 16
 },
@@ -479,6 +547,7 @@
 "tipo": "Artefato",
 "mundo": "Greyhawk",
 "nome": "Taça do Al'Akbar",
+"texto": "Se este jogador descartar 3 cartas de sua mão durante a fase 5, ele pode retornar qualquer carta do descarte para a mão.",
 "confiavel": true,
 "numeroImpresso": 160
 },
@@ -486,6 +555,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "“ (RSVR = Rary, o Traidor",
+"texto": "“ (RSVR = Rary, o Traidor “ aR Ae Ad a Schoey Rary ganha 3 niveis ao enfrentar um mago e/ou 3 niveis ao defender um reino em anexo a uma fortaleza.",
 "confiavel": false,
 "numeroImpresso": 161
 },
@@ -493,6 +563,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "coat WA ai vi",
+"texto": "coat WA ai vi (Suevieaye  Mordenkainen",
 "confiavel": false,
 "numeroImpresso": 162
 },
@@ -500,6 +571,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee 6 A ee",
+"texto": "ee 6 A ee (RST Tysiln San",
 "confiavel": false,
 "numeroImpresso": 163
 },
@@ -507,6 +579,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "GEASS Z",
+"texto": "ant GEASS Z Otto pode lancar tanto feitigos demago © quanto de clérigo. ,",
 "confiavel": false,
 "numeroImpresso": 164
 },
@@ -514,6 +587,7 @@
 "tipo": "Mago",
 "mundo": "Greyhawk",
 "nome": "Mika o Nômade Lobo",
+"texto": "Mika ganha três níveis quando o oponente usa aliados contra ele. Ele também pode usar cartas de combate desarmado de heróis.",
 "confiavel": true,
 "numeroImpresso": 165
 },
@@ -521,6 +595,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "eas Lloth, a Rainha §",
+"texto": "eas Lloth, a Rainha § GANT) das Aranhas Lloth pode lancar feiticos de mago e de clérigo. Se Lloth for derrotada, recoloque-a na pilha de saque e embaralhe.",
 "confiavel": false,
 "numeroImpresso": 166
 },
@@ -528,6 +603,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "(eeevieaye luz, o Maligno",
+"texto": "(eeevieaye luz, o Maligno luz pode lancar feiticos de mago. Se derrotado, as forcas de luz podem destruir um reino adversario ou fazé-lo descartar um reino destruido.",
 "confiavel": false,
 "numeroImpresso": 167
 },
@@ -535,6 +611,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "- poses yt!",
+"texto": "- poses yt! E Pagamento | Campo de Batalha Cada aliado colocado em jogo depois desta carta, pelo mesmo jogador, ganha 3 niveis.",
 "confiavel": false,
 "numeroImpresso": 168
 },
@@ -542,6 +619,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "1) eee OR",
+"texto": "1) eee OR chs niin Espadachim Morto-vivo.",
 "confiavel": false,
 "numeroImpresso": 169
 },
@@ -549,6 +627,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "pm] Cost",
+"texto": "pm] Cost Espada ~ O jogador defensor pode retornar um aliado a sua mao depois de cada round de batalha.",
 "confiavel": false,
 "numeroImpresso": 17
 },
@@ -556,6 +635,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "; Voador. E",
+"texto": "; Voador. E",
 "confiavel": false,
 "numeroImpresso": 170
 },
@@ -563,6 +643,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ee eee",
+"texto": "Ee eee , Kiara pode destruir um item magico » que seja usado contra ela. O item afetado ¢ descartado.",
 "confiavel": false,
 "numeroImpresso": 171
 },
@@ -570,6 +651,7 @@
 "tipo": "Herói",
 "mundo": "Greyhawk",
 "nome": "Hettman Tsurin",
+"texto": "No final do turno deste jogador, se Hettman não tiver atacado, este jogador pode pegar aleatoriamente uma carta da mão de outro jogador e a descartar.",
 "confiavel": true,
 "numeroImpresso": 172
 },
@@ -577,6 +659,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Grifo",
+"texto": "Grifo O campedo unido torna-se voador. (Def)",
 "confiavel": false,
 "numeroImpresso": 173
 },
@@ -584,6 +667,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Zumbi do Mar",
+"texto": "LCT Zumbi do Mar Morto-vivo. '",
 "confiavel": false,
 "numeroImpresso": 174
 },
@@ -591,6 +675,7 @@
 "tipo": "Evento",
 "mundo": "AD&D",
 "nome": "Zona Anti-Magia",
+"texto": "Até o próximo turno deste jogador, nenhum feitiço pode ser jogado, e todos os itens mágicos e artefatos são ignorados. (Maléfico)",
 "confiavel": true,
 "numeroImpresso": 175
 },
@@ -598,6 +683,7 @@
 "tipo": null,
 "mundo": null,
 "nome": null,
+"texto": null,
 "confiavel": false,
 "numeroImpresso": 176
 },
@@ -605,6 +691,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ARES 0 Dragao",
+"texto": "ARES 0 Dragao = Voador.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -612,6 +699,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Pergaminho do",
+"texto": "a om Pergaminho do Ses EXilio Espiritual Um campedo derrotado pelo possuidor deste pergaminho ¢ removido do jogo; nao pode deixar a pilha de descartes e voltar ao jogo em nenhuma circunstancia.",
 "confiavel": false,
 "numeroImpresso": 178
 },
@@ -619,6 +707,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Assassino",
+"texto": "Assassino Jogue este evento apenas durante um round de batalha, depois que ambos os campedes tiverem sido selecionados. Nenhuma outra carta pode ser jogada neste turno,",
 "confiavel": false,
 "numeroImpresso": 179
 },
@@ -626,6 +715,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "aaa Arsh",
+"texto": ": Sti aaa Arsh Todos os atacantes perdem 1 nivel. . J",
 "confiavel": false,
 "numeroImpresso": 18
 },
@@ -633,6 +723,7 @@
 "tipo": "Reino",
 "mundo": "Greyhawk",
 "nome": "Ruinas de Greyhawk",
+"texto": "Todos os campeões de Greyhawk deste jogador ganham 2 níveis.",
 "confiavel": true,
 "numeroImpresso": 180
 },
@@ -640,6 +731,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Os Nomades ganham 2 niveis se Mika estiver",
+"texto": "Os Nomades ganham 2 niveis se Mika estiver na mesa.",
 "confiavel": false,
 "numeroImpresso": 181
 },
@@ -647,6 +739,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "[  Pergaminho &",
+"texto": "[  Pergaminho & 2 da Furia § * O mago que usar este pergaminho nao pode ® jogar qualquer outra carta neste round. =",
 "confiavel": false,
 "numeroImpresso": 182
 },
@@ -654,6 +747,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "es we",
+"texto": "es we",
 "confiavel": false,
 "numeroImpresso": 183
 },
@@ -661,6 +755,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "- i. Trystan",
+"texto": "- i. Trystan pono mpier a",
 "confiavel": false,
 "numeroImpresso": 184
 },
@@ -668,6 +763,7 @@
 "tipo": "Herói",
 "mundo": "Greyhawk",
 "nome": "Thorvid",
+"texto": "Thorvid ganha 3 níveis em batalha contra monstros, mortos-vivos ou voadores.",
 "confiavel": true,
 "numeroImpresso": 185
 },
@@ -675,6 +771,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Loucura das",
+"texto": "Loucura das Fadas Loucura das Fadas afeta um campedo (que nao esteja em batalha). A carta deste campedo ¢ virada com a face para baixo e nao pode ser usada ate o proximo turno.",
 "confiavel": false,
 "numeroImpresso": 186
 },
@@ -682,6 +779,7 @@
 "tipo": null,
 "mundo": null,
 "nome": null,
+"texto": "Fee",
 "confiavel": false,
 "numeroImpresso": 187
 },
@@ -689,6 +787,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "- Voador. © Dragéo Dourado pode usar",
+"texto": "- Voador. © Dragéo Dourado pode usar a feitigos de mago. ‘",
 "confiavel": false,
 "numeroImpresso": 188
 },
@@ -696,6 +795,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Se apenas um Arquidruida estiver em jogo,",
+"texto": "Se apenas um Arquidruida estiver em jogo, clérigos nao podem lancar feiticos sem sua f permissdao.",
 "confiavel": false,
 "numeroImpresso": 189
 },
@@ -703,6 +803,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "ae Sea / tt even SORT Impiltur B",
+"texto": "ae Sea / tt even SORT Impiltur B rene oye Ae: Ly x} A) e ¥ ee its \\ hic : Ao defender Impiltur, todos os campedes e ali- i ados ganham 1 nivel. }",
 "confiavel": false,
 "numeroImpresso": 19
 },
@@ -710,6 +811,7 @@
 "tipo": "Aliado",
 "mundo": "AD&D",
 "nome": "Cão do Inferno",
+"texto": "O Cão do Inferno e todas as cartas jogadas no exército deste jogador são imunes a feitiços ofensivos.",
 "confiavel": true,
 "numeroImpresso": 190
 },
@@ -717,6 +819,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "‘ea eel",
+"texto": "‘ea eel = Ri Pergaminho de Acesso | a Outros Mundos Se um campedo com este pergaminho for der- rotado, o jogador pode renovar sua mao com 8 cartas da pilha de saque.",
 "confiavel": false,
 "numeroImpresso": 191
 },
@@ -724,6 +827,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Esqueleto",
+"texto": "Esqueleto Gigante orto-vivo. Qualquer espada magica ou lanca usada pelo campedo adversdrio deve ser descartada imediatamente.",
 "confiavel": false,
 "numeroImpresso": 192
 },
@@ -731,6 +835,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "rr” ez",
+"texto": "rr” ez Esqueleto Morto-vivo.",
 "confiavel": false,
 "numeroImpresso": 193
 },
@@ -738,6 +843,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "IGREYHGWK Horror Alado",
+"texto": "IGREYHGWK Horror Alado exe MSs Voador.",
 "confiavel": false,
 "numeroImpresso": 194
 },
@@ -745,6 +851,7 @@
 "tipo": "Aliado",
 "mundo": "AD&D",
 "nome": "Entes de Grandwood",
+"texto": "Os entes e todas as cartas no exército deste jogador são imunes a feitiços ofensivos, exceto bola de fogo.",
 "confiavel": true,
 "numeroImpresso": 195
 },
@@ -752,6 +859,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "V2 ADVENTURES dos Espinhos",
+"texto": "V2 ADVENTURES dos Espinhos",
 "confiavel": false,
 "numeroImpresso": 196
 },
@@ -759,6 +867,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "> te detearn ¢",
+"texto": "> te detearn ¢ — A Cabeca de Re Gulothku Esta temida reliquia afeta qualquer aliado jogado com ou contra o campedo que tiver o artefato, reduzindo seu nivel em 2 pontos - exceto se o campedo for um clérigo.",
 "confiavel": false,
 "numeroImpresso": 197
 },
@@ -766,6 +875,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Fort da f",
+"texto": "Fort da f ee Fronteira j Apenas voadores podem atacaro reinoem ~~ anexo. g",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -773,6 +883,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "| Bola de Cristal",
+"texto": "| Bola de Cristal EERSTE de Ren No inicio de seu turno, o possuidor da Bola de FS de ea ere n trés primeiras c we seiiiete re \"",
 "confiavel": false,
 "numeroImpresso": 199
 },
@@ -780,6 +891,7 @@
 "tipo": "Reino",
 "mundo": "Forgotten Realms",
 "nome": "Menzoberranzan",
+"texto": "Menzoberranzan pode ser jogado a qualquer momento. O reino é imune a voadores. Subterrâneo.",
 "confiavel": true,
 "numeroImpresso": 2
 },
@@ -787,6 +899,7 @@
 "tipo": "Reino",
 "mundo": "Forgotten Realms",
 "nome": "Icewind Dale",
+"texto": "O campeão atacante deve descartar um item mágico escolhido pelo defensor. Costa.",
 "confiavel": true,
 "numeroImpresso": 20
 },
@@ -794,6 +907,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Pe ee SS Estatueta dos",
+"texto": "Pe ee SS Estatueta dos Falcao",
 "confiavel": false,
 "numeroImpresso": 200
 },
@@ -801,6 +915,7 @@
 "tipo": "Evento",
 "mundo": "AD&D",
 "nome": "Renovação!",
+"texto": "Todos os jogadores descartam as suas mãos imediatamente e compram cinco novas cartas. (Maléfico)",
 "confiavel": true,
 "numeroImpresso": 201
 },
@@ -808,6 +923,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Cre es — Escravizado!",
+"texto": "Cre es — Escravizado! Todos os jogadores devem descartar um campedo de sua mesa.",
 "confiavel": false,
 "numeroImpresso": 202
 },
@@ -815,6 +931,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Dungeons ragons Cerco",
+"texto": "Dungeons ragons Cerco . Todos os jogadores devem descartar um reino de 7 sua posicdo frontal. O proximo reino a ser joga- / do deve ser colocado no lugar vago.",
 "confiavel": false,
 "numeroImpresso": 203
 },
@@ -822,6 +939,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "a Suborno!",
+"texto": "a Suborno! f Jogue este evento logo depois que os campedes forem escolhidos para a batalha. O campedo subor- ‘}, nado retorna a seu poco, ¢ 0 jogador deve escolher outro campedo ou perder a batatha.",
 "confiavel": false,
 "numeroImpresso": 794
 },
@@ -829,6 +947,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee ee ee ee",
+"texto": "ee ee ee ee Cee es lee ny Carga! Todos os campedes do jogador ganham 3 niveis até o fim de seu proximo turno.",
 "confiavel": false,
 "numeroImpresso": 205
 },
@@ -836,6 +955,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Se Espada Magica §",
+"texto": "Se Espada Magica § ; +5 contra mertos-vivos. (Ofe) |",
 "confiavel": false,
 "numeroImpresso": 206
 },
@@ -843,6 +963,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Aumentar",
+"texto": "Aumentar O campedo ganha 3 niveis ao atacar voadores.",
 "confiavel": false,
 "numeroImpresso": 207
 },
@@ -850,6 +971,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Anel das Estrelas",
+"texto": "Anel das Estrelas Cadentes O Herdi pode “emprestar” 1 nivel a um . campeao em combate se nao estiver envolvido. ~ - (Ofe)",
 "confiavel": false,
 "numeroImpresso": 208
 },
@@ -857,6 +979,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "JOSSerGM YS Brasao",
+"texto": "JOSSerGM YS Brasao —_ EEE de Veluna Sempre que conseguir defender o reino em anexo, traga de volta para sua mao um aliado da pilha de descartes. 559 4. 400",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -864,6 +987,7 @@
 "tipo": "Reino",
 "mundo": "Greyhawk",
 "nome": "Sterich",
+"texto": "Qualquer monstro defendendo Sterich ganha 5 níveis.",
 "confiavel": true,
 "numeroImpresso": 21
 },
@@ -871,6 +995,7 @@
 "tipo": "Evento",
 "mundo": "AD&D",
 "nome": "Levando na Conversa!",
+"texto": "Todos são convencidos de que os artefatos e itens mágicos em jogo não funcionam mais. Todos os jogadores descartam seus itens mágicos e artefatos. (Maléfico)",
 "confiavel": true,
 "numeroImpresso": 319
 },
@@ -878,6 +1003,7 @@
 "tipo": "Feitiço de Clérigo",
 "mundo": "AD&D",
 "nome": "Andar sob os ventos",
+"texto": "O campeão e seus aliados são considerados voadores durante esta rodada de batalha. (Def/3/4)",
 "confiavel": true,
 "numeroImpresso": 211
 },
@@ -885,6 +1011,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "1 Transformagao =",
+"texto": "1 Transformagao =",
 "confiavel": false,
 "numeroImpresso": 212
 },
@@ -892,6 +1019,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "to ane ine a",
+"texto": "to ane ine a Atacantes | Barbaros! Cada jogador deve descartar, a sua escolha, um reino da mesa ou de sua mao.",
 "confiavel": false,
 "numeroImpresso": 213
 },
@@ -899,6 +1027,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Frota",
+"texto": "Frota de Tesouros Todos os jogadores sacam trés cartas.",
 "confiavel": false,
 "numeroImpresso": 214
 },
@@ -906,6 +1035,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "aos en Pocdo do",
+"texto": "aos en Pocdo do Halito Flamejante Descarte depois de usar uma vez. (Ofe)",
 "confiavel": false,
 "numeroImpresso": 215
 },
@@ -913,6 +1043,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "xd USI Shield Lands",
+"texto": "a ee: xd USI Shield Lands Ao ser anexado a esta carta, um reino de . GREYHAWK destruido é reconstruido 7 instantaneamente.",
 "confiavel": false,
 "numeroImpresso": 216
 },
@@ -920,6 +1051,7 @@
 "tipo": "Item Mágico",
 "mundo": "AD&D",
 "nome": "Rede do Aprisionamento",
+"texto": "O oponente deste campeão não pode jogar aliados. Qualquer um que esteja em jogo é descartado. (Ofe)",
 "confiavel": true,
 "numeroImpresso": 217
 },
@@ -927,6 +1059,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ponte Arco-lris",
+"texto": "Ponte Arco-lris O jogador com esta carta pode redirecionar um ataque contra qualquer reino (exceto um dos reinos do atacante).",
 "confiavel": false,
 "numeroImpresso": 718
 },
@@ -934,6 +1067,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "J am i",
+"texto": "J am i : sont G Pelos Flancos © _O oponente deve jogar um aliado em resposta \\ / a esta carta, ou perde o round. ‘",
 "confiavel": false,
 "numeroImpresso": 219
 },
@@ -941,6 +1075,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "SEE See Ne",
+"texto": "SEE See Ne a Rashamen fr ar",
 "confiavel": false,
 "numeroImpresso": 22
 },
@@ -948,6 +1083,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "i _ Bastao de\\",
+"texto": "i _ Bastao de\\ EEE Dispersar MagiaS Um campedo com este bastao pode cancelar um feitico quando atacando ou defendendo. _",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -955,6 +1091,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Eevee as “Ne r",
+"texto": "Eevee as “Ne r ~“Atacantes nao-voadores perdem 2 niveis.",
 "confiavel": false,
 "numeroImpresso": 221
 },
@@ -962,6 +1099,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "RE seat Se ee",
+"texto": "RE seat Se ee Todos os defensores deste reino ganham 1 nivel.",
 "confiavel": false,
 "numeroImpresso": 222
 },
@@ -969,6 +1107,7 @@
 "tipo": "Reino",
 "mundo": "Dark Sun",
 "nome": "Urik",
+"texto": "Aliados não podem atacar Urik. Este reino pode se defender como um herói de nível 4.",
 "confiavel": true,
 "numeroImpresso": 323
 },
@@ -976,6 +1115,7 @@
 "tipo": "Reino",
 "mundo": "Dark Sun",
 "nome": "Tyr",
+"texto": "O jogador de Tyr compra uma carta extra por turno. Este reino pode se defender como um herói de nível 5.",
 "confiavel": true,
 "numeroImpresso": 924
 },
@@ -983,6 +1123,7 @@
 "tipo": "Reino",
 "mundo": "Dark Sun",
 "nome": "Gulg",
+"texto": "O primeiro aliado que atacar Gulg em cada batalha é destruído. Gulg pode se defender como um herói  de nível 7.",
 "confiavel": true,
 "numeroImpresso": 325
 },
@@ -990,6 +1131,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Beale ‘",
+"texto": "Beale ‘ <i, Narr ire Esta carta nao é colocada com a face para baixo a menos que o reino seja destruido duas vezes em uma batalha.",
 "confiavel": false,
 "numeroImpresso": 226
 },
@@ -997,6 +1139,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "<5 - 3 seeeenee te",
+"texto": "Tos - <5 - 3 seeeenee te -. ~~ Todos os aliados atacantes perdem metade de seus * $i re --»  niveis (arredondados para baixo). Balic pode se, 47 -~~ defender como um herdi de nivel 4. ; Me et,",
 "confiavel": false,
 "numeroImpresso": 227
 },
@@ -1004,6 +1147,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "2 aia: O Palacio.",
+"texto": "2 aia: O Palacio. ~~ 0 Palacio da Cama aumenta a mao do a jogador em 2 cartas. |",
 "confiavel": false,
 "numeroImpresso": 228
 },
@@ -1011,6 +1155,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee ehonk .",
+"texto": "ee ehonk . me oe _  Ledopolus Norte’ bs Uma carta pode ser sacada e jogada y imediatamente em defesa do reino em anexo. —",
 "confiavel": false,
 "numeroImpresso": 229
 },
@@ -1018,6 +1163,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "We Matt ees _ ee",
+"texto": "We Matt ees _ ee Awibitowe Damara KA\\ 3 Dobra o nivel de um campedo defensor do Vv eaiat mundo FORGOTTEN REALMS.",
 "confiavel": false,
 "numeroImpresso": 23
 },
@@ -1025,6 +1171,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Leger * pode",
+"texto": "Leger * pode = a _  Ledopolus Sul® :  Oreino em anexo pode usar qualquer aliado ~ como se fosse um campedo. Oaliadoé * descartado depois da batalha. 535 4, 400",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -1032,6 +1179,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "~ Qualquer campedo defendendo o reinoem",
+"texto": "~ Qualquer campedo defendendo o reinoem ” anexo pode usar feiticos de clérigo. *",
 "confiavel": false,
 "numeroImpresso": 231
 },
@@ -1039,6 +1187,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ye en ee",
+"texto": "ye en ee Monstros ndéo podem atacar o reino em anexo.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -1046,6 +1195,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Bete k Pe",
+"texto": "Bete k Pe Quaisquer campeoes ¢ aliados atacandoo reino em anexo perdem 1 nivel pelo medo dos - halflings canibais de Ogo.",
 "confiavel": false,
 "numeroImpresso": 233
 },
@@ -1053,6 +1203,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "~ Makla adiciona 1 nivel a todos os defensores \\",
+"texto": "~ Makla adiciona 1 nivel a todos os defensores \\ | do reino em anexo. : tra",
 "confiavel": false,
 "numeroImpresso": 234
 },
@@ -1060,6 +1211,7 @@
 "tipo": "Reino",
 "mundo": "Greyhawk",
 "nome": "Sterich",
+"texto": "Qualquer monstro defendendo Sterich ganha 5 níveis.",
 "confiavel": true,
 "numeroImpresso": 235
 },
@@ -1067,6 +1219,7 @@
 "tipo": "Fortaleza",
 "mundo": "Dark Sun",
 "nome": "Arkhold",
+"texto": "Compre uma carta extra por turno.",
 "confiavel": true,
 "numeroImpresso": 236
 },
@@ -1074,6 +1227,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "me _ : Salt View ©",
+"texto": "me _ : Salt View © Campedes defensores ganham 2 niveis.",
 "confiavel": false,
 "numeroImpresso": 237
 },
@@ -1081,6 +1235,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Esau do",
+"texto": "Esau do ee Crepusculo Este escudo pode ser unido apenas a um campedo monstro ou morto-vivo.",
 "confiavel": false,
 "numeroImpresso": 238
 },
@@ -1088,6 +1243,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ME OO ES Pe ee",
+"texto": "ME OO ES Pe ee foes Campanha de “ Inverno ~~ Jogue contra um jogador no passo 4. Até o fim ~ deste passo, o jogador afetado nao pode jogar _ mais que 1 aliado por round.",
 "confiavel": false,
 "numeroImpresso": 339
 },
@@ -1095,6 +1251,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "acer Ch ererte = OT TERN",
+"texto": "acer Ch ererte = OT TERN awierios GAMA (Nar PBST Rs bye S Ca eke",
 "confiavel": false,
 "numeroImpresso": 24
 },
@@ -1102,6 +1259,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "e eee ,",
+"texto": "e eee , x ee : Giustenal Um campedo atacando 0 reino em anexo nado pode jogar mais que trés aliados por round.",
 "confiavel": false,
 "numeroImpresso": 240
 },
@@ -1109,6 +1267,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "oo ma.",
+"texto": "oo ma. A dgua envenenada destroi um dos aliados  / ~ atacantes-assim que ele for jogado (a escolha do defensor).",
 "confiavel": false,
 "numeroImpresso": 341
 },
@@ -1116,6 +1275,7 @@
 "tipo": "Fortaleza",
 "mundo": "Dark Sun",
 "nome": "Oasis Perdido",
+"texto": "Este jogador pode comprar uma carta e jogá-la imediatamente sempre que o reino anexado for atacado.",
 "confiavel": true,
 "numeroImpresso": 49
 },
@@ -1123,6 +1283,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "i. a Lagoa de Grak }",
+"texto": "i. a Lagoa de Grak } i ee ee ee / _ A lagoa funciona como um aliado de nivel 5 F para o campedo que defenda o reino em Ag anexo-",
 "confiavel": false,
 "numeroImpresso": 243
 },
@@ -1130,6 +1291,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "kK oe : Silver Spring",
+"texto": "kK oe : Silver Spring Seo reino em anexo ¢ destruido, um reino do - oponente (a escolha do defensor) ¢ destruido",
 "confiavel": false,
 "numeroImpresso": 44
 },
@@ -1137,6 +1299,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ba hee",
+"texto": "ba hee ‘ ae _ Pogo Amargo Este odsis destréi qualquer voador que ataque 0 reino em anexo. ‘",
 "confiavel": false,
 "numeroImpresso": 245
 },
@@ -1144,6 +1307,7 @@
 "tipo": "Fortaleza",
 "mundo": "Dark Sun",
 "nome": "Águas Negras",
+"texto": "Nenhuma licantropo ou monstro pode atacar qualquer reino da formação deste jogador.",
 "confiavel": true,
 "numeroImpresso": 246
 },
@@ -1151,6 +1315,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "jae “Forte Melidor",
+"texto": "jae “Forte Melidor Aliados defendendo qualquer reino de DARK SUN deste jogador ganham 1 nivel.",
 "confiavel": false,
 "numeroImpresso": 247
 },
@@ -1158,6 +1323,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "saat",
+"texto": "saat het eins 5 “ ee F Masmorra de / . ee ae Gulg z Quaisquer campedes ¢ aliados atacandoo =~ reino em anexo perdem 1 nivel. «",
 "confiavel": false,
 "numeroImpresso": 248
 },
@@ -1165,6 +1331,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ie FSR) NAS VIB BBY - a aaa ae",
+"texto": "ie FSR) NAS VIB BBY - a aaa ae pen ae O nivel de bénus (numero no icone) de y qualquer feitico de mago usado em defesa 2 deste reino é dobrado.",
 "confiavel": false,
 "numeroImpresso": 249
 },
@@ -1172,6 +1339,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Sait",
+"texto": "Sait i —————«s Dragonspear Todos os aliados de um monstro defensor ganham 2 niveis.",
 "confiavel": false,
 "numeroImpresso": 25
 },
@@ -1179,6 +1347,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "__  Oreino em anexo pode lancar feitigos",
+"texto": "__  Oreino em anexo pode lancar feitigos de clérigo. “",
 "confiavel": false,
 "numeroImpresso": 250
 },
@@ -1186,6 +1355,7 @@
 "tipo": "Aliado",
 "mundo": "AD&D",
 "nome": "As Hordas de Mogadisho",
+"texto": "Se esta carta estiver no lado perdedor da batalha, todas as fortalezas em jogo são descartadas.",
 "confiavel": true,
 "numeroImpresso": 251
 },
@@ -1193,6 +1363,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Assassinos",
+"texto": "Assassinos Se esta carta estiver no lado perdedor da batalha, ela destroi qualquer campedo adver- sdrio a escolha do perdedor. 525 4. ago f",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -1200,6 +1371,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "So Bete aly Mercendarios",
+"texto": "So Bete aly Mercendarios | Halflings",
 "confiavel": false,
 "numeroImpresso": 253
 },
@@ -1207,6 +1379,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Bando de",
+"texto": "Bando de Guerra",
 "confiavel": false,
 "numeroImpresso": 254
 },
@@ -1214,6 +1387,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Lt al Lanceiros Kank",
+"texto": "Lt al Lanceiros Kank",
 "confiavel": false,
 "numeroImpresso": 255
 },
@@ -1221,6 +1395,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Wekenicion",
+"texto": "Wekenicion Nomades",
 "confiavel": false,
 "numeroImpresso": 256
 },
@@ -1228,6 +1403,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Se Gladiadores",
+"texto": "Se Gladiadores",
 "confiavel": false,
 "numeroImpresso": 257
 },
@@ -1235,6 +1411,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "____Rikus pode atacar duas vezes; se vencero",
+"texto": "eee | ____Rikus pode atacar duas vezes; se vencero _ primeiro round, ele pode atacar de novo com S novos aliados.",
 "confiavel": false,
 "numeroImpresso": 258
 },
@@ -1242,6 +1419,7 @@
 "tipo": null,
 "mundo": null,
 "nome": null,
+"texto": null,
 "confiavel": false,
 "numeroImpresso": 259
 },
@@ -1249,6 +1427,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "X ae SEs eR",
+"texto": "X ae SEs eR Hie NODS pecemmemeeeme — Daagerdale % Ne Daggerdale \\. wi Ses 34 ROR! Aliados nao podem ser usados A \\ Nites para atacar este reino. ee}",
 "confiavel": false,
 "numeroImpresso": 26
 },
@@ -1256,6 +1435,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee ee BO eee",
+"texto": "ee ee BO eee",
 "confiavel": false,
 "numeroImpresso": 260
 },
@@ -1263,6 +1443,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Quando atacando, pode destruir psiquica-",
+"texto": "Quando atacando, pode destruir psiquica- mente um monstro da mesa do defensor antes que a batalha comece.",
 "confiavel": false,
 "numeroImpresso": 261
 },
@@ -1270,6 +1451,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "oo ae iM We Gee NN",
+"texto": "oo ae iM We Gee NN Quando atacando, pode negar psiquicamente o poder de todas as fortalezas inimigas F durante a batalha. 5.5 4, aoo",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -1277,6 +1459,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "iS Vaerhirmana ©",
+"texto": "iS Vaerhirmana ©",
 "confiavel": false,
 "numeroImpresso": 263
 },
@@ -1284,6 +1467,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "}. tel = Herminard",
+"texto": "}. tel = Herminard",
 "confiavel": false,
 "numeroImpresso": 264
 },
@@ -1291,6 +1475,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "eS ot",
+"texto": "eS ot",
 "confiavel": false,
 "numeroImpresso": 265
 },
@@ -1298,6 +1483,7 @@
 "tipo": null,
 "mundo": null,
 "nome": null,
+"texto": null,
 "confiavel": false,
 "numeroImpresso": 266
 },
@@ -1305,6 +1491,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Sabotador",
+"texto": "Sabotador Suicida Descartando um campedo, 0 jogador pode destruir um reino qualquer.",
 "confiavel": false,
 "numeroImpresso": 267
 },
@@ -1312,6 +1499,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "\\ S alee or A mente",
+"texto": "\\ S alee or A mente * lias Bagual *",
 "confiavel": false,
 "numeroImpresso": 268
 },
@@ -1319,6 +1507,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "eget =",
+"texto": "eget =",
 "confiavel": false,
 "numeroImpresso": 269
 },
@@ -1326,6 +1515,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "ra ie TRL, ey eA",
+"texto": "ra ie TRL, ey eA I Todos os defensores de Darkhold ganham 2 Lae niveis se o Zhentil Keep estiver em jogo. ip.",
 "confiavel": false,
 "numeroImpresso": 27
 },
@@ -1333,6 +1523,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ae A LDL 4) Ys",
+"texto": "ae A LDL 4) Ys",
 "confiavel": false,
 "numeroImpresso": 270
 },
@@ -1340,6 +1531,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Be ST MY ER |",
+"texto": "Be ST MY ER |",
 "confiavel": false,
 "numeroImpresso": 271
 },
@@ -1347,6 +1539,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ba aly",
+"texto": "Ba aly",
 "confiavel": false,
 "numeroImpresso": 272
 },
@@ -1354,6 +1547,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "fe Ka Cha",
+"texto": "fe Ka Cha",
 "confiavel": false,
 "numeroImpresso": 273
 },
@@ -1361,6 +1555,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "fom Gale",
+"texto": "fom Gale",
 "confiavel": false,
 "numeroImpresso": 274
 },
@@ -1368,6 +1563,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Fae SN Ee ee",
+"texto": "Fae SN Ee ee es Dangarinos ie do Vento ~ Todos os voadores em jogo sao destruidos imediatamente.",
 "confiavel": false,
 "numeroImpresso": 275
 },
@@ -1375,6 +1571,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ie ei ee",
+"texto": "Ie ei ee ces Cacadores * Todos os mortos-vivos em jogo sao destruidos imediatamente. . Lh",
 "confiavel": false,
 "numeroImpresso": 276
 },
@@ -1382,6 +1579,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Méos Prateadas —",
+"texto": "Méos Prateadas — Todos os campedes mortos na ultima batalha sao devolvidos a mesa dos jogadores. Este evento deve ser jogado apenas quando uma ° batalha estiver terminada.",
 "confiavel": false,
 "numeroImpresso": 277
 },
@@ -1389,6 +1587,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Cantores",
+"texto": "Cantores Celestes Todos os itens magicos no jogo sao destruidos.",
 "confiavel": false,
 "numeroImpresso": 278
 },
@@ -1396,6 +1595,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Cacadores _",
+"texto": "Cacadores _ | da Areia",
 "confiavel": false,
 "numeroImpresso": 279
 },
@@ -1403,6 +1603,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "pon S15 AON INA i “a",
+"texto": "pon S15 AON INA i “a —~Ki Se 9 peg ie Os Saldes Assombrados \\ 4 tS) | \\& de Eveningstar a (xe Saque uma carta para sua mao quando este “ ! Likes e reino for jogado ou reconstruido.",
 "confiavel": false,
 "numeroImpresso": 28
 },
@@ -1410,6 +1611,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "2 eel XY",
+"texto": "2 eel XY oe os Corredores “ , a Noturnos ©",
 "confiavel": false,
 "numeroImpresso": 280
 },
@@ -1417,6 +1619,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "SSS A ek,",
+"texto": "SSS A ek,",
 "confiavel": false,
 "numeroImpresso": 281
 },
@@ -1424,6 +1627,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ill Deménio da",
+"texto": "ill Deménio da _ aS Cisterna Aliados nao podem ser usados contra este deméonio.",
 "confiavel": false,
 "numeroImpresso": 282
 },
@@ -1431,6 +1635,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "PREBBLE eee",
+"texto": "PREBBLE eee Sloth",
 "confiavel": false,
 "numeroImpresso": 283
 },
@@ -1438,6 +1643,7 @@
 "tipo": null,
 "mundo": null,
 "nome": ": ia == Mul Selvagem",
+"texto": ": ia == Mul Selvagem",
 "confiavel": false,
 "numeroImpresso": 284
 },
@@ -1445,6 +1651,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "GG! yo ate Inumano",
+"texto": "rR F GG! yo ate Inumano",
 "confiavel": false,
 "numeroImpresso": 285
 },
@@ -1452,6 +1659,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee ND eA NS",
+"texto": "ee ND eA NS pees Pyreen",
 "confiavel": false,
 "numeroImpresso": 286
 },
@@ -1459,6 +1667,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Cee ; rm",
+"texto": "Cee ; rm",
 "confiavel": false,
 "numeroImpresso": 287
 },
@@ -1466,6 +1675,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Espirito da Terra",
+"texto": "Espirito da Terra O Espirito evita que um reino ou fortalezade DARK = SUN seja destruido ou descartado, ou restaura um § reino destruido de qualquer mundo. O atacante nao = 4  ganha espolios pela vitoria e a : batalha termina.",
 "confiavel": false,
 "numeroImpresso": 288
 },
@@ -1473,6 +1683,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "y Thri-kreen “%",
+"texto": "y Thri-kreen “%",
 "confiavel": false,
 "numeroImpresso": 289
 },
@@ -1480,6 +1691,7 @@
 "tipo": "Reino",
 "mundo": "Forgotten Realms",
 "nome": "Evermeet",
+"texto": "Qualquer campeão pode usar feitiços de mago ao defender Evermeet. Voadores, nadadores e cavadores não podem atacar este reino.",
 "confiavel": true,
 "numeroImpresso": 29
 },
@@ -1487,6 +1699,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "pee Wijon §",
+"texto": "pee Wijon §",
 "confiavel": false,
 "numeroImpresso": 290
 },
@@ -1494,6 +1707,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "; maT Mikor",
+"texto": "; maT Mikor",
 "confiavel": false,
 "numeroImpresso": 291
 },
@@ -1501,6 +1715,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Salicia",
+"texto": "Salicia",
 "confiavel": false,
 "numeroImpresso": 292
 },
@@ -1508,6 +1723,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "rs Zurn",
+"texto": "rs Zurn",
 "confiavel": false,
 "numeroImpresso": 293
 },
@@ -1515,6 +1731,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "DungeonspDragons) Powel @",
+"texto": "DungeonspDragons) Powel @ Sos",
 "confiavel": false,
 "numeroImpresso": 294
 },
@@ -1522,6 +1739,7 @@
 "tipo": null,
 "mundo": null,
 "nome": null,
+"texto": "(SSS",
 "confiavel": false,
 "numeroImpresso": 295
 },
@@ -1529,6 +1747,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "aed Sarr] Vi 2",
+"texto": "aed Sarr] Vi 2 = erat isitante",
 "confiavel": false,
 "numeroImpresso": 296
 },
@@ -1536,6 +1755,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "' RE Ne ee ie oC.",
+"texto": "' RE Ne ee ie oC. Foucault &.",
 "confiavel": false,
 "numeroImpresso": 297
 },
@@ -1543,6 +1763,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "— Stef’fa Naf’ski",
+"texto": "— Stef’fa Naf’ski",
 "confiavel": false,
 "numeroImpresso": 298
 },
@@ -1550,6 +1771,7 @@
 "tipo": "Herói",
 "mundo": "Dark Sun",
 "nome": "Capitão Kazhal",
+"texto": "Destrói um item mágico do oponente a qualquer momento durante a batalha.",
 "confiavel": true,
 "numeroImpresso": 299
 },
@@ -1557,6 +1779,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Sh ot eS",
+"texto": "Sh ot eS wx Way, SA Zhentil Keep Rt Zhentil Keep pode defender a si mesmo como ; \\ ~ um clérigo de nivel 5.",
 "confiavel": false,
 "numeroImpresso": 3
 },
@@ -1564,6 +1787,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "oy Pere i",
+"texto": "oy Pere i ge SSS Charco ios arta",
 "confiavel": false,
 "numeroImpresso": 30
 },
@@ -1571,6 +1795,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "pis ae Dlasva",
+"texto": "pis ae Dlasva Dlasva pode destruir psionicamente um aliado adversdrio durante um round de batalha.",
 "confiavel": false,
 "numeroImpresso": 300
 },
@@ -1578,6 +1803,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ne A ee ,",
+"texto": "ne A ee , ett Se Tithian ataca e vence um round de batalha, o reino do defensor é destruido imediatamente.",
 "confiavel": false,
 "numeroImpresso": 301
 },
@@ -1585,6 +1811,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Verrasi",
+"texto": "Verrasi",
 "confiavel": false,
 "numeroImpresso": 302
 },
@@ -1592,6 +1819,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "eta drirhans “jt 2",
+"texto": "eta drirhans “jt 2 ae i : Profanadora Se ee Se a Profanadora lancar um ou mais pitins um reino do jogador ¢ destruido ou uma fortaleza do jogador ¢ embaralhada de volta a pilha de saque.",
 "confiavel": false,
 "numeroImpresso": 303
 },
@@ -1599,6 +1827,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "— Rei Dragao",
+"texto": "— Rei Dragao Pode lancar feitigos de mago.",
 "confiavel": false,
 "numeroImpresso": 304
 },
@@ -1606,6 +1835,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "— Borys",
+"texto": "— Borys _ Pode lancar feitigos de mago e de clérigo.",
 "confiavel": false,
 "numeroImpresso": 305
 },
@@ -1613,6 +1843,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "_Jenades en",
+"texto": "_Jenades en",
 "confiavel": false,
 "numeroImpresso": 306
 },
@@ -1620,6 +1851,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Carrasco",
+"texto": "Carrasco",
 "confiavel": false,
 "numeroImpresso": 307
 },
@@ -1627,6 +1859,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Se ie Gith!",
+"texto": "Se ie Gith! ani hae alee",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -1634,6 +1867,7 @@
 "tipo": null,
 "mundo": null,
 "nome": null,
+"texto": "Tar}",
 "confiavel": false,
 "numeroImpresso": 309
 },
@@ -1641,6 +1875,7 @@
 "tipo": null,
 "mundo": null,
 "nome": ") See Sine Berdusk",
+"texto": ") See Sine Berdusk 0 Sanne yy Um mago ou clérigo ganha 3 niveis ao defender o reino em anexo.",
 "confiavel": false,
 "numeroImpresso": 31
 },
@@ -1648,6 +1883,7 @@
 "tipo": "Item Mágico",
 "mundo": "AD&D",
 "nome": "Orbe do Poder",
+"texto": "Feitiços ofensivos, itens mágicos ofensivos e eventos maléficos não tem efeito contra o campeão anexo. (Def)",
 "confiavel": true,
 "numeroImpresso": 310
 },
@@ -1655,6 +1891,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "fii Anel dell",
+"texto": "fii Anel dell — nS Tudo Ver No inicio de seu turno, vocé pode olhar as cartas da mao de um adversario. (Def) )",
 "confiavel": false,
 "numeroImpresso": 311
 },
@@ -1662,6 +1899,7 @@
 "tipo": "Evento",
 "mundo": "AD&D",
 "nome": "Tesouro",
+"texto": "Todos os monstros são subornados a desertar; descarte todos os monstros em batalha e nas mesas. (Maléfico)",
 "confiavel": true,
 "numeroImpresso": 312
 },
@@ -1669,6 +1907,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "re Escudo da",
+"texto": "re Escudo da Cae 2 Destruicgao (Def)",
 "confiavel": false,
 "numeroImpresso": 313
 },
@@ -1676,6 +1915,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Escudo da",
+"texto": "Escudo da eal sie Aniquilagao (Def)",
 "confiavel": false,
 "numeroImpresso": 314
 },
@@ -1683,6 +1923,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Escudo da",
+"texto": "Escudo da Devastacao q (Def)",
 "confiavel": false,
 "numeroImpresso": 315
 },
@@ -1690,6 +1931,7 @@
 "tipo": "Item Mágico",
 "mundo": "AD&D",
 "nome": "Escudo da Perversidade",
+"texto": "Um aliado escolhido pelo possuidor do escudo é forçado a trocar de lado e lutar pelo campeão anexado por um round de batalha. (Ofe)",
 "confiavel": true,
 "numeroImpresso": 316
 },
@@ -1697,6 +1939,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Escudo de Gore",
+"texto": "Escudo de Gore (Dung hte OS (Ofe)",
 "confiavel": false,
 "numeroImpresso": 317
 },
@@ -1704,6 +1947,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "| be a ee",
+"texto": "| be a ee eee Certeira Mata qualquer dragdo ou monstro adversdrio em batalha, automaticamente.",
 "confiavel": false,
 "numeroImpresso": 318
 },
@@ -1711,6 +1955,7 @@
 "tipo": "Evento",
 "mundo": "AD&D",
 "nome": "A Caravana",
+"texto": "Jogue somente entre o turno de dois jogadores. O jogador do evento joga um  turno imediatamente. Após, o jogo retorna à ordem normal. (Benéfico)",
 "confiavel": true,
 "numeroImpresso": 319
 },
@@ -1718,6 +1963,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Tatas}",
+"texto": "Tatas} Nenhum feitico pode ser usado ao atacar ou if defender Tantras. 4",
 "confiavel": false,
 "numeroImpresso": 32
 },
@@ -1725,6 +1971,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "es ~ OColarh",
+"texto": "es ~ OColarh O campedo que tiver este colar pode lancar feiticos de clérigo.",
 "confiavel": false,
 "numeroImpresso": 320
 },
@@ -1732,6 +1979,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "“ a . Clerigo",
+"texto": "“ a . Clerigo ee Elemental O Clérigo Elemental ¢ imune a feiticos ofensivos de mago.",
 "confiavel": false,
 "numeroImpresso": 321
 },
@@ -1739,6 +1987,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Arqueiro Elfo",
+"texto": "Arqueiro Elfo",
 "confiavel": false,
 "numeroImpresso": 322
 },
@@ -1746,6 +1995,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "| ilies O Paria *",
+"texto": "| ilies O Paria * Pode usar feiticos de mago ¢ de clérigo. = 1s. Tae er",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -1753,6 +2003,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Assaltantes",
+"texto": "Assaltantes",
 "confiavel": false,
 "numeroImpresso": 324
 },
@@ -1760,6 +2011,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "~. piece aA 2 us",
+"texto": "~. piece aA 2 us il Guerreiro do sae BE Deserto O primeiro aliado do Guerreiro do Deserto em cada round é considerado +4, independente de seu nivel atual.",
 "confiavel": false,
 "numeroImpresso": 325
 },
@@ -1767,6 +2019,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "7 PE a ay",
+"texto": "7 PE a ay | Guloth’katra Este filho de Guloth ganha 4 niveis ao enfrentar qualquer campedo de um jogador que tenha a Cabeca de Guloth em jogo.",
 "confiavel": false,
 "numeroImpresso": 326
 },
@@ -1774,6 +2027,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "x os ; Guerreiro do |",
+"texto": "x os ; Guerreiro do | ee Deserto Todos os aliados do Guerreiro do Deserto ganham 1 nivel.",
 "confiavel": false,
 "numeroImpresso": 327
 },
@@ -1781,6 +2035,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee £ FF oe Vee",
+"texto": "ee £ FF oe Vee ¥ Saqueador ®",
 "confiavel": false,
 "numeroImpresso": 328
 },
@@ -1788,6 +2043,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Besouros Shaqat",
+"texto": "Besouros Shaqat",
 "confiavel": false,
 "numeroImpresso": 329
 },
@@ -1795,6 +2051,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "BENNO STL Ae",
+"texto": "BENNO STL Ae Moimasttt Saque outra carta cada vez que uma carta de feitico for jogada.",
 "confiavel": false,
 "numeroImpresso": 33
 },
@@ -1802,6 +2059,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ill Tembo",
+"texto": "ill Tembo O oponente nao pode usar aliados para = ataque ou defesa contra o Tembo.",
 "confiavel": false,
 "numeroImpresso": 330
 },
@@ -1809,6 +2067,7 @@
 "tipo": "Feitiço de Mago",
 "mundo": "AD&D",
 "nome": "Bola de Fogo",
+"texto": "Destrói imediatamente todos os aliados oponentes de nível 4 ou menos. (Ofe/ 4)",
 "confiavel": true,
 "numeroImpresso": 331
 },
@@ -1816,6 +2075,7 @@
 "tipo": "Feitiço de Mago",
 "mundo": "AD&D",
 "nome": "Relâmpago",
+"texto": "Imediatamente destrói um aliado oponente de nível 4 ou menos ou um item mágico, à escolha do lançador. (Ofe/4)",
 "confiavel": true,
 "numeroImpresso": 332
 },
@@ -1823,6 +2083,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Paralisar",
+"texto": "Paralisar el oan (i Se lancado sobre um campedo antes de uma batalha, ; ele nao poderd defender. Se langado durante a batatha, elimina um adversdrio a escolha do jogador.",
 "confiavel": false,
 "numeroImpresso": 333
 },
@@ -1830,6 +2091,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "| ae ATF, Projétil Magico",
+"texto": "| ae ATF, Projétil Magico ii So ;",
 "confiavel": false,
 "numeroImpresso": 334
 },
@@ -1837,6 +2099,7 @@
 "tipo": "Feitiço de Mago",
 "mundo": "AD&D",
 "nome": "Parede de Fogo",
+"texto": "Somente voadores podem atravessar a muralha. (Ofe/4)",
 "confiavel": true,
 "numeroImpresso": 335
 },
@@ -1844,6 +2107,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "[DungeonsPragons Muralha de",
+"texto": "[DungeonsPragons Muralha de ~ aS Ferro Apenas voadores podem atacar através da muralha. S6 pode ser usada para defesa.",
 "confiavel": false,
 "numeroImpresso": 336
 },
@@ -1851,6 +2115,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Muralha de",
+"texto": "Muralha de Pedra Apenas voadores podem atacar através da muralha. S6 pode ser usada para defesa. i er) oa",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -1858,6 +2123,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "-Muralha de &",
+"texto": "-Muralha de & Ss ~ Forca \\ a Apenas voadores podem atacar através desta",
 "confiavel": false,
 "numeroImpresso": 338
 },
@@ -1865,6 +2131,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Espadachim —",
+"texto": "Espadachim — “~ Aurak Quando atacar um reino, 0 espadachim escolheo defensor na mesa do oponente para um combate simples; aliados nao podem ser usados em nenhum —__ os lados.",
 "confiavel": false,
 "numeroImpresso": 339
 },
@@ -1872,6 +2139,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "I Le. VANS SALE NAO MEN Tee as!",
+"texto": "I Le. VANS SALE NAO MEN Tee as! : ils > Qualquer campedo ganha 3 niveis ao = defender o reino em anexo.",
 "confiavel": false,
 "numeroImpresso": 34
 },
@@ -1879,6 +2147,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ges Cone de Frio",
+"texto": "Ges Cone de Frio Cre os",
 "confiavel": false,
 "numeroImpresso": 340
 },
@@ -1886,6 +2155,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Adormecer",
+"texto": "Adormecer Elimina até 3 aliados adversdrios de nivel 1 ou 2, escolhidos pelo jogador. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 341
 },
@@ -1893,6 +2163,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "es Escudo",
+"texto": "es Escudo",
 "confiavel": false,
 "numeroImpresso": 342
 },
@@ -1900,6 +2171,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Um campedo ou aliado torna-se voador.",
+"texto": "Um campedo ou aliado torna-se voador.",
 "confiavel": false,
 "numeroImpresso": 343
 },
@@ -1907,6 +2179,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "- Pe ae ee",
+"texto": "- Pe ae ee Punho | Esmagador — O Punho Esmagador da 4 niveisaum = © campedo ou destrdi um item magico, a escol- _ ha do jogador. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 344
 },
@@ -1914,6 +2187,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Batt Mistico",
+"texto": "Batt Mistico de Nystul ste item magico nunca pode ser destruido ou escartado; se o campedo é descartado, o bau retorna @ mao do jogador.",
 "confiavel": false,
 "numeroImpresso": 345
 },
@@ -1921,6 +2195,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "J AEE Ea",
+"texto": "J AEE Ea Pre Dispersar Magia Cancela os efeitos de qualquer feitico.",
 "confiavel": false,
 "numeroImpresso": 346
 },
@@ -1928,6 +2203,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "es Forca-Fantasma §",
+"texto": "es Forca-Fantasma §",
 "confiavel": false,
 "numeroImpresso": 347
 },
@@ -1935,6 +2211,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "~ Esta carta é anexada a qualquer campedo inimigo 4",
+"texto": "~ Esta carta é anexada a qualquer campedo inimigo 4 na mesa; ele nao podera mais atacar ou defender ‘ f até que 0 feitico seja dispersado.",
 "confiavel": false,
 "numeroImpresso": 348
 },
@@ -1942,6 +2219,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "rece a ooo",
+"texto": "rece a ooo 7 re Advapced Sn 5 Cura de ee Ferimentos Leves",
 "confiavel": false,
 "numeroImpresso": 349
 },
@@ -1949,6 +2227,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee eae",
+"texto": "ee eae : Sul Qualquer campedo pode lancar feiticos de mago ao defender o reino unido. Se unido a Cormyr, todos os defensores ganham 4 niveis.",
 "confiavel": false,
 "numeroImpresso": 35
 },
@@ -1956,6 +2235,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "a Ferimentos Graves ¥",
+"texto": "a Ferimentos Graves ¥",
 "confiavel": false,
 "numeroImpresso": 350
 },
@@ -1963,6 +2243,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "De Bastées Para",
+"texto": "De Bastées Para | Serpentes —",
 "confiavel": false,
 "numeroImpresso": 351
 },
@@ -1970,6 +2251,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Barreira de",
+"texto": "Barreira de Laminas Destroi todos os aliados adversarios de nivel 5 ou menos. SO pode ser usado para defender.",
 "confiavel": false,
 "numeroImpresso": 359
 },
@@ -1977,6 +2259,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Bencao",
+"texto": "Bencao “QO campedo e cada um de seus aliados ganha 1 nivel neste round. (Def/4)",
 "confiavel": false,
 "numeroImpresso": 353
 },
@@ -1984,6 +2267,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Bae OB Ee eee",
+"texto": "Bae OB Ee eee Santuario « .O clérigo que lancar este feitico perde este round de batalha mas nao ¢ descartado; em vez disso, ele retorna a mesa. (Def/4)",
 "confiavel": false,
 "numeroImpresso": 354
 },
@@ -1991,6 +2275,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "(ces Caminhar",
+"texto": "(ces Caminhar nos Ventos OQ campedo e seus aliados sao tratados como voadores neste round. (Def/4)",
 "confiavel": false,
 "numeroImpresso": 355
 },
@@ -1998,6 +2283,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "0S (hE EN",
+"texto": "0S (hE EN | Pele de Cortica — Um unico defensor ganha 2 niveis. (Def/4) ‘",
 "confiavel": false,
 "numeroImpresso": 356
 },
@@ -2005,6 +2291,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "re Encantar",
+"texto": "re Encantar lie O oponente perde um aliado a escolha do jogador que lanca o feitico. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 357
 },
@@ -2012,6 +2299,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "wan  TtlCU",
+"texto": "wan  TtlCU Dispersar Magia Cancela os efeitos de qualquer feitico.",
 "confiavel": false,
 "numeroImpresso": 358
 },
@@ -2019,6 +2307,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "cores © Eseuridao",
+"texto": "cores © Eseuridao beds rele A batalha termina imediatamente, sem vencedor ou perdedor; campedes retornam as suas mesas, aliados voltam para as maos dos jogadores, e feiticos sto descartados. Escuridao nao tem efeito d contra monstros. (Def/4)",
 "confiavel": false,
 "numeroImpresso": 359
 },
@@ -2026,6 +2315,7 @@
 "tipo": "Reino",
 "mundo": "Forgotten Realms",
 "nome": "Ruínas de Zentil Keep",
+"texto": "Este reino só pode ser atacado por clérigos. Pode se defender como um monstro de nível 5. Costa.",
 "confiavel": true,
 "numeroImpresso": 36
 },
@@ -2033,6 +2323,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "- Protecdo",
+"texto": "- Protecdo OO — aaa Oo aeons nao pode usar mortos-vivos neste round de batalha; aliados sao descartados. Um campeado morto-vivo perde a batalha, mas retorna a mesa.",
 "confiavel": false,
 "numeroImpresso": 360
 },
@@ -2040,6 +2331,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ae Carruagem",
+"texto": "ae Carruagem nal de Sustarre — 6 Um campedo ou dois aliados podem voar por x um round de batalha. (Def/4)",
 "confiavel": false,
 "numeroImpresso": 361
 },
@@ -2047,6 +2339,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "a Raio de Sol '",
+"texto": "a Raio de Sol ' O Raio de Sol mata todos os mortos-vivos na mesa de um jogador. (Ofe/3)",
 "confiavel": false,
 "numeroImpresso": 362
 },
@@ -2054,6 +2347,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Muralha de |",
+"texto": "Muralha de | a Espinhos Use este feitico apenas para defesa. S6 atacantes de nivel 3 ou mais podem cruzar a",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2061,6 +2355,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "AS aes eee",
+"texto": "AS aes eee Muralha de Fogo Apenas atacantes de nivel 4 ou maior podem atravessar a muralha. S6 pode ser usado para",
 "confiavel": false,
 "numeroImpresso": 4
 },
@@ -2068,6 +2363,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Palavra Sagrada",
+"texto": "a TR Palavra Sagrada Destroi todos os aliados mortos-vivos em ambos os lados da batalha instantaneamente.",
 "confiavel": false,
 "numeroImpresso": 365
 },
@@ -2075,6 +2371,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "me “SS ewe",
+"texto": "me “SS ewe . Ressuscitar © >| Qualquer campedo derrotado pode ser ressuscitado da pilha do descartes e retornar a ~ méo do jogador. (Def/3/5)",
 "confiavel": false,
 "numeroImpresso": 366
 },
@@ -2082,6 +2379,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Dungeonbrasors: re Ataque",
+"texto": "Dungeonbrasors: re Ataque Flamejante Destroi quaisquer aliados adversdrios cujos niveis somem 6 ou menos, escolhidos pelo jogador ” lanca o feitico. Descarta-se imediatamente. (Ofe/4) ~@",
 "confiavel": false,
 "numeroImpresso": 367
 },
@@ -2089,6 +2387,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Protecdo contra -",
+"texto": "Protecdo contra - ¥ Raios © Raios nao podem afetar o campedo que lanca o feitico nem seus aliados nesta batalha.",
 "confiavel": false,
 "numeroImpresso": 368
 },
@@ -2096,6 +2395,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee eed Or a FS a",
+"texto": "ee eed Or a FS a * tees 0 Siléncio Cat a , =  Ocampedo adversdrio nao pode lancar qualquer feitico nesta batalha. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 369
 },
@@ -2103,6 +2403,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Fortificacées",
+"texto": "Fortificacées a eae Cada defensor do reino em anexo ganha 2 niveis.",
 "confiavel": false,
 "numeroImpresso": 37
 },
@@ -2110,6 +2411,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Sere PE Se SS SC",
+"texto": "Sere PE Se SS SC Invisibilidade aos & Mortos-Vivos & % Este campedo ignora oponentes mortos-vivos. r",
 "confiavel": false,
 "numeroImpresso": 370
 },
@@ -2117,6 +2419,7 @@
 "tipo": null,
 "mundo": null,
 "nome": ": Muralha",
+"texto": ": Muralha = de Neblina s ~ Nenhum ataque pode ser feito por qualquer jogador até o proximo turno do jogador que *, lanca o feitigo. (Ofe/3)",
 "confiavel": false,
 "numeroImpresso": 371
 },
@@ -2124,6 +2427,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Esquecimento",
+"texto": "Esquecimento leg ; Um aliado “esquece” de atacar ou defender neste turno; 0 aliado é descartado. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 372
 },
@@ -2131,6 +2435,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "eel AT a.",
+"texto": "eel AT a. Sos Tela Destrdi qualquer aliado adversdrio de nivel 3 ou menos. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 373
 },
@@ -2138,6 +2443,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Piscar de Olhos",
+"texto": "Piscar de Olhos Um campedo que esta para perder um round de batalha escapa para a mesa; a batalha ¢ perdida, / mas 0 campedo nao é descartado.",
 "confiavel": false,
 "numeroImpresso": 374
 },
@@ -2145,6 +2451,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "| Paralisar |",
+"texto": "| Paralisar | Mortos-Vivos 4 Aliados mortos-vivos adversdrios nao podem ser usados nesta batalha. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 375
 },
@@ -2152,6 +2459,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Encantar",
+"texto": "Encantar Monstros Todos os monstros adversdrios retornam a mesa de origem; o campedo que lanca o feitigo vence este round de batalha. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 376
 },
@@ -2159,6 +2467,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee . TM",
+"texto": "ee . TM Ventos Arcanos » Esta tempestade anti-magia atravessa 0 _ cosmo e destrdi todos os itens magicos em E Jogo.",
 "confiavel": false,
 "numeroImpresso": 377
 },
@@ -2166,6 +2475,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "= ee es Tentaculos =",
+"texto": "= ee es Tentaculos = iS Negros Todos os campedes de nivel 4 ou menos sdo '_ mortos, estejam em batalha ou na mesa. «",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2173,6 +2483,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "| Escudo de Fogo",
+"texto": "| Escudo de Fogo",
 "confiavel": false,
 "numeroImpresso": 379
 },
@@ -2180,6 +2491,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Fortificacoes",
+"texto": "Fortificacoes Cada defensor do reino em anexo ganha 3 niveis.",
 "confiavel": false,
 "numeroImpresso": 38
 },
@@ -2187,6 +2499,7 @@
 "tipo": "Evento",
 "mundo": "AD&D",
 "nome": "Tempestade de Gelo",
+"texto": "Destrói todos os campeões e aliados de nível base 4 ou menos em qualquer lugar em jogo. (Maléfico)",
 "confiavel": true,
 "numeroImpresso": 380
 },
@@ -2194,6 +2507,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Moeda da",
+"texto": "Moeda da Megalomania Um campedo com esta moeda pode ter qualquer numero de artefatos unidos, e de - qualquer mundo.",
 "confiavel": false,
 "numeroImpresso": 381
 },
@@ -2201,6 +2515,7 @@
 "tipo": "Evento",
 "mundo": "AD&D",
 "nome": "Névoa Sólida",
+"texto": "Um nevoeiro de outro mundo previne ataques contra todos os jogadores até o próximo turno deste jogador. (Maléfico)",
 "confiavel": true,
 "numeroImpresso": 382
 },
@@ -2208,6 +2523,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ge os Animar Mortos",
+"texto": "Ge os Animar Mortos m mago que lanca este feitico pode lutar outra vez proximo round de batalha, tenha perdido ou nao 0 round whtesior. (Def/4)",
 "confiavel": false,
 "numeroImpresso": 383
 },
@@ -2215,6 +2531,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "'  Nuvem",
+"texto": "'  Nuvem Assassina Aliados adversdrios de nivel 3 ou menos sao descartados ¢ nenhum outro aliado pode ser jogado até o final deste round. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 384
 },
@@ -2222,6 +2539,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "hs . Sea",
+"texto": "hs . Sea Dungeonst Dragons) Mente Smet ~—SsEnfraquecida Um adversdrio nao pode lancar feitigos pelo resto do round. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 385
 },
@@ -2229,6 +2547,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "eS Recipiente",
+"texto": "eS Recipiente =o Arcano Se o defensor ¢ derrotado, 0 campedo atacante torna-se defensor no round seguinte da batalha 1 e entao é descartado. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 386
 },
@@ -2236,6 +2555,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Se pen ;",
+"texto": "Se pen ; 4 a Cao Fiel Saal : penas voadores podem atacar um reino até o proximo turno do jogador.",
 "confiavel": false,
 "numeroImpresso": 387
 },
@@ -2243,6 +2563,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Passa-Muralha",
+"texto": "Passa-Muralha Anula um feitico de muralha. (Def/4)",
 "confiavel": false,
 "numeroImpresso": 388
 },
@@ -2250,6 +2571,7 @@
 "tipo": null,
 "mundo": null,
 "nome": ". ce De Rocha",
+"texto": ". ce De Rocha Ss. Para Lama Apenas voadores podem atacar os reinos deste jogador até seu préximo turno. (Def/4)",
 "confiavel": false,
 "numeroImpresso": 389
 },
@@ -2257,6 +2579,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "pes ge",
+"texto": "pes ge DLL PR TT Mortos-vivos nao podem atacar 0 reino em anexo.",
 "confiavel": false,
 "numeroImpresso": 39
 },
@@ -2264,6 +2587,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Dungeons Dragons) Corrente de",
+"texto": "Dungeons Dragons) Corrente de at Raios",
 "confiavel": false,
 "numeroImpresso": 390
 },
@@ -2271,6 +2595,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Dungeons Dragons) Neblina Mortal &",
+"texto": "Dungeons Dragons) Neblina Mortal & Mata todos os campedes de nivel 5 ou menor, na mesa de um jogador; os sobreviventes nao podem atacar até o final do préximo turno do jogador. a",
 "confiavel": false,
 "numeroImpresso": 391
 },
@@ -2278,6 +2603,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "aX Maley Feitico Mortal",
+"texto": "aX Maley Feitico Mortal SUS CONS TAS OTS Mata qualquer campedo ou aliado de nivel 7 ou menor, a escolha do jogador que langa o feitico. (Ofe/3/4)",
 "confiavel": false,
 "numeroImpresso": 392
 },
@@ -2285,6 +2611,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "= es Desintegrar",
+"texto": "= es Desintegrar Destroi um reino, independente de sua posicao. O reino destruido deve ser descartado. O jogador nao pode fazer ae neste turno.",
 "confiavel": false,
 "numeroImpresso": 393
 },
@@ -2292,6 +2619,7 @@
 "tipo": null,
 "mundo": null,
 "nome": ". aes ll ee ee",
+"texto": ". aes ll ee ee e ee as Confusdo o ‘et O campedo afetado nao pode atacar ou defender até o fim do préximo turno de seu t possuidor.",
 "confiavel": false,
 "numeroImpresso": 394
 },
@@ -2299,6 +2627,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "teers &",
+"texto": "teers & Exilio Destréi um monstro 4 escolha do jogador que _ lanca o feitico. (Ofe/3/4)",
 "confiavel": false,
 "numeroImpresso": 395
 },
@@ -2306,6 +2635,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "K Controlar",
+"texto": "K Controlar a Mortos-Vivos O jogador pode pedir a qualquer outro jogador sua carta de aliado morto-vivo mais poderoso, e trazé-la para seu proprio lado neste round de batalha. O aliado ¢ descartado depois. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 396
 },
@@ -2313,6 +2643,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ae es Dedo da Morte",
+"texto": "ae es Dedo da Morte Mata qualquer campedo ou aliado de nivel 5 ou menos. (Ofe/4)",
 "confiavel": false,
 "numeroImpresso": 397
 },
@@ -2320,6 +2651,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "aes Contra-Feitico",
+"texto": "aes Contra-Feitico — iia Envia um efeitos de volta aquele que o lancou, se o alvo original puder usar este",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2327,6 +2659,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "pine",
+"texto": "pine — — Percival Se um campedo com o Sino de Percival destroi um reino, ele pode também destruir qualquer fortaleza que esteja em jogo.",
 "confiavel": false,
 "numeroImpresso": 399
 },
@@ -2334,6 +2667,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Pn or Shadowdale %",
+"texto": "Pn or Shadowdale % mace Fe . ; 6 6 = Qualquer campedo pode lancar feitigos de if , ee) mago e de clérigo ao defender Shadowdale. Ye",
 "confiavel": false,
 "numeroImpresso": 4
 },
@@ -2341,6 +2675,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Milicia",
+"texto": "Milicia i — Camponesa - Cada campedo e aliado atacando o reino em anexo perde 1 nivel.",
 "confiavel": false,
 "numeroImpresso": 40
 },
@@ -2348,6 +2683,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "afer Serenidade ,*",
+"texto": "afer Serenidade ,* wun Agons) \\ Anula os efeitos de uma carta de evento, mas apenas para o jogador desta carta. |",
 "confiavel": false,
 "numeroImpresso": 400
 },
@@ -2355,6 +2691,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Alias, a Mercendria",
+"texto": "Alias, a Mercendria Imune a feiticos ofensivos.",
 "confiavel": false,
 "numeroImpresso": 41
 },
@@ -2362,6 +2699,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "a Rei Azoun IV >",
+"texto": "a Rei Azoun IV > eet ters ees heeesecaeces angel Todos os aliados do Rei Azoun IV ganham 1 nivel.",
 "confiavel": false,
 "numeroImpresso": 42
 },
@@ -2369,6 +2707,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Maligor, o",
+"texto": "Maligor, o ee Vermetho Em cada batalha, Maligor pode trazer um ali- ado adversdrio para seu proprio lado.",
 "confiavel": false,
 "numeroImpresso": 43
 },
@@ -2376,6 +2715,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "gio OR a aime: rome",
+"texto": "gio OR a aime: rome \\ Elminster, o= s Imune a feiticos ofensivos.",
 "confiavel": false,
 "numeroImpresso": 44
 },
@@ -2383,6 +2723,7 @@
 "tipo": "Herói",
 "mundo": "Forgotten Realms",
 "nome": "Drizzt Do'Urden",
+"texto": "Elfo (drow). Se defendendo um reino, Drizzt precisa ser derrotado duas vezes em uma batalha antes de ser descartado.",
 "confiavel": true,
 "numeroImpresso": 45
 },
@@ -2390,6 +2731,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Pinson Gna: Deusa da Magia",
+"texto": "Pinson Gna: Deusa da Magia “ , Se apenas uma Midnight estiver no jogo, magos nao podem lancar feiticos sem sua permissao. Ela pode também destruir todos os itens magicos unidos ao campedo adversario.",
 "confiavel": false,
 "numeroImpresso": 46
 },
@@ -2397,6 +2739,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "—~ = Senhor do Ferro §",
+"texto": "—~ = Senhor do Ferro § O nivel de Torg ¢ dobrado quando defendendo ,» ou atacando o Grande Despenhadeiro.",
 "confiavel": false,
 "numeroImpresso": 47
 },
@@ -2404,6 +2747,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "© Pareghost",
+"texto": "© Pareghost Todos os aliados do Pereghost ganham 2 niveis.",
 "confiavel": false,
 "numeroImpresso": 48
 },
@@ -2411,6 +2755,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "oS ea Bruenor @",
+"texto": "oS ea Bruenor @ PASS OTET SS NSA Y / ae Martelo-de-Batalha Bruenor ganha 2 niveis ao lutar contra um monstro. -",
 "confiavel": false,
 "numeroImpresso": 49
 },
@@ -2418,6 +2763,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "CPU DGS CEE ARE",
+"texto": "CPU DGS CEE ARE f At pO concen tent Cormyr i WEP NEE ; ‘S Steck!",
 "confiavel": false,
 "numeroImpresso": 5
 },
@@ -2425,6 +2771,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Maco Vol",
+"texto": "Maco Vol No inicio do turno, 0 jogador pode olhar a carta no topo de qualquer pilha de saque e, se quiser, descarta-la.",
 "confiavel": false,
 "numeroImpresso": 50
 },
@@ -2432,6 +2779,7 @@
 "tipo": "Herói",
 "mundo": "Forgotten Realms",
 "nome": "Os Harpistas",
+"texto": "Os Harpistas podem escolher lançar feitiços de mago ou de clérigo, porém no início de cada batalha em que participar, o jogador deve escolher que tipo de feitiço eles irão lançar.",
 "confiavel": true,
 "numeroImpresso": 51
 },
@@ -2439,6 +2787,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Gnomes de",
+"texto": "Gnomes de la Samek<",
 "confiavel": false,
 "numeroImpresso": 52
 },
@@ -2446,6 +2795,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Aventureiros! ;",
+"texto": "Aventureiros! ; bp vy A Podem lancar feiticos de mago e de clérigo. wy",
 "confiavel": false,
 "numeroImpresso": 53
 },
@@ -2453,6 +2803,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Pree Sos Grupo de Guerra",
+"texto": "Pree Sos Grupo de Guerra",
 "confiavel": false,
 "numeroImpresso": 54
 },
@@ -2460,6 +2811,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "» eee ee",
+"texto": "» eee ee Senhor do Crime fe pe eae ee: O Senhor do Crime também pode ser jogado como um evento e destruir uma fortaleza. A fortaleza destruida e o Senhor do Crime sao descartados.",
 "confiavel": false,
 "numeroImpresso": 55
 },
@@ -2467,6 +2819,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ee ee CU eee",
+"texto": "Ee ee CU eee ) Aventureiros Todos os aliados destes aventureiros ganham 1 nivel.",
 "confiavel": false,
 "numeroImpresso": 56
 },
@@ -2474,6 +2827,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "na aE",
+"texto": "na aE i Os Assassinos ee de Jotun i Os Assassinos de Jotun sao de nivel 8 se o 4 campedo adversdrio é um monstro.",
 "confiavel": false,
 "numeroImpresso": 57
 },
@@ -2481,6 +2835,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "pe os ee = Exército de",
+"texto": "pe os ee = Exército de SiS Boodstone",
 "confiavel": false,
 "numeroImpresso": 58
 },
@@ -2488,6 +2843,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "oS Se) a",
+"texto": "oS Se) a ieee Tl Ae ; DungeoreBeagors) A Legido de | le Ferro t",
 "confiavel": false,
 "numeroImpresso": 59
 },
@@ -2495,6 +2851,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "IATCNIVUON |",
+"texto": "IATCNIVUON | ia BZ rye ay 34h oe rr me Y Sembia L Jo pan SR Ms kN te th,",
 "confiavel": false,
 "numeroImpresso": 6
 },
@@ -2502,6 +2859,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "LEAS Tenhammer",
+"texto": "LEAS Tenhammer",
 "confiavel": false,
 "numeroImpresso": 60
 },
@@ -2509,6 +2867,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Guerreiros",
+"texto": "Guerreiros Sagrados Quando os Guerreiros Sagrados sao descartados, 0 jogador pode devolver todas as cartas descartadas (exceto eventos) de volta a pilha de saque, embaralhando bem.",
 "confiavel": false,
 "numeroImpresso": 61
 },
@@ -2516,6 +2875,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "© Arcano",
+"texto": "© Arcano —_—_ Supremo",
 "confiavel": false,
 "numeroImpresso": 62
 },
@@ -2523,6 +2883,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee a ee Shaman —",
+"texto": "ee a ee Shaman —",
 "confiavel": false,
 "numeroImpresso": 63
 },
@@ -2530,6 +2891,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Rei Halvor 1!",
+"texto": "Rei Halvor 1!",
 "confiavel": false,
 "numeroImpresso": 64
 },
@@ -2537,6 +2899,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "® a See",
+"texto": "® a See a Pteranodonte w O Pteranodonte ganha 3 niveis ao = 4 defender Chult.",
 "confiavel": false,
 "numeroImpresso": 65
 },
@@ -2544,6 +2907,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ss Gorgossauro :",
+"texto": "Ss Gorgossauro : . O Gorgossauro ganha 3 niveis ao defender f Chult.",
 "confiavel": false,
 "numeroImpresso": 66
 },
@@ -2551,6 +2915,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "> Grande Fey",
+"texto": "> Grande Fey O primeiro adversdrio aliado jogado contra o Grande Feyr em cada batalha sera descartado _ imediatamente.",
 "confiavel": false,
 "numeroImpresso": 67
 },
@@ -2558,6 +2923,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "DS El",
+"texto": "DS El es Ane Camara Espiritual Quando um de seus campedes for descartado, | | sua carta pode ser trocada pela do campedo que tiver a Camara Espiritual.",
 "confiavel": false,
 "numeroImpresso": 68
 },
@@ -2565,6 +2931,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "2 PAS Te Nee",
+"texto": "2 PAS Te Nee Clérigo de Torm",
 "confiavel": false,
 "numeroImpresso": 69
 },
@@ -2572,6 +2939,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "ale SSS a",
+"texto": "ale SSS a = A (fancy Ilhas Moonshae == _ As Moonshaes podem defender a si mesmas = — 4 como um monstro de nivel 2. Todos os aliados- JX ~ ganham 3 niveis ao defender as i a Moonshaes.",
 "confiavel": false,
 "numeroImpresso": 7
 },
@@ -2579,6 +2947,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Clériga de Mask",
+"texto": "Clériga de Mask Esta carta ¢ todas anexadas a ela permanecem com as faces voltadas para baixo e sao reveladas apenas em batalha. \\",
 "confiavel": false,
 "numeroImpresso": 70
 },
@@ -2586,6 +2955,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "*. ie Tae",
+"texto": "*. ie Tae Matriarca Drow A Matriarca Drow ganha 3 niveis ao defender Menzoberranzan.",
 "confiavel": false,
 "numeroImpresso": 71
 },
@@ -2593,6 +2963,7 @@
 "tipo": "Monstro",
 "mundo": "Forgotten Realms",
 "nome": "Dracolich",
+"texto": "Dragão; morto-vivo; voador. Pode lançar feitiços de mago e usar cartas de combate desarmado utilizáveis por dragões.",
 "confiavel": true,
 "numeroImpresso": 72
 },
@@ -2600,6 +2971,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Vasos ganha 3 niveis ao lutar contra um",
+"texto": "Vasos ganha 3 niveis ao lutar contra um monstro.",
 "confiavel": false,
 "numeroImpresso": 73
 },
@@ -2607,6 +2979,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "a ae UMA",
+"texto": "a ae UMA q pronconcs <n. aaa da Névoa A Pp es2 et tee wai - + Allisia ganha 3 niveis ao lutar contra um a monstro.",
 "confiavel": false,
 "numeroImpresso": 74
 },
@@ -2614,6 +2987,7 @@
 "tipo": null,
 "mundo": null,
 "nome": ". eet eT ea Saurio",
+"texto": "gra . eet eT ea Saurio",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2621,6 +2995,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Worden Punho E",
+"texto": "Worden Punho E Worden ganha 3 niveis ao lutar contra um monstro. >",
 "confiavel": false,
 "numeroImpresso": 76
 },
@@ -2628,6 +3003,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "CN See OE lle | :",
+"texto": "CN See OE lle | : Amari Se Amarill for derrotado, o lopeter pode puxar um outro campedo de sua pilha de descartes e B trazé-lo de volta a sua mao.",
 "confiavel": false,
 "numeroImpresso": 77
 },
@@ -2635,6 +3011,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Joliet, o",
+"texto": "Joliet, o ee ey Audacioso Uma vez em jogo, deve atacar no turno do jogador, todos os turnos, ou ser descartado.",
 "confiavel": false,
 "numeroImpresso": 78
 },
@@ -2642,6 +3019,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ana de",
+"texto": "Ana de ee a Earthfast Ganha 4 niveis ao enfrentar um monstro.",
 "confiavel": false,
 "numeroImpresso": 79
 },
@@ -2649,6 +3027,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "Z ay, t AS Go See",
+"texto": "Z ay, t AS Go See ae Thay > Qualquer campedo pode usar feitigos de mago | R ao defender Thay.",
 "confiavel": false,
 "numeroImpresso": 8
 },
@@ -2656,6 +3035,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "O Andarilho",
+"texto": "O Andarilho Ee ae eee Negro O nivel do Andarilho Negro ¢ 8 ao enfrentar dragées ou mortosvivos.",
 "confiavel": false,
 "numeroImpresso": 80
 },
@@ -2663,6 +3043,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ounoamcti Chifres",
+"texto": "ounoamcti Chifres",
 "confiavel": false,
 "numeroImpresso": 81
 },
@@ -2670,6 +3051,7 @@
 "tipo": null,
 "mundo": null,
 "nome": null,
+"texto": "aga",
 "confiavel": false,
 "numeroImpresso": 82
 },
@@ -2677,6 +3059,7 @@
 "tipo": "Aliado",
 "mundo": "AD&D",
 "nome": "Devorador de Mentes",
+"texto": "Quando jogado, o devorador de intelecto pode imediatamente trazer um aliado adversário para o seu lado da batalha por um round de batalha. O aliado perde um nível.",
 "confiavel": true,
 "numeroImpresso": 83
 },
@@ -2684,6 +3067,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Nobre Djinn",
+"texto": "Nobre Djinn O oponente nao pode jogar voadores neste round, e todos os adversdrios voadores na batalha sao descartados.",
 "confiavel": false,
 "numeroImpresso": 84
 },
@@ -2691,6 +3075,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "a a eer",
+"texto": "a a eer ~ : a k = ON ee c-, Antiga Sothligor mo a a \\ —@ Esta antiga cidade-estado perdida pode ser jogada i ; durante o turno de qualquer jogador, imediata- 4 paxa, ‘mente depois que qualquer reino de DARK SUN - ez rd em jogo seja destruido. 85 of 400 f",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2698,6 +3083,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Pree es Devorador de",
+"texto": "Pree es Devorador de a Intelecto Destroi imediatamente um campedo adversario de nivel 5 ou menor. Considerar apenas os bonus de itens magicos e artefatos ao determinar o nivel do adversario.",
 "confiavel": false,
 "numeroImpresso": 86
 },
@@ -2705,6 +3091,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Shands",
+"texto": "Shands Imune a feiticos ofensivos.",
 "confiavel": false,
 "numeroImpresso": 87
 },
@@ -2712,6 +3099,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ji Mile",
+"texto": "ji Mile Triceratops O Triceratops ganha 6 niveis quando defendendo Chult.",
 "confiavel": false,
 "numeroImpresso": 88
 },
@@ -2719,6 +3107,7 @@
 "tipo": "Clérigo",
 "mundo": "Forgotten Realms",
 "nome": "Clerigos de Malar",
+"texto": "Este campeão ganha 2 níveis ao atacar reinos que não sejam de Forgotten Realms. Ele pode usar cartas de combate desarmado utilizáveis por heróis.",
 "confiavel": true,
 "numeroImpresso": 89
 },
@@ -2726,6 +3115,7 @@
 "tipo": "Reino",
 "mundo": null,
 "nome": "igang? Calimshan",
+"texto": "igang? Calimshan",
 "confiavel": false,
 "numeroImpresso": 9
 },
@@ -2733,6 +3123,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "[DungeonsfDragons Barco Voador",
+"texto": "PR] [DungeonsfDragons Barco Voador ~  Destrdi dois aliados quaisquer, escolhidos fF pelo jogador desta carta.",
 "confiavel": false,
 "numeroImpresso": 90
 },
@@ -2740,6 +3131,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "pL) ae",
+"texto": "pL) ae re Maus Pressdgios ~ —SFA iS > Todos os campedes e aliados perdem 1 nivel d até o proximo turno do jogador. é",
 "confiavel": false,
 "numeroImpresso": 91
 },
@@ -2747,6 +3139,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Bons Pressdgios",
+"texto": "Bons Pressdgios Todos os aliados ganham 3 niveis até o proximo turno do jogador.",
 "confiavel": false,
 "numeroImpresso": 92
 },
@@ -2754,6 +3147,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "bast",
+"texto": "bast == Transformaga Escolha qualquer campeao da pilha de descarte ¢ use-o em batalha no lugar deste cena Depois de vencer a batalha, este campedo ¢ o artefato retornam a mesa; 0 substituto ¢ descartado. -",
 "confiavel": false,
 "numeroImpresso": 93
 },
@@ -2761,6 +3155,7 @@
 "tipo": null,
 "mundo": null,
 "nome": ". ma OS",
+"texto": ". ma OS Martelo dos ‘ Andes ©",
 "confiavel": false,
 "numeroImpresso": 94
 },
@@ -2768,6 +3163,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "‘ Cajado de",
+"texto": "‘ Cajado de Ataque # - Este item transforma-se em +5 quando & anexado a um clérigo. (Ofe)",
 "confiavel": false,
 "numeroImpresso": 95
 },
@@ -2775,6 +3171,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Horrores d’O",
+"texto": "Horrores d’O Abismo —",
 "confiavel": false,
 "numeroImpresso": 96
 },
@@ -2782,6 +3179,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ms OU \\ SAS 8 ee",
+"texto": "ms OU \\ SAS 8 ee Convaca z aie, O jogador examina sua pilha de saque, de baixo para cima. O primeiro aliado que aparecer é convocado se esta 4 carta for usada outra vez.",
 "confiavel": false,
 "numeroImpresso": 97
 },
@@ -2789,6 +3187,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Pe es Estatueta do Poder",
+"texto": "Pe es Estatueta do Poder Smet ~=—sAssombroso (Ofe)",
 "confiavel": false,
 "numeroImpresso": 98
 },
@@ -2796,6 +3195,7 @@
 "tipo": "Evento",
 "mundo": "AD&D",
 "nome": "Cataclisma!",
+"texto": "Destrói um reino à escolha deste jogador; aquele reino é descartado. (Maléfico)",
 "confiavel": true,
 "numeroImpresso": 99
 },
@@ -2803,6 +3203,7 @@
 "tipo": null,
 "mundo": null,
 "nome": ". Cee os Sakornia —",
+"texto": ". Cee os Sakornia — O nivel de Sakornia ¢ 9 se tiver um item magico unido.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2810,6 +3211,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Delsenora",
+"texto": "Delsenora eal meas = ~ Delsenora ¢ também um ordculo; ela pode &  cancelar o efeito de um evento ae este ¥ jogador, mas deve ser descartada depois. a j rr g a",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2817,6 +3219,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "> Pe os Gib Evets",
+"texto": "> Pe os Gib Evets Esta criatura é imune a todas as magias ofen- sivas, tanto feiticos quanto itens magicos. Apenas artefatos fazem efeito. tide 25",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2824,6 +3227,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Sana: 2VE meses ATT AK =",
+"texto": "Sana: 2VE meses ATT AK = ja Dori, a Barbara 1 Dori ganha 2 niveis quando enfrenta um clérigo ou mago.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2831,6 +3235,7 @@
 "tipo": "Monstro",
 "mundo": "Forgotten Realms",
 "nome": "O Olho Tirano",
+"texto": "Subterrâneo. Este beholder pode lançar feitiços de mago e é imune a itens mágicos ofensivos.",
 "confiavel": true,
 "numeroImpresso": null
 },
@@ -2838,6 +3243,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Pra t*=*S",
+"texto": "Pra t*=*S j cs Darbee Darbee ganha 4 niveis quando enfrentar um monstro.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2845,6 +3251,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Aurum, 0",
+"texto": "SNE Aurum, 0 -—*~ Dragdo Dourado Voador. Aurum ganha 1 nivel extra para cada aliado unido a ele (em adicéo ao bénus do",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2852,6 +3259,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "= hr = vw flU SSS OTF",
+"texto": "= hr = vw flU SSS OTF Halcyon | 4 Cada vez que Halcyon vencer um round de batalha, o ep pode retornar uma carta da pilha de descartes para sua mao. ;",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2859,6 +3267,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "eo Stryck",
+"texto": "eo Stryck Quando Stryck ataca, ela pode escolher seu ¢ proprio oponente entre os campedes NO pogo sy do defensor. 17 de 25",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2866,6 +3275,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "fi os Alicia *",
+"texto": "fi os Alicia * ee r, Os feiticos protetores de Alicia lhe dao com- pleta imunidade contra itens magicos.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2873,6 +3283,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ee Zeb, o Vermelho",
+"texto": "Ee Zeb, o Vermelho eat LOS ald Nenhum aliado de nivel 3 ou menos pode ser usado contra o horrivel Zeb.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2880,6 +3291,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Edormira, 0",
+"texto": "Edormira, 0 Dragdo Vermelho Voador. Nenhum monstro pode defender con- _ tra Edormira. Pe",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2887,6 +3299,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Avatar",
+"texto": "Avatar O Avatar destroi instantaneamente todos os campedes e aliados mortos-vivos.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2894,6 +3307,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "[Dungeons Dragons Smolder, o",
+"texto": "[Dungeons Dragons Smolder, o ~~ — iittite =~ Dragdo Vermelho Voador. Se Smolder perde um round de ‘ batalha, ele destroi uma das fortalezas de seu proprio jogador por vinganga. 31 de 25",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2901,6 +3315,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "fi poe os Adoravel Colleen —",
+"texto": "fi poe os Adoravel Colleen — Todos os monstros sao encantados pela beleza de Colleen. Ela vence o round automaticamente se 0 adversario € um monstro.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2908,6 +3323,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "oe os Ember, o",
+"texto": "oe os Ember, o i \"iia \"~~ Dragdo Vermelho Voador. Se Ember ¢ derrotado, 0 vitorioso pode sacar duas cartas como espolios pela vitéria (0 tesouro do dragao). 93 de 25",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2915,6 +3331,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "[DanegeonsbDragors) Andra, a Sabia",
+"texto": "[DanegeonsbDragors) Andra, a Sabia Andra carrega um bastao encantado que impede qualquer aliado morto-vivo de ser stewari",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2922,6 +3339,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ce os | ey",
+"texto": "ce os | ey - es” ___Dragdo Negro 4 Voador. Karm pole lancar feiticos de mago, mas ele é excessivamente ousado; nenhum ali- * ado pode ser unido a ele. 25 de 25",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2929,6 +3347,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee i i",
+"texto": "ee i i Cee Gloriana a alee eS Gloriana pode causar uma ventania para soprar todos os voadores para longe da batalha; nenhum voador pode ser usado contra as",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2936,6 +3355,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Dung Ob palsy",
+"texto": "Dung Ob palsy ib pode lutar como maga (5) e como heroina (7); o jogador deve escolher no inicio do",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2943,6 +3363,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Ee Rs ah Neirgral, o |",
+"texto": "Ee Rs ah Neirgral, o | Dragdo Verde , Voador. Neirgral é tao assustador que nenhum aliado de nivel 4 ou menos pode ser",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2950,6 +3371,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "joes Dagaronzie, o",
+"texto": "EEE joes Dagaronzie, o | ~~ Dragdo Verde ~ ~ Voador. Dagaronzie pode instantaneamente > | destruir dois aliados jogados contra ele em p “um round de batalha. 6 de 25 % Eh Lr SR",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2957,6 +3379,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "2S eae te)",
+"texto": "2S eae te) ‘ Fejyelsae f Se qualquer aliado for unido a Fejyelsae, ela \" cai para nivel 7.",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2964,6 +3387,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "Furia do",
+"texto": "Furia do Dragao! Todas as criaturas temem a furia do dragao! Todos os jogadores devem descartar um campedo de sua mao ou pogo. 8de25 fo",
 "confiavel": false,
 "numeroImpresso": null
 },
@@ -2971,6 +3395,7 @@
 "tipo": null,
 "mundo": null,
 "nome": "ee ee BY »",
+"texto": "ee ee BY » Shalbaal, 0” Dragdo Vermelho Voador. Cada vez que Shalbaal vence um round de _  batalha, o jogador saca ao acaso uma cartada x mao do jogador derrotado e a descarta. < 3 O jogador deve rir enquanto faz isso. Q9de25 —",
 "confiavel": false,
 "numeroImpresso": null
 }
