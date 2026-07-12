@@ -285,11 +285,21 @@
     color:var(--text-dim); max-width:90px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
   }
 
+  #avisoToast {
+    display:none; position:fixed; top:14px; left:50%; transform:translateX(-50%); z-index:70;
+    background:var(--coral); color:#2b0f00; border-radius:20px; padding:10px 18px; font-size:12px;
+    font-family:'Space Grotesk', sans-serif; font-weight:700; box-shadow:0 6px 18px rgba(0,0,0,0.5);
+    max-width:80vw; text-align:center;
+  }
+  #avisoToast.show { display:block; }
+
   footer { font-size:11px; color:var(--text-dim); margin-top:14px; line-height:1.5; }
 </style>
 </head>
 <body>
 <div id="app">
+
+  <div id="avisoToast"></div>
 
   <div id="entryOverlay" class="overlay">
     <div class="box chamfer">
@@ -436,6 +446,24 @@
     }
     return copia;
   }
+  // Mesma regra de ordem de preenchimento do triângulo que o server.js usa: A antes de B/C;
+  // B e C antes de D/E/F. Usado só pra já mostrar desabilitado no menu antes de tentar no servidor.
+  function posicaoLiberadaClient(formacao, posicao){
+    if(!formacao) return true;
+    if(posicao === 'A') return true;
+    if(posicao === 'B' || posicao === 'C') return !!(formacao.A && formacao.A.reino);
+    if(posicao === 'D' || posicao === 'E' || posicao === 'F') return !!(formacao.B && formacao.B.reino && formacao.C && formacao.C.reino);
+    return false;
+  }
+  let avisoTimeout = null;
+  function mostrarAviso(msg){
+    const el = document.getElementById('avisoToast');
+    if(!el) return;
+    el.textContent = '⚠ ' + msg;
+    el.classList.add('show');
+    if(avisoTimeout) clearTimeout(avisoTimeout);
+    avisoTimeout = setTimeout(() => el.classList.remove('show'), 3500);
+  }
 
   const entryOverlay = document.getElementById('entryOverlay');
   const entryError = document.getElementById('entryError');
@@ -556,6 +584,10 @@
 
     socket.on('baralho-validado', (relatorio) => {
       mostrarResumoValidacao(relatorio);
+    });
+
+    socket.on('acao-invalida', (msg) => {
+      mostrarAviso(msg);
     });
 
     socket.on('mensagem', (msg) => {
@@ -1044,6 +1076,7 @@
       let habilitado = true, motivo = '';
       if(tipoJogada === 'reino'){
         if(slot && slot.reino && !slot.arrasada){ habilitado = false; motivo=' (ocupada)'; }
+        else if(!posicaoLiberadaClient(eu && eu.formacao, pos)){ habilitado = false; motivo=' (preencha antes)'; }
       } else {
         if(!slot || !slot.reino || slot.arrasada){ habilitado = false; motivo=' (sem reino)'; }
         else if(slot.fortaleza){ habilitado = false; motivo=' (já tem fortaleza)'; }
