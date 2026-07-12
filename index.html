@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Mesa Virtual — Spellfire</title>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0d16;
+    --panel: #131a2c;
+    --panel-border: rgba(63, 208, 255, 0.35);
+    --cyan: #3fd0ff;
+    --coral: #ff9152;
+    --coral-dark: #a34a1c;
+    --cyan-dark: #157096;
+    --text: #eaf2f7;
+    --text-dim: #8fa0c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 14px 12px;
+  }
+  #app { max-width: 1400px; width: 100%; position: relative; }
+
+  .chamfer {
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+  }
+
+  header { display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px; }
+  header h1 { font-family:'Space Grotesk', sans-serif; font-size: 19px; margin: 0; font-weight: 700; }
+  header p { font-size: 12px; color:var(--text-dim); margin: 4px 0 0; }
+
+  #headerControls { display:none; align-items:center; gap:8px; flex-wrap:wrap; }
+  #statusBadge, #totalOnlineBadge {
+    background:var(--panel); border:1px solid var(--panel-border); padding:7px 16px;
+    font-family:'Space Grotesk', sans-serif; font-size:12px; font-weight:600; letter-spacing:0.03em;
+    color:var(--cyan); white-space:nowrap;
+  }
+  .btn-game {
+    font-family:'Space Grotesk', sans-serif; font-weight:700; letter-spacing:0.02em;
+    border-radius:4px; cursor:pointer; font-size:13px; padding:9px 18px;
+    transition:transform .07s, box-shadow .07s;
+  }
+  .btn-game:active { transform:translateY(3px); }
+  #muteBtn, #camBtn {
+    background:var(--panel); border:2px solid var(--panel-border); color:var(--cyan);
+    box-shadow:0 4px 0 rgba(63,208,255,0.35); padding:7px 14px; font-size:16px;
+  }
+  #muteBtn:active, #camBtn:active { box-shadow:0 1px 0 rgba(63,208,255,0.35); }
+  #leaveBtn {
+    background:var(--coral); border:2px solid var(--coral-dark); color:#2b0f00;
+    box-shadow:0 4px 0 var(--coral-dark); padding:7px 16px;
+  }
+  #leaveBtn:active { box-shadow:0 1px 0 var(--coral-dark); }
+
+  .overlay {
+    position:fixed; inset:0; background:rgba(6,8,14,0.96);
+    display:flex; align-items:center; justify-content:center; z-index:50;
+    text-align:center; padding:20px;
+  }
+  .overlay .box {
+    max-width:380px; width:100%; background:var(--panel); border:1px solid var(--panel-border);
+    padding:26px 24px; box-shadow:0 0 40px rgba(63,208,255,0.08);
+  }
+  .overlay h2 { font-family:'Space Grotesk', sans-serif; margin:0 0 8px; font-size:19px; }
+  .overlay p { font-size:13px; color:var(--text-dim); margin:0 0 16px; line-height:1.5; }
+  .overlay .row { display:flex; gap:8px; }
+  #nameInput {
+    flex:1; min-width:0; background:#080b13; border:1px solid var(--panel-border); border-radius:5px;
+    padding:9px 12px; color:var(--text); font-size:13px; outline:none; font-family:'Inter', sans-serif;
+  }
+  #nameInput:focus { border-color:var(--cyan); }
+  #enterBtn {
+    background:var(--cyan); border:2px solid var(--cyan-dark); color:#04141c;
+    box-shadow:0 4px 0 var(--cyan-dark); flex-shrink:0; white-space:nowrap;
+  }
+  #enterBtn:active { box-shadow:0 1px 0 var(--cyan-dark); }
+  .entryError {
+    display:none; margin-top:12px; background:rgba(255,145,82,0.15);
+    border:1px solid var(--coral); color:#ffcba8; border-radius:6px;
+    padding:10px 12px; font-size:12px; line-height:1.5; text-align:left;
+  }
+  .entryError.show { display:block; }
+
+  /* ---- Montagem de baralho ---- */
+  #deckBuilderOverlay .box { max-width:1000px; max-height:88vh; display:flex; flex-direction:column; }
+  #deckBuilderHeader { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px; }
+  #contadorBaralho { font-family:'Space Grotesk', sans-serif; font-weight:700; color:var(--cyan); font-size:13px; }
+  #gradeCartas {
+    flex:1; overflow-y:auto; display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(84px, 1fr)); gap:8px;
+    padding:4px; background:#080b13; border-radius:6px; border:1px solid var(--panel-border);
+  }
+  .miniCarta {
+    position:relative; cursor:pointer; border-radius:6px; overflow:hidden;
+    border:2px solid transparent; aspect-ratio: 5/7;
+  }
+  .miniCarta img { width:100%; height:100%; object-fit:cover; display:block; }
+  .miniCarta.selecionada { border-color:var(--cyan); box-shadow:0 0 10px rgba(63,208,255,0.6); }
+  .miniCarta.selecionada::after {
+    content:'✓'; position:absolute; top:2px; right:2px; background:var(--cyan); color:#04141c;
+    width:18px; height:18px; border-radius:50%; font-size:11px; font-weight:700;
+    display:flex; align-items:center; justify-content:center;
+  }
+  #deckBuilderAcoes { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+
+  /* ---- Mesa de jogo ---- */
+  #jogoArea { display:none; }
+  #jogoArea.show { display:block; }
+
+  .mesaWrap { position:relative; width:100%; max-width:1300px; margin:0 auto; }
+  #mesa {
+    position:relative; width:100%; aspect-ratio: 16/8;
+    background:radial-gradient(ellipse at center, #1c3a2e 0%, #0f2318 100%);
+    border:3px solid #3a2a18; border-radius:16px; overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5), inset 0 0 60px rgba(0,0,0,0.4);
+  }
+  .cartaMesa {
+    position:absolute; width:9%; aspect-ratio:5/7; cursor:grab;
+    border-radius:6px; box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    transform:translate(-50%, -50%); transition:box-shadow .15s;
+  }
+  .cartaMesa img { width:100%; height:100%; object-fit:cover; border-radius:6px; display:block; pointer-events:none; }
+  .cartaMesa.girada img { transform:rotate(90deg); }
+  .cartaMesa.arrastando { cursor:grabbing; z-index:20; }
+  .cartaMesa:hover { box-shadow:0 0 0 2px var(--cyan), 0 4px 14px rgba(0,0,0,0.6); }
+
+  #menuCartaMesa {
+    display:none; position:absolute; z-index:30; background:var(--panel); border:1px solid var(--panel-border);
+    border-radius:8px; padding:6px; gap:4px; flex-direction:column; box-shadow:0 8px 20px rgba(0,0,0,0.5);
+  }
+  #menuCartaMesa.show { display:flex; }
+  #menuCartaMesa button {
+    background:none; border:none; color:var(--text); font-size:12px; padding:6px 10px; text-align:left;
+    cursor:pointer; border-radius:4px; font-family:'Inter', sans-serif; white-space:nowrap;
+  }
+  #menuCartaMesa button:hover { background:rgba(63,208,255,0.15); }
+
+  .painelInferior { display:flex; gap:14px; margin-top:14px; align-items:flex-end; flex-wrap:wrap; }
+  #baralhoPilha {
+    flex-shrink:0; width:76px; cursor:pointer; text-align:center;
+  }
+  #baralhoPilha img { width:76px; aspect-ratio:5/7; object-fit:cover; border-radius:6px; box-shadow:0 4px 10px rgba(0,0,0,0.5); display:block; }
+  #baralhoPilha .legenda { font-size:11px; color:var(--text-dim); margin-top:4px; font-family:'Space Grotesk', sans-serif; }
+
+  #minhaMao {
+    flex:1; display:flex; gap:6px; overflow-x:auto; padding:8px; min-height:110px;
+    background:var(--panel); border:1px solid var(--panel-border); border-radius:10px;
+  }
+  .cartaMao { width:74px; flex-shrink:0; cursor:pointer; transition:transform .1s; border-radius:6px; }
+  .cartaMao img { width:100%; aspect-ratio:5/7; object-fit:cover; border-radius:6px; box-shadow:0 3px 8px rgba(0,0,0,0.5); display:block; }
+  .cartaMao:hover { transform:translateY(-8px); }
+
+  /* ---- Chat flutuante (mesmo esquema do escritório) ---- */
+  .chatFloating {
+    position:absolute; right:14px; bottom:14px; z-index:15;
+    display:flex; flex-direction:column; align-items:flex-end; gap:8px;
+    max-width:300px; width:calc(100% - 28px);
+  }
+  .chatFloatingBody {
+    display:none; flex-direction:column; width:100%;
+    background:var(--panel); border:1px solid var(--panel-border);
+    padding:12px; max-height:280px;
+  }
+  .chatFloatingBody.open { display:flex; }
+  #chatLog { flex:1; overflow-y:auto; font-size:13px; display:flex; flex-direction:column; gap:6px; max-height:190px; }
+  .msg { padding:7px 11px; border-radius:8px; max-width:85%; line-height:1.4; }
+  .msg .author { font-family:'Space Grotesk', sans-serif; font-size:10px; opacity:0.7; margin-bottom:2px; }
+  .msg.theirs { align-self:flex-start; background:#1c2540; border:1px solid rgba(63,208,255,0.25); color:#e3ecf7; }
+  .msg.mine { align-self:flex-end; background:rgba(255,145,82,0.18); border:1px solid rgba(255,145,82,0.5); color:#ffe3ce; }
+  .chatRow { display:flex; gap:8px; margin-top:10px; }
+  #chatInput {
+    flex:1; min-width:0; background:#080b13; border:1px solid var(--panel-border); border-radius:5px;
+    padding:9px 12px; color:var(--text); font-size:13px; outline:none; font-family:'Inter', sans-serif;
+  }
+  #chatInput:focus { border-color:var(--cyan); }
+  #sendBtn {
+    background:var(--cyan); border:2px solid var(--cyan-dark); color:#04141c;
+    box-shadow:0 4px 0 var(--cyan-dark);
+  }
+  #sendBtn:active { box-shadow:0 1px 0 var(--cyan-dark); }
+  .chatToggleBtn {
+    background:#ffffff; color:#0a0d16; border:none; border-radius:999px;
+    padding:9px 18px; font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:13px;
+    display:flex; align-items:center; gap:8px; cursor:pointer;
+    box-shadow:0 4px 14px rgba(0,0,0,0.4);
+  }
+
+  .videoStrip {
+    position:absolute; left:14px; top:14px; z-index:15;
+    display:flex; flex-direction:column; gap:8px; align-items:flex-start;
+  }
+  .videoThumb { width:90px; display:flex; flex-direction:column; align-items:center; gap:3px; }
+  .videoThumb video {
+    width:90px; height:68px; object-fit:cover; border-radius:8px;
+    border:2px solid var(--panel-border); background:#0a0d16; box-shadow:0 4px 12px rgba(0,0,0,0.4);
+  }
+  .videoThumb.me video { border-color:var(--coral); }
+  .videoThumb .videoThumbName {
+    font-family:'Space Grotesk', sans-serif; font-size:10px; font-weight:600;
+    color:var(--text-dim); max-width:90px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+
+  footer { font-size:11px; color:var(--text-dim); margin-top:14px; line-height:1.5; }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <div id="entryOverlay" class="overlay">
+    <div class="box chamfer">
+      <h2>🃏 Mesa Virtual — Spellfire</h2>
+      <p>Digite seu nome e entre na mesa.</p>
+      <div class="row">
+        <input id="nameInput" type="text" placeholder="Seu nome" maxlength="20" />
+        <button id="enterBtn" class="btn-game">Entrar</button>
+      </div>
+      <div id="entryError" class="entryError"></div>
+    </div>
+  </div>
+
+  <div id="deckBuilderOverlay" class="overlay" style="display:none;">
+    <div class="box chamfer">
+      <div id="deckBuilderHeader">
+        <h2 style="margin:0;">Monte seu baralho</h2>
+        <span id="contadorBaralho">0 cartas selecionadas</span>
+      </div>
+      <p style="margin:0 0 10px;">Clique nas cartas que farão parte do seu baralho nessa partida.</p>
+      <div id="gradeCartas"></div>
+      <div id="deckBuilderAcoes">
+        <button id="limparSelecaoBtn" class="btn-game" style="background:var(--panel); border:2px solid var(--panel-border); color:var(--text-dim);">Limpar seleção</button>
+        <button id="comecarBtn" class="btn-game" style="background:var(--cyan); border:2px solid var(--cyan-dark); color:#04141c; box-shadow:0 4px 0 var(--cyan-dark); margin-left:auto;">Começar a jogar</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div>
+      <h1>🃏 Mesa Virtual — Spellfire</h1>
+      <p>Arraste as cartas da mesa pra reposicionar. Clique numa carta da sua mão pra jogar na mesa.</p>
+    </div>
+    <div id="headerControls">
+      <div id="statusBadge" class="chamfer">🎮 Jogando</div>
+      <button id="muteBtn" class="btn-game" title="Ativar/desativar microfone">🎤</button>
+      <button id="camBtn" class="btn-game" title="Ativar/desativar câmera">📷</button>
+      <button id="leaveBtn" class="btn-game">🚪 Sair</button>
+    </div>
+  </header>
+
+  <div id="jogoArea">
+    <div class="mesaWrap">
+      <div id="mesa">
+        <div class="videoStrip" id="videoStrip"></div>
+        <div id="menuCartaMesa"></div>
+      </div>
+
+      <div class="chatFloating">
+        <div id="chatBody" class="chatFloatingBody">
+          <div id="chatLog"></div>
+          <div class="chatRow">
+            <input id="chatInput" type="text" placeholder="Digite uma mensagem..." />
+            <button id="sendBtn" class="btn-game">Enviar</button>
+          </div>
+        </div>
+        <button id="toggleChatBtn" class="chatToggleBtn">
+          <span id="toggleChatLabel">↩ Abrir chat</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="painelInferior">
+      <div id="baralhoPilha" title="Clique pra comprar carta">
+        <img src="images/verso.jpg" alt="Baralho" />
+        <div class="legenda" id="baralhoContador">0 cartas</div>
+      </div>
+      <div id="minhaMao"></div>
+    </div>
+  </div>
+
+  <footer>
+    Mesa Virtual de Spellfire — uso pessoal e privado, entre amigos.
+  </footer>
+</div>
+
+<script>
+(function(){
+  // ======================= CONFIGURAÇÃO =======================
+  // IMPORTANTE: troque pelo endereço do seu servidor (mesmo esquema do Escritório Virtual)
+  const SERVER_URL = "https://TROQUE-PELO-SEU-DOMINIO-DO-TUNEL.com";
+  // ===============================================================
+
+  const entryOverlay = document.getElementById('entryOverlay');
+  const entryError = document.getElementById('entryError');
+  const nameInput = document.getElementById('nameInput');
+  const enterBtn = document.getElementById('enterBtn');
+
+  const deckBuilderOverlay = document.getElementById('deckBuilderOverlay');
+  const gradeCartas = document.getElementById('gradeCartas');
+  const contadorBaralho = document.getElementById('contadorBaralho');
+  const limparSelecaoBtn = document.getElementById('limparSelecaoBtn');
+  const comecarBtn = document.getElementById('comecarBtn');
+
+  const headerControls = document.getElementById('headerControls');
+  const statusBadge = document.getElementById('statusBadge');
+  const muteBtn = document.getElementById('muteBtn');
+  const camBtn = document.getElementById('camBtn');
+  const leaveBtn = document.getElementById('leaveBtn');
+
+  const jogoArea = document.getElementById('jogoArea');
+  const mesa = document.getElementById('mesa');
+  const menuCartaMesa = document.getElementById('menuCartaMesa');
+  const baralhoPilha = document.getElementById('baralhoPilha');
+  const baralhoContador = document.getElementById('baralhoContador');
+  const minhaMaoEl = document.getElementById('minhaMao');
+  const videoStrip = document.getElementById('videoStrip');
+
+  const chatBody = document.getElementById('chatBody');
+  const chatLog = document.getElementById('chatLog');
+  const chatInput = document.getElementById('chatInput');
+  const sendBtn = document.getElementById('sendBtn');
+  const toggleChatBtn = document.getElementById('toggleChatBtn');
+  const toggleChatLabel = document.getElementById('toggleChatLabel');
+
+  let socket = null;
+  let myName = '';
+  let todasAsCartas = [];
+  let selecionadas = new Set();
+  let minhaMao = [];
+  let estadoAtual = { jogadores:{}, mesa:{} };
+  let chatAberto = false;
+
+  // ---------------- Tela inicial ----------------
+  enterBtn.addEventListener('click', () => {
+    myName = nameInput.value.trim() || 'Visitante';
+    conectar();
+  });
+  nameInput.addEventListener('keydown', e => { if(e.key === 'Enter') enterBtn.click(); });
+
+  async function conectar(){
+    entryError.classList.remove('show');
+    enterBtn.disabled = true;
+    enterBtn.textContent = 'Conectando...';
+
+    socket = io(SERVER_URL, { transports: ['websocket', 'polling'], timeout: 8000 });
+
+    socket.on('connect', async () => {
+      entryOverlay.style.display = 'none';
+      enterBtn.disabled = false;
+      enterBtn.textContent = 'Entrar';
+      socket.emit('entrar', { nome: myName });
+      await abrirMontagemDeBaralho();
+    });
+
+    socket.on('connect_error', () => {
+      entryError.textContent = '⚠️ Servidor fora do ar no momento. Tente novamente mais tarde.';
+      entryError.classList.add('show');
+      enterBtn.disabled = false;
+      enterBtn.textContent = 'Entrar';
+      entryOverlay.style.display = 'flex';
+      if(socket){ socket.disconnect(); socket = null; }
+    });
+
+    socket.on('estado', (estado) => {
+      estadoAtual = estado;
+      renderizarMesa();
+      renderizarJogadores();
+    });
+
+    socket.on('minha-mao', (mao) => {
+      minhaMao = mao;
+      renderizarMao();
+    });
+
+    socket.on('mensagem', (msg) => {
+      addMessage(msg.autor, msg.texto, msg.autor === myName);
+    });
+
+    configurarWebRTC(socket);
+  }
+
+  // ---------------- Montagem de baralho ----------------
+  async function abrirMontagemDeBaralho(){
+    if(todasAsCartas.length === 0){
+      const resp = await fetch('images/cartas.json', { cache:'no-store' });
+      todasAsCartas = await resp.json();
+    }
+    gradeCartas.innerHTML = '';
+    for(const arquivo of todasAsCartas){
+      const div = document.createElement('div');
+      div.className = 'miniCarta';
+      div.dataset.arquivo = arquivo;
+      const img = document.createElement('img');
+      img.src = 'images/thumbs/' + arquivo;
+      img.loading = 'lazy';
+      div.appendChild(img);
+      div.addEventListener('click', () => {
+        if(selecionadas.has(arquivo)){
+          selecionadas.delete(arquivo);
+          div.classList.remove('selecionada');
+        } else {
+          selecionadas.add(arquivo);
+          div.classList.add('selecionada');
+        }
+        atualizarContador();
+      });
+      gradeCartas.appendChild(div);
+    }
+    atualizarContador();
+    deckBuilderOverlay.style.display = 'flex';
+  }
+
+  function atualizarContador(){
+    contadorBaralho.textContent = selecionadas.size + ' carta(s) selecionada(s)';
+  }
+
+  limparSelecaoBtn.addEventListener('click', () => {
+    selecionadas.clear();
+    gradeCartas.querySelectorAll('.miniCarta.selecionada').forEach(el => el.classList.remove('selecionada'));
+    atualizarContador();
+  });
+
+  comecarBtn.addEventListener('click', () => {
+    if(selecionadas.size === 0){
+      alert('Selecione pelo menos uma carta pro seu baralho.');
+      return;
+    }
+    socket.emit('montar-baralho', Array.from(selecionadas));
+    deckBuilderOverlay.style.display = 'none';
+    jogoArea.classList.add('show');
+    headerControls.style.display = 'flex';
+  });
+
+  // ---------------- Comprar carta ----------------
+  baralhoPilha.addEventListener('click', () => {
+    if(socket) socket.emit('comprar-carta');
+  });
+
+  // ---------------- Renderização ----------------
+  function renderizarJogadores(){
+    const eu = estadoAtual.jogadores[socket.id];
+    if(eu) baralhoContador.textContent = eu.baralhoCount + ' carta(s)';
+  }
+
+  function renderizarMao(){
+    minhaMaoEl.innerHTML = '';
+    minhaMao.forEach((arquivo, indice) => {
+      const div = document.createElement('div');
+      div.className = 'cartaMao';
+      const img = document.createElement('img');
+      img.src = 'images/cartas/' + arquivo;
+      div.appendChild(img);
+      div.addEventListener('click', () => {
+        const x = 35 + Math.random()*30;
+        const y = 35 + Math.random()*30;
+        socket.emit('jogar-carta', { indice, x, y });
+      });
+      minhaMaoEl.appendChild(div);
+    });
+  }
+
+  let arrastando = null;
+  function renderizarMesa(){
+    // remove cartas que não existem mais
+    mesa.querySelectorAll('.cartaMesa').forEach(el => {
+      if(!estadoAtual.mesa[el.dataset.id]) el.remove();
+    });
+
+    for(const id of Object.keys(estadoAtual.mesa)){
+      const carta = estadoAtual.mesa[id];
+      let el = mesa.querySelector('[data-id="' + id + '"]');
+      if(!el){
+        el = document.createElement('div');
+        el.className = 'cartaMesa';
+        el.dataset.id = id;
+        const img = document.createElement('img');
+        img.src = 'images/cartas/' + carta.img;
+        el.appendChild(img);
+        el.addEventListener('pointerdown', (e) => iniciarArraste(e, el, id));
+        mesa.appendChild(el);
+      }
+      if(arrastando !== id){
+        el.style.left = carta.x + '%';
+        el.style.top = carta.y + '%';
+      }
+      el.classList.toggle('girada', !!carta.girada);
+    }
+  }
+
+  function iniciarArraste(e, el, id){
+    const carta = estadoAtual.mesa[id];
+    if(!carta || carta.dono !== socket.id){
+      abrirMenuCarta(e, id, false);
+      return;
+    }
+    e.preventDefault();
+    const inicioX = e.clientX, inicioY = e.clientY;
+    let moveu = false;
+    arrastando = id;
+    el.classList.add('arrastando');
+
+    function mover(ev){
+      const dx = ev.clientX - inicioX, dy = ev.clientY - inicioY;
+      if(Math.abs(dx) > 4 || Math.abs(dy) > 4) moveu = true;
+      const rect = mesa.getBoundingClientRect();
+      const novoX = Math.max(2, Math.min(98, ((ev.clientX - rect.left) / rect.width) * 100));
+      const novoY = Math.max(2, Math.min(98, ((ev.clientY - rect.top) / rect.height) * 100));
+      el.style.left = novoX + '%';
+      el.style.top = novoY + '%';
+    }
+    function soltar(ev){
+      window.removeEventListener('pointermove', mover);
+      window.removeEventListener('pointerup', soltar);
+      el.classList.remove('arrastando');
+      arrastando = null;
+      if(moveu){
+        const rect = mesa.getBoundingClientRect();
+        const x = Math.max(2, Math.min(98, ((ev.clientX - rect.left) / rect.width) * 100));
+        const y = Math.max(2, Math.min(98, ((ev.clientY - rect.top) / rect.height) * 100));
+        socket.emit('mover-carta-mesa', { cartaId: id, x, y });
+      } else {
+        abrirMenuCarta(ev, id, true);
+      }
+    }
+    window.addEventListener('pointermove', mover);
+    window.addEventListener('pointerup', soltar);
+  }
+
+  function abrirMenuCarta(e, id, souDono){
+    menuCartaMesa.innerHTML = '';
+    if(souDono){
+      const btnGirar = document.createElement('button');
+      btnGirar.textContent = '🔄 Girar';
+      btnGirar.onclick = () => { socket.emit('girar-carta-mesa', { cartaId: id }); fecharMenu(); };
+      const btnDevolver = document.createElement('button');
+      btnDevolver.textContent = '↩ Devolver pra mão';
+      btnDevolver.onclick = () => { socket.emit('devolver-carta-mesa', { cartaId: id }); fecharMenu(); };
+      const btnDescartar = document.createElement('button');
+      btnDescartar.textContent = '🗑 Descartar';
+      btnDescartar.onclick = () => { socket.emit('descartar-carta-mesa', { cartaId: id }); fecharMenu(); };
+      menuCartaMesa.appendChild(btnGirar);
+      menuCartaMesa.appendChild(btnDevolver);
+      menuCartaMesa.appendChild(btnDescartar);
+    } else {
+      const aviso = document.createElement('button');
+      aviso.textContent = 'Carta de outro jogador';
+      aviso.disabled = true;
+      menuCartaMesa.appendChild(aviso);
+    }
+    const rectMesa = mesa.getBoundingClientRect();
+    menuCartaMesa.style.left = (e.clientX - rectMesa.left) + 'px';
+    menuCartaMesa.style.top = (e.clientY - rectMesa.top) + 'px';
+    menuCartaMesa.classList.add('show');
+  }
+  function fecharMenu(){ menuCartaMesa.classList.remove('show'); }
+  document.addEventListener('click', (e) => {
+    if(!menuCartaMesa.contains(e.target)) fecharMenu();
+  });
+
+  // ---------------- Chat ----------------
+  toggleChatBtn.addEventListener('click', () => {
+    chatAberto = !chatAberto;
+    chatBody.classList.toggle('open', chatAberto);
+    toggleChatLabel.textContent = chatAberto ? '✖ Fechar chat' : '↩ Abrir chat';
+  });
+  sendBtn.addEventListener('click', enviarMensagem);
+  chatInput.addEventListener('keydown', e => { if(e.key === 'Enter') enviarMensagem(); });
+  function enviarMensagem(){
+    const texto = chatInput.value.trim();
+    if(!texto || !socket) return;
+    socket.emit('mensagem', texto);
+    chatInput.value = '';
+  }
+  function addMessage(autor, texto, minha){
+    const div = document.createElement('div');
+    div.className = 'msg ' + (minha ? 'mine' : 'theirs');
+    const a = document.createElement('div');
+    a.className = 'author';
+    a.textContent = autor;
+    div.appendChild(a);
+    div.appendChild(document.createTextNode(texto));
+    chatLog.appendChild(div);
+    chatLog.scrollTop = chatLog.scrollHeight;
+  }
+
+  // ---------------- Áudio/vídeo (WebRTC) — mesmo esquema do Escritório Virtual ----------------
+  const ICE_SERVERS = [{ urls: 'stun:stun.l.google.com:19302' }];
+  let localStream = null;
+  let micDisponivel = false, camDisponivel = false, micMutado = true, camMutado = true;
+  const peerConnections = {};
+  const remoteMediaEls = {};
+  let localVideoEl = null;
+
+  function criarVideoEl(id, isMe){
+    let video = document.getElementById('video-' + id);
+    if(video) return video;
+    video = document.createElement('video');
+    video.id = 'video-' + id;
+    video.autoplay = true;
+    video.playsInline = true;
+    video.muted = isMe;
+    const wrap = document.createElement('div');
+    wrap.className = 'videoThumb' + (isMe ? ' me' : '');
+    wrap.id = 'thumb-' + id;
+    const nomeEl = document.createElement('div');
+    nomeEl.className = 'videoThumbName';
+    nomeEl.textContent = isMe ? 'Você' : ((estadoAtual.jogadores[id] || {}).name || 'Colega');
+    wrap.appendChild(video);
+    wrap.appendChild(nomeEl);
+    videoStrip.appendChild(wrap);
+    return video;
+  }
+  function removerVideoEl(id){
+    const wrap = document.getElementById('thumb-' + id);
+    if(wrap) wrap.remove();
+  }
+
+  async function iniciarMicrofone(){
+    try {
+      localStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: { width: 200, height: 150 } });
+      micDisponivel = true;
+      camDisponivel = localStream.getVideoTracks().length > 0;
+      micMutado = true;
+      for(const t of localStream.getAudioTracks()) t.enabled = false;
+      muteBtn.textContent = '🔇';
+      if(camDisponivel){
+        localVideoEl = criarVideoEl('local', true);
+        localVideoEl.srcObject = localStream;
+        localStream.getVideoTracks()[0].stop();
+        camMutado = true;
+        camBtn.style.opacity = '0.5';
+      } else {
+        camBtn.style.display = 'none';
+      }
+    } catch(e){
+      try {
+        localStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+        micDisponivel = true;
+        micMutado = true;
+        for(const t of localStream.getAudioTracks()) t.enabled = false;
+        muteBtn.textContent = '🔇';
+        camBtn.style.display = 'none';
+      } catch(e2){
+        micDisponivel = false;
+        muteBtn.textContent = '🚫';
+        camBtn.style.display = 'none';
+      }
+    }
+  }
+
+  muteBtn.addEventListener('click', () => {
+    if(!localStream) return;
+    micMutado = !micMutado;
+    for(const t of localStream.getAudioTracks()) t.enabled = !micMutado;
+    muteBtn.textContent = micMutado ? '🔇' : '🎤';
+  });
+
+  const videoSenders = {};
+  camBtn.addEventListener('click', async () => {
+    if(!camDisponivel) return;
+    if(!camMutado){
+      const track = localStream.getVideoTracks()[0];
+      if(track) track.stop();
+      for(const id of Object.keys(videoSenders)){ try{ videoSenders[id].replaceTrack(null); }catch(e){} }
+      camMutado = true;
+      camBtn.style.opacity = '0.5';
+    } else {
+      try {
+        const novo = await navigator.mediaDevices.getUserMedia({ video: { width:200, height:150 } });
+        const novoTrack = novo.getVideoTracks()[0];
+        const antigo = localStream.getVideoTracks()[0];
+        if(antigo) localStream.removeTrack(antigo);
+        localStream.addTrack(novoTrack);
+        for(const id of Object.keys(peerConnections)){
+          if(videoSenders[id]) await videoSenders[id].replaceTrack(novoTrack);
+          else { videoSenders[id] = peerConnections[id].addTrack(novoTrack, localStream); renegociar(id); }
+        }
+        localVideoEl = criarVideoEl('local', true);
+        localVideoEl.srcObject = localStream;
+        camMutado = false;
+        camBtn.style.opacity = '1';
+      } catch(e){}
+    }
+  });
+
+  function criarPeerConnection(remoteId){
+    if(peerConnections[remoteId]) return peerConnections[remoteId];
+    const pc = new RTCPeerConnection({ iceServers: ICE_SERVERS });
+    peerConnections[remoteId] = pc;
+    if(localStream){
+      for(const track of localStream.getTracks()){
+        if(track.readyState !== 'live') continue;
+        const sender = pc.addTrack(track, localStream);
+        if(track.kind === 'video') videoSenders[remoteId] = sender;
+      }
+    }
+    pc.onicecandidate = (e) => { if(e.candidate && socket) socket.emit('webrtc-ice', { to: remoteId, candidate: e.candidate }); };
+    pc.ontrack = (event) => {
+      const video = criarVideoEl(remoteId, false);
+      remoteMediaEls[remoteId] = video;
+      video.srcObject = event.streams[0];
+    };
+    return pc;
+  }
+  async function renegociar(remoteId){
+    const pc = peerConnections[remoteId];
+    if(!pc || !socket) return;
+    const offer = await pc.createOffer();
+    await pc.setLocalDescription(offer);
+    socket.emit('webrtc-offer', { to: remoteId, offer });
+  }
+  async function iniciarChamada(remoteId){
+    const pc = criarPeerConnection(remoteId);
+    const offer = await pc.createOffer();
+    await pc.setLocalDescription(offer);
+    socket.emit('webrtc-offer', { to: remoteId, offer });
+  }
+  function encerrarConexao(remoteId){
+    const pc = peerConnections[remoteId];
+    if(pc){ pc.close(); delete peerConnections[remoteId]; }
+    if(remoteMediaEls[remoteId]){ remoteMediaEls[remoteId].srcObject = null; delete remoteMediaEls[remoteId]; }
+    removerVideoEl(remoteId);
+  }
+
+  let membrosAnteriores = new Set();
+  function atualizarConexoes(){
+    const atuais = new Set(Object.keys(estadoAtual.jogadores).filter(id => id !== socket.id));
+    for(const id of atuais){
+      if(!membrosAnteriores.has(id) && micDisponivel && socket.id < id) iniciarChamada(id);
+    }
+    for(const id of membrosAnteriores){
+      if(!atuais.has(id)) encerrarConexao(id);
+    }
+    membrosAnteriores = atuais;
+  }
+
+  function configurarWebRTC(s){
+    iniciarMicrofone();
+
+    s.on('webrtc-offer', async ({ from, offer }) => {
+      const pc = criarPeerConnection(from);
+      await pc.setRemoteDescription(new RTCSessionDescription(offer));
+      const answer = await pc.createAnswer();
+      await pc.setLocalDescription(answer);
+      s.emit('webrtc-answer', { to: from, answer });
+    });
+    s.on('webrtc-answer', async ({ from, answer }) => {
+      const pc = peerConnections[from];
+      if(pc) await pc.setRemoteDescription(new RTCSessionDescription(answer));
+    });
+    s.on('webrtc-ice', async ({ from, candidate }) => {
+      const pc = peerConnections[from];
+      if(pc){ try{ await pc.addIceCandidate(new RTCIceCandidate(candidate)); }catch(e){} }
+    });
+
+    s.on('estado', () => { atualizarConexoes(); });
+  }
+
+  leaveBtn.addEventListener('click', () => {
+    if(!confirm('Sair da mesa?')) return;
+    location.reload();
+  });
+})();
+</script>
+</body>
+</html>
