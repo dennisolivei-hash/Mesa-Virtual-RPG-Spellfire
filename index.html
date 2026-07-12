@@ -334,10 +334,11 @@
           <option value="75">Formato 75 cartas</option>
           <option value="110">Formato 110 cartas</option>
         </select>
+        <button id="sortearBtn" class="btn-game" style="background:var(--coral); border:2px solid var(--coral-dark); color:#2b0f00; box-shadow:0 4px 0 var(--coral-dark); padding:7px 14px; font-size:12px;">🎲 Sortear baralho</button>
         <span id="contadorBaralho">0 cartas selecionadas</span>
       </div>
       <div id="resumoValidacao">Selecione cartas pra ver a conferência com as faixas oficiais da Regra Brasil.</div>
-      <p style="margin:0 0 8px; font-size:12px;">Clique nas cartas que farão parte do seu baralho nessa partida. Muitas ainda não têm tipo identificado no nosso banco (marcadas "?"); a conferência de faixas só considera as identificadas.</p>
+      <p style="margin:0 0 8px; font-size:12px;">Clique nas cartas que farão parte do seu baralho nessa partida, ou use "Sortear baralho" pra preencher automaticamente. Muitas cartas ainda não têm tipo identificado no nosso banco (marcadas "?"); a conferência de faixas só considera as identificadas.</p>
       <div id="gradeCartas"></div>
       <div id="deckBuilderAcoes">
         <button id="limparSelecaoBtn" class="btn-game" style="background:var(--panel); border:2px solid var(--panel-border); color:var(--text-dim);">Limpar seleção</button>
@@ -439,6 +440,27 @@
   const NOMES_FASE = ['0 · Carta-regra', '1 · Compra', '2 · Reino/Fortaleza', '3 · Poço/Feitiços', '4 · Ataque', '5 · Ajusta mão', '6 · Fim de turno'];
   const POSICOES = ['A','B','C','D','E','F'];
 
+  // Mesmas faixas oficiais e mapeamento de tipo->categoria do server.js, usados aqui só
+  // pra montar um baralho aleatório plausível no botão "Sortear baralho".
+  const CATEGORIA_POR_TIPO_LOCAL = {
+    'Reino':'reino', 'Fortaleza':'fortaleza', 'Herói':'campeao', 'Monstro':'campeao',
+    'Clérigo':'campeao', 'Mago':'campeao', 'Psiônico':'campeao', 'Regente':'campeao',
+    'Artefato':'artefato', 'Item Mágico':'itemMagico', 'Evento':'evento', 'Regra':'cartaRegra',
+  };
+  const FORMATOS_FAIXAS_LOCAL = {
+    55: { total:55, faixas: { reino:[8,15], fortaleza:[0,6], campeao:[1,20], artefato:[0,10], itemMagico:[0,12], evento:[0,10], cartaRegra:[0,3] } },
+    75: { total:75, faixas: { reino:[10,20], fortaleza:[0,7], campeao:[3,27], artefato:[0,12], itemMagico:[0,15], evento:[0,13], cartaRegra:[0,4] } },
+    110: { total:110, faixas: { reino:[15,30], fortaleza:[0,10], campeao:[4,40], artefato:[0,15], itemMagico:[0,20], evento:[0,17], cartaRegra:[0,5] } },
+  };
+  function embaralharArray(lista){
+    const copia = lista.slice();
+    for(let i = copia.length - 1; i > 0; i--){
+      const j = Math.floor(Math.random() * (i + 1));
+      const tmp = copia[i]; copia[i] = copia[j]; copia[j] = tmp;
+    }
+    return copia;
+  }
+
   const entryOverlay = document.getElementById('entryOverlay');
   const entryError = document.getElementById('entryError');
   const nameInput = document.getElementById('nameInput');
@@ -451,6 +473,7 @@
   const comecarBtn = document.getElementById('comecarBtn');
   const formatoSelect = document.getElementById('formatoSelect');
   const resumoValidacao = document.getElementById('resumoValidacao');
+  const sortearBtn = document.getElementById('sortearBtn');
 
   const painelZonaOverlay = document.getElementById('painelZonaOverlay');
   const painelZonaTitulo = document.getElementById('painelZonaTitulo');
@@ -635,6 +658,47 @@
   limparSelecaoBtn.addEventListener('click', () => {
     selecionadas.clear();
     gradeCartas.querySelectorAll('.miniCarta.selecionada').forEach(el => el.classList.remove('selecionada'));
+    atualizarContador();
+  });
+
+  // Monta um baralho aleatório plausível pro formato escolhido: sorteia uma quantidade
+  // dentro da faixa oficial pra cada categoria conhecida, e completa o resto (inclusive
+  // as cartas com tipo ainda não identificado) com cartas aleatórias até bater o total.
+  function sortearBaralho(formato){
+    const cfg = FORMATOS_FAIXAS_LOCAL[formato];
+    const porCategoria = { reino:[], fortaleza:[], campeao:[], artefato:[], itemMagico:[], evento:[], cartaRegra:[] };
+    for(const arquivo of todasAsCartas){
+      const meta = metaDaCarta(arquivo);
+      const cat = CATEGORIA_POR_TIPO_LOCAL[meta.tipo];
+      if(cat && porCategoria[cat]) porCategoria[cat].push(arquivo);
+    }
+    const escolhidas = [];
+    const escolhidasSet = new Set();
+    for(const cat of Object.keys(cfg.faixas)){
+      const min = cfg.faixas[cat][0], max = cfg.faixas[cat][1];
+      const disponiveis = embaralharArray(porCategoria[cat]);
+      const alvo = Math.min(disponiveis.length, min + Math.floor(Math.random() * (max - min + 1)));
+      for(let i = 0; i < alvo; i++){
+        escolhidas.push(disponiveis[i]);
+        escolhidasSet.add(disponiveis[i]);
+      }
+    }
+    const restantes = cfg.total - escolhidas.length;
+    if(restantes > 0){
+      const pool = embaralharArray(todasAsCartas.filter(a => !escolhidasSet.has(a)));
+      for(let i = 0; i < Math.min(restantes, pool.length); i++) escolhidas.push(pool[i]);
+    }
+    return escolhidas.slice(0, cfg.total);
+  }
+
+  sortearBtn.addEventListener('click', () => {
+    if(todasAsCartas.length === 0) return;
+    const formato = Number(formatoSelect.value);
+    const sorteadas = sortearBaralho(formato);
+    selecionadas = new Set(sorteadas);
+    gradeCartas.querySelectorAll('.miniCarta').forEach(el => {
+      el.classList.toggle('selecionada', selecionadas.has(el.dataset.arquivo));
+    });
     atualizarContador();
   });
 
@@ -896,7 +960,7 @@
       const pilhas = document.createElement('div');
       pilhas.className = 'pilhasZonas';
       for(const zona of [['limbo','Limbo'], ['abismo','Abismo'], ['descarte','Descarte']]){
-        const [chave, rotulo] = zona;
+        const chave = zona[0], rotulo = zona[1];
         const lista = jog[chave] || [];
         const pz = document.createElement('div');
         pz.className = 'pilhaZona';
