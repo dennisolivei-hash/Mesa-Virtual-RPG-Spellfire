@@ -17,6 +17,7 @@
     --coral: #ff9152;
     --coral-dark: #a34a1c;
     --cyan-dark: #157096;
+    --green: #52d68a;
     --text: #eaf2f7;
     --text-dim: #8fa0c2;
   }
@@ -50,9 +51,10 @@
   .btn-game {
     font-family:'Space Grotesk', sans-serif; font-weight:700; letter-spacing:0.02em;
     border-radius:4px; cursor:pointer; font-size:13px; padding:9px 18px;
-    transition:transform .07s, box-shadow .07s;
+    transition:transform .07s, box-shadow .07s; border:none;
   }
   .btn-game:active { transform:translateY(3px); }
+  .btn-game:disabled { opacity:0.4; cursor:not-allowed; }
   #muteBtn, #camBtn {
     background:var(--panel); border:2px solid var(--panel-border); color:var(--cyan);
     box-shadow:0 4px 0 rgba(63,208,255,0.35); padding:7px 14px; font-size:16px;
@@ -94,9 +96,21 @@
   .entryError.show { display:block; }
 
   /* ---- Montagem de baralho ---- */
-  #deckBuilderOverlay .box { max-width:1000px; max-height:88vh; display:flex; flex-direction:column; }
-  #deckBuilderHeader { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px; }
+  #deckBuilderOverlay .box { max-width:1040px; max-height:90vh; display:flex; flex-direction:column; }
+  #deckBuilderHeader { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:8px; }
   #contadorBaralho { font-family:'Space Grotesk', sans-serif; font-weight:700; color:var(--cyan); font-size:13px; }
+  #formatoSelect {
+    background:#080b13; border:1px solid var(--panel-border); border-radius:5px; color:var(--text);
+    padding:7px 10px; font-size:12px; font-family:'Inter', sans-serif;
+  }
+  #resumoValidacao {
+    background:#080b13; border:1px solid var(--panel-border); border-radius:6px;
+    padding:8px 10px; font-size:11px; line-height:1.6; margin-bottom:8px; text-align:left;
+    max-height:110px; overflow-y:auto;
+  }
+  #resumoValidacao .ok { color: var(--green); }
+  #resumoValidacao .aviso { color: var(--coral); }
+  #resumoValidacao .categoria { color: var(--text-dim); }
   #gradeCartas {
     flex:1; overflow-y:auto; display:grid;
     grid-template-columns:repeat(auto-fill, minmax(84px, 1fr)); gap:8px;
@@ -106,6 +120,7 @@
     position:relative; cursor:pointer; border-radius:6px; overflow:hidden;
     border:2px solid transparent; aspect-ratio: 5/7;
   }
+  .miniCarta.paisagem { aspect-ratio: 5/3.5; }
   .miniCarta img { width:100%; height:100%; object-fit:cover; display:block; }
   .miniCarta.selecionada { border-color:var(--cyan); box-shadow:0 0 10px rgba(63,208,255,0.6); }
   .miniCarta.selecionada::after {
@@ -113,40 +128,118 @@
     width:18px; height:18px; border-radius:50%; font-size:11px; font-weight:700;
     display:flex; align-items:center; justify-content:center;
   }
+  .miniCarta .tipoTag {
+    position:absolute; bottom:0; left:0; right:0; font-size:8px; text-align:center;
+    background:rgba(0,0,0,0.6); color:#dff; padding:1px 2px; line-height:1.3;
+  }
   #deckBuilderAcoes { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
 
   /* ---- Mesa de jogo ---- */
   #jogoArea { display:none; }
   #jogoArea.show { display:block; }
 
-  .mesaWrap { position:relative; width:100%; max-width:1300px; margin:0 auto; }
-  #mesa {
-    position:relative; width:100%; aspect-ratio: 16/8;
-    background:radial-gradient(ellipse at center, #1c3a2e 0%, #0f2318 100%);
-    border:3px solid #3a2a18; border-radius:16px; overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.5), inset 0 0 60px rgba(0,0,0,0.4);
+  #turnoBar {
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    background:var(--panel); border:1px solid var(--panel-border); border-radius:8px;
+    padding:9px 14px; margin-bottom:10px; font-size:12px;
   }
-  .cartaMesa {
-    position:absolute; width:9%; aspect-ratio:5/7; cursor:grab;
-    border-radius:6px; box-shadow:0 4px 10px rgba(0,0,0,0.5);
-    transform:translate(-50%, -50%); transition:box-shadow .15s;
+  #turnoBar .fase { font-family:'Space Grotesk', sans-serif; font-weight:700; color:var(--cyan); }
+  #turnoBar .vez { color: var(--text-dim); }
+  #proximaFaseBtn {
+    background:var(--green); border:2px solid #1f7a4d; color:#04231a;
+    box-shadow:0 4px 0 #1f7a4d; margin-left:auto; padding:7px 14px; font-size:12px;
   }
-  .cartaMesa img { width:100%; height:100%; object-fit:cover; border-radius:6px; display:block; pointer-events:none; }
-  .cartaMesa.girada img { transform:rotate(90deg); }
-  .miniCarta.paisagem, .cartaMao.paisagem, .cartaMesa.paisagem { aspect-ratio: 7/5; }
-  .cartaMesa.arrastando { cursor:grabbing; z-index:20; }
-  .cartaMesa:hover { box-shadow:0 0 0 2px var(--cyan), 0 4px 14px rgba(0,0,0,0.6); }
+  #proximaFaseBtn:active { box-shadow:0 1px 0 #1f7a4d; }
 
-  #menuCartaMesa {
-    display:none; position:absolute; z-index:30; background:var(--panel); border:1px solid var(--panel-border);
-    border-radius:8px; padding:6px; gap:4px; flex-direction:column; box-shadow:0 8px 20px rgba(0,0,0,0.5);
+  #cartasRegraArea {
+    display:flex; gap:8px; align-items:center; flex-wrap:wrap; min-height:56px;
+    background:rgba(63,208,255,0.06); border:1px dashed var(--panel-border); border-radius:8px;
+    padding:8px 10px; margin-bottom:12px;
   }
-  #menuCartaMesa.show { display:flex; }
-  #menuCartaMesa button {
-    background:none; border:none; color:var(--text); font-size:12px; padding:6px 10px; text-align:left;
+  #cartasRegraArea .rotulo { font-size:10px; color:var(--text-dim); font-family:'Space Grotesk', sans-serif; text-transform:uppercase; letter-spacing:0.05em; }
+  .miniCartaRegra { width:46px; aspect-ratio:5/7; border-radius:4px; overflow:hidden; cursor:pointer; position:relative; }
+  .miniCartaRegra img { width:100%; height:100%; object-fit:cover; }
+  .miniCartaRegra .dono { position:absolute; bottom:0; left:0; right:0; font-size:7px; background:rgba(0,0,0,0.7); text-align:center; }
+
+  #boards { display:flex; flex-direction:column; gap:14px; }
+  .playerBoard {
+    background:radial-gradient(ellipse at top, #17233a 0%, #0f1626 100%);
+    border:2px solid #24304a; border-radius:12px; padding:10px 12px;
+  }
+  .playerBoard.souEu { border-color: var(--coral); }
+  .playerBoard.davez { border-color: var(--green); box-shadow:0 0 0 1px var(--green); }
+  .boardHeader { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+  .boardHeader .nome { font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:13px; }
+  .boardHeader .tagVez { font-size:9px; background:var(--green); color:#04231a; border-radius:4px; padding:2px 6px; font-weight:700; }
+  .boardHeader .tagAusente { font-size:9px; background:var(--coral); color:#2b0f00; border-radius:4px; padding:2px 6px; font-weight:700; }
+
+  .boardGrid { display:flex; gap:14px; flex-wrap:wrap; align-items:flex-start; }
+
+  .formacaoGrid {
+    display:grid; grid-template-columns:repeat(3, 62px); grid-auto-rows:44px; gap:4px;
+    justify-content:center;
+  }
+  .slotFormacao {
+    position:relative; border-radius:5px; border:1.5px dashed rgba(255,255,255,0.15);
+    background:rgba(255,255,255,0.02); cursor:default; overflow:visible;
+  }
+  .slotFormacao.temReino { border-style:solid; border-color:var(--panel-border); cursor:pointer; }
+  .slotFormacao img.imgReino { width:100%; height:100%; object-fit:cover; border-radius:4px; display:block; }
+  .slotFormacao.arrasada img.imgReino { filter:grayscale(1) brightness(0.5); }
+  .slotFormacao .posLabel { position:absolute; top:1px; left:2px; font-size:7px; color:rgba(255,255,255,0.35); pointer-events:none; }
+  .badgeFortaleza {
+    position:absolute; bottom:-6px; right:-6px; width:20px; height:20px; border-radius:50%;
+    overflow:hidden; border:1.5px solid var(--coral); cursor:pointer; z-index:2;
+  }
+  .badgeFortaleza img { width:100%; height:100%; object-fit:cover; }
+  .slotA { grid-column:2; grid-row:1; }
+  .slotB { grid-column:1; grid-row:2; }
+  .slotC { grid-column:3; grid-row:2; }
+  .slotD { grid-column:1; grid-row:3; }
+  .slotE { grid-column:2; grid-row:3; }
+  .slotF { grid-column:3; grid-row:3; }
+
+  .zonaLabel { font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:3px; font-family:'Space Grotesk', sans-serif; }
+  .pocoStrip { display:flex; gap:5px; flex-wrap:wrap; min-width:120px; max-width:260px; min-height:64px; }
+  .cartaPoco { position:relative; width:44px; aspect-ratio:5/7; border-radius:4px; overflow:hidden; cursor:pointer; border:1.5px solid var(--panel-border); }
+  .cartaPoco img { width:100%; height:100%; object-fit:cover; }
+  .cartaPoco.girada { transform:rotate(90deg); }
+  .cartaPoco .anexoCount { position:absolute; top:-4px; right:-4px; background:var(--cyan); color:#04141c; border-radius:50%; width:14px; height:14px; font-size:8px; display:flex; align-items:center; justify-content:center; font-weight:700; }
+
+  .pilhasZonas { display:flex; gap:8px; }
+  .pilhaZona { width:44px; text-align:center; cursor:pointer; }
+  .pilhaZona .caixa {
+    width:44px; aspect-ratio:5/7; border-radius:4px; background:#1c2540; border:1.5px dashed var(--panel-border);
+    display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; color:var(--cyan);
+    font-family:'Space Grotesk', sans-serif;
+  }
+  .pilhaZona .rotulo { font-size:8px; color:var(--text-dim); margin-top:2px; }
+
+  #acaoMenu {
+    display:none; position:fixed; z-index:60; background:var(--panel); border:1px solid var(--panel-border);
+    border-radius:8px; padding:6px; gap:2px; flex-direction:column; box-shadow:0 8px 24px rgba(0,0,0,0.6);
+    max-height:70vh; overflow-y:auto; min-width:170px;
+  }
+  #acaoMenu.show { display:flex; }
+  #acaoMenu .tituloMenu { font-size:10px; color:var(--text-dim); padding:4px 8px; border-bottom:1px solid rgba(255,255,255,0.08); margin-bottom:2px; }
+  #acaoMenu button {
+    background:none; border:none; color:var(--text); font-size:12px; padding:7px 10px; text-align:left;
     cursor:pointer; border-radius:4px; font-family:'Inter', sans-serif; white-space:nowrap;
   }
-  #menuCartaMesa button:hover { background:rgba(63,208,255,0.15); }
+  #acaoMenu button:hover { background:rgba(63,208,255,0.15); }
+  #acaoMenu button:disabled { opacity:0.35; cursor:not-allowed; }
+
+  #modoSelecaoBar {
+    display:none; position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:55;
+    background:var(--coral); color:#2b0f00; border-radius:20px; padding:9px 16px; font-size:12px;
+    font-family:'Space Grotesk', sans-serif; font-weight:700; gap:10px; align-items:center; box-shadow:0 6px 18px rgba(0,0,0,0.5);
+  }
+  #modoSelecaoBar.show { display:flex; }
+  #modoSelecaoBar button { background:#2b0f00; color:#ffe3ce; border:none; border-radius:14px; padding:5px 12px; font-size:11px; cursor:pointer; }
+
+  #painelZonaOverlay .box { max-width:520px; }
+  #painelZonaGrid { display:grid; grid-template-columns:repeat(auto-fill, minmax(64px,1fr)); gap:6px; max-height:50vh; overflow-y:auto; }
+  #painelZonaGrid img { width:100%; aspect-ratio:5/7; object-fit:cover; border-radius:4px; }
 
   .painelInferior { display:flex; gap:14px; margin-top:14px; align-items:flex-end; flex-wrap:wrap; }
   #baralhoPilha {
@@ -159,13 +252,14 @@
     flex:1; display:flex; gap:6px; overflow-x:auto; padding:8px; min-height:110px;
     background:var(--panel); border:1px solid var(--panel-border); border-radius:10px;
   }
-  .cartaMao { width:74px; flex-shrink:0; cursor:pointer; transition:transform .1s; border-radius:6px; }
+  .cartaMao { width:74px; flex-shrink:0; cursor:pointer; transition:transform .1s; border-radius:6px; position:relative; }
   .cartaMao img { width:100%; aspect-ratio:5/7; object-fit:cover; border-radius:6px; box-shadow:0 3px 8px rgba(0,0,0,0.5); display:block; }
   .cartaMao:hover { transform:translateY(-8px); }
+  .cartaMao.selecionadaTemp img { outline:3px solid var(--coral); }
 
   /* ---- Chat flutuante (mesmo esquema do escritório) ---- */
   .chatFloating {
-    position:absolute; right:14px; bottom:14px; z-index:15;
+    position:fixed; right:14px; bottom:14px; z-index:15;
     display:flex; flex-direction:column; align-items:flex-end; gap:8px;
     max-width:300px; width:calc(100% - 28px);
   }
@@ -199,8 +293,8 @@
   }
 
   .videoStrip {
-    position:absolute; left:14px; top:14px; z-index:15;
-    display:flex; flex-direction:column; gap:8px; align-items:flex-start;
+    display:flex; flex-wrap:wrap; gap:8px; align-items:flex-start;
+    margin-bottom:10px;
   }
   .videoThumb { width:90px; display:flex; flex-direction:column; align-items:center; gap:3px; }
   .videoThumb video {
@@ -235,9 +329,15 @@
     <div class="box chamfer">
       <div id="deckBuilderHeader">
         <h2 style="margin:0;">Monte seu baralho</h2>
+        <select id="formatoSelect">
+          <option value="55">Formato 55 cartas</option>
+          <option value="75">Formato 75 cartas</option>
+          <option value="110">Formato 110 cartas</option>
+        </select>
         <span id="contadorBaralho">0 cartas selecionadas</span>
       </div>
-      <p style="margin:0 0 10px;">Clique nas cartas que farão parte do seu baralho nessa partida.</p>
+      <div id="resumoValidacao">Selecione cartas pra ver a conferência com as faixas oficiais da Regra Brasil.</div>
+      <p style="margin:0 0 8px; font-size:12px;">Clique nas cartas que farão parte do seu baralho nessa partida. Muitas ainda não têm tipo identificado no nosso banco (marcadas "?"); a conferência de faixas só considera as identificadas.</p>
       <div id="gradeCartas"></div>
       <div id="deckBuilderAcoes">
         <button id="limparSelecaoBtn" class="btn-game" style="background:var(--panel); border:2px solid var(--panel-border); color:var(--text-dim);">Limpar seleção</button>
@@ -246,10 +346,20 @@
     </div>
   </div>
 
+  <div id="painelZonaOverlay" class="overlay" style="display:none;">
+    <div class="box chamfer">
+      <h2 id="painelZonaTitulo" style="margin:0 0 10px;">Zona</h2>
+      <div id="painelZonaGrid"></div>
+      <div style="display:flex; gap:8px; margin-top:12px;">
+        <button id="fecharPainelZonaBtn" class="btn-game" style="background:var(--panel); border:2px solid var(--panel-border); color:var(--text-dim); margin-left:auto;">Fechar</button>
+      </div>
+    </div>
+  </div>
+
   <header>
     <div>
       <h1>🃏 Mesa Virtual — Spellfire</h1>
-      <p>Arraste as cartas da mesa pra reposicionar. Clique numa carta da sua mão pra jogar na mesa.</p>
+      <p>Clique numa carta da sua mão pra jogar. Clique nas cartas da mesa pra ver as ações.</p>
     </div>
     <div id="headerControls">
       <div id="statusBadge" class="chamfer">🎮 Jogando</div>
@@ -260,24 +370,25 @@
   </header>
 
   <div id="jogoArea">
-    <div class="mesaWrap">
-      <div id="mesa">
-        <div class="videoStrip" id="videoStrip"></div>
-        <div id="menuCartaMesa"></div>
-      </div>
+    <div class="videoStrip" id="videoStrip"></div>
 
-      <div class="chatFloating">
-        <div id="chatBody" class="chatFloatingBody">
-          <div id="chatLog"></div>
-          <div class="chatRow">
-            <input id="chatInput" type="text" placeholder="Digite uma mensagem..." />
-            <button id="sendBtn" class="btn-game">Enviar</button>
-          </div>
-        </div>
-        <button id="toggleChatBtn" class="chatToggleBtn">
-          <span id="toggleChatLabel">↩ Abrir chat</span>
-        </button>
-      </div>
+    <div id="turnoBar">
+      <span class="fase" id="faseTexto">Etapa 0</span>
+      <span class="vez" id="vezTexto">—</span>
+      <button id="proximaFaseBtn" class="btn-game">Próxima etapa ▶</button>
+    </div>
+
+    <div id="cartasRegraArea">
+      <span class="rotulo">Cartas-regra em jogo</span>
+    </div>
+
+    <div id="boards"></div>
+
+    <div id="acaoMenu"></div>
+    <div id="modoSelecaoBar">
+      <span id="modoSelecaoTexto"></span>
+      <button id="modoConfirmarBtn">Confirmar</button>
+      <button id="modoCancelarBtn">Cancelar</button>
     </div>
 
     <div class="painelInferior">
@@ -287,27 +398,46 @@
       </div>
       <div id="minhaMao"></div>
     </div>
+
+    <div class="chatFloating">
+      <div id="chatBody" class="chatFloatingBody">
+        <div id="chatLog"></div>
+        <div class="chatRow">
+          <input id="chatInput" type="text" placeholder="Digite uma mensagem..." />
+          <button id="sendBtn" class="btn-game">Enviar</button>
+        </div>
+      </div>
+      <button id="toggleChatBtn" class="chatToggleBtn">
+        <span id="toggleChatLabel">↩ Abrir chat</span>
+      </button>
+    </div>
   </div>
 
   <footer>
-    Mesa Virtual de Spellfire — uso pessoal e privado, entre amigos.
+    Mesa Virtual de Spellfire — uso pessoal e privado, entre amigos. Combate e resultados de batalha não são automatizados: resolvam entre vocês e movam as cartas manualmente (limbo/abismo/descarte), como manda a Regra Brasil.
   </footer>
 </div>
 
 <script>
 (function(){
   // ======================= CONFIGURAÇÃO =======================
-  // IMPORTANTE: troque pelo endereço do seu servidor (mesmo esquema do Escritório Virtual)
   async function buscarServerUrl(){
-  try {
-    const resp = await fetch('./config.json', { cache: 'no-store' });
-    const data = await resp.json();
-    return data.serverUrl || null;
-  } catch(e){
-    return null;
+    try {
+      const resp = await fetch('./config.json', { cache: 'no-store' });
+      const data = await resp.json();
+      return data.serverUrl || null;
+    } catch(e){
+      return null;
+    }
   }
-}
   // ===============================================================
+
+  const FORMATOS_LABEL = {
+    reino:'Reinos', fortaleza:'Fortalezas', campeao:'Campeões', artefato:'Artefatos',
+    itemMagico:'Itens Mágicos', evento:'Eventos', cartaRegra:'Cartas-regra',
+  };
+  const NOMES_FASE = ['0 · Carta-regra', '1 · Compra', '2 · Reino/Fortaleza', '3 · Poço/Feitiços', '4 · Ataque', '5 · Ajusta mão', '6 · Fim de turno'];
+  const POSICOES = ['A','B','C','D','E','F'];
 
   const entryOverlay = document.getElementById('entryOverlay');
   const entryError = document.getElementById('entryError');
@@ -319,6 +449,13 @@
   const contadorBaralho = document.getElementById('contadorBaralho');
   const limparSelecaoBtn = document.getElementById('limparSelecaoBtn');
   const comecarBtn = document.getElementById('comecarBtn');
+  const formatoSelect = document.getElementById('formatoSelect');
+  const resumoValidacao = document.getElementById('resumoValidacao');
+
+  const painelZonaOverlay = document.getElementById('painelZonaOverlay');
+  const painelZonaTitulo = document.getElementById('painelZonaTitulo');
+  const painelZonaGrid = document.getElementById('painelZonaGrid');
+  const fecharPainelZonaBtn = document.getElementById('fecharPainelZonaBtn');
 
   const headerControls = document.getElementById('headerControls');
   const statusBadge = document.getElementById('statusBadge');
@@ -327,8 +464,17 @@
   const leaveBtn = document.getElementById('leaveBtn');
 
   const jogoArea = document.getElementById('jogoArea');
-  const mesa = document.getElementById('mesa');
-  const menuCartaMesa = document.getElementById('menuCartaMesa');
+  const boardsEl = document.getElementById('boards');
+  const cartasRegraArea = document.getElementById('cartasRegraArea');
+  const faseTexto = document.getElementById('faseTexto');
+  const vezTexto = document.getElementById('vezTexto');
+  const proximaFaseBtn = document.getElementById('proximaFaseBtn');
+  const acaoMenu = document.getElementById('acaoMenu');
+  const modoSelecaoBar = document.getElementById('modoSelecaoBar');
+  const modoSelecaoTexto = document.getElementById('modoSelecaoTexto');
+  const modoConfirmarBtn = document.getElementById('modoConfirmarBtn');
+  const modoCancelarBtn = document.getElementById('modoCancelarBtn');
+
   const baralhoPilha = document.getElementById('baralhoPilha');
   const baralhoContador = document.getElementById('baralhoContador');
   const minhaMaoEl = document.getElementById('minhaMao');
@@ -344,17 +490,17 @@
   let socket = null;
   let myName = '';
   let todasAsCartas = [];
+  let cartasMeta = {};
   let selecionadas = new Set();
   let minhaMao = [];
-  let estadoAtual = { jogadores:{}, mesa:{} };
+  let estadoAtual = { jogadores:{}, cartasRegraEmJogo:[], turno:{ jogadorDaVez:null, fase:0, ordem:[] } };
   let chatAberto = false;
 
-  function aplicarOrientacao(el, img){
-    function checar(){
-      if(img.naturalWidth && img.naturalWidth > img.naturalHeight) el.classList.add('paisagem');
-    }
-    if(img.complete && img.naturalWidth) checar();
-    else img.addEventListener('load', checar);
+  // modo de seleção múltipla na mão (pra reconstruir reino: escolher 3 cartas pra descartar)
+  let modoSelecao = null; // { tipo:'reconstruir', posicao, indices:Set }
+
+  function metaDaCarta(arquivo){
+    return cartasMeta[arquivo] || { tipo:null, mundo:null, nome:null, confiavel:false };
   }
 
   // ---------------- Tela inicial ----------------
@@ -371,7 +517,7 @@
 
     const serverUrl = await buscarServerUrl();
     if(!serverUrl){
-      entryError.textContent = '?? N�o foi poss�vel obter o endere�o do servidor. Tente novamente em instantes.';
+      entryError.textContent = '⚠️ Não foi possível obter o endereço do servidor. Tente novamente em instantes.';
       entryError.classList.add('show');
       enterBtn.disabled = false;
       enterBtn.textContent = 'Entrar';
@@ -398,13 +544,20 @@
 
     socket.on('estado', (estado) => {
       estadoAtual = estado;
-      renderizarMesa();
-      renderizarJogadores();
+      renderizarTudo();
     });
 
     socket.on('minha-mao', (mao) => {
       minhaMao = mao;
       renderizarMao();
+    });
+
+    socket.on('meta-cartas', (meta) => {
+      cartasMeta = meta;
+    });
+
+    socket.on('baralho-validado', (relatorio) => {
+      mostrarResumoValidacao(relatorio);
     });
 
     socket.on('mensagem', (msg) => {
@@ -420,16 +573,27 @@
       const resp = await fetch('images/cartas.json', { cache:'no-store' });
       todasAsCartas = await resp.json();
     }
+    if(Object.keys(cartasMeta).length === 0){
+      try {
+        const resp2 = await fetch('images/cartas_meta.json', { cache:'no-store' });
+        cartasMeta = await resp2.json();
+      } catch(e){ /* segue sem meta */ }
+    }
     gradeCartas.innerHTML = '';
     for(const arquivo of todasAsCartas){
+      const meta = metaDaCarta(arquivo);
       const div = document.createElement('div');
-      div.className = 'miniCarta';
+      div.className = 'miniCarta' + (meta.tipo === 'Reino' ? ' paisagem' : '');
       div.dataset.arquivo = arquivo;
+      div.title = meta.nome ? (meta.nome + (meta.tipo ? ' — ' + meta.tipo : '') + (meta.mundo ? ' (' + meta.mundo + ')' : '')) : 'Tipo não identificado';
       const img = document.createElement('img');
       img.src = 'images/thumbs/' + arquivo;
       img.loading = 'lazy';
       div.appendChild(img);
-      aplicarOrientacao(div, img);
+      const tag = document.createElement('div');
+      tag.className = 'tipoTag';
+      tag.textContent = meta.tipo ? meta.tipo : '?';
+      div.appendChild(tag);
       div.addEventListener('click', () => {
         if(selecionadas.has(arquivo)){
           selecionadas.delete(arquivo);
@@ -448,6 +612,24 @@
 
   function atualizarContador(){
     contadorBaralho.textContent = selecionadas.size + ' carta(s) selecionada(s)';
+    if(socket) socket.emit('validar-baralho', { cartas: Array.from(selecionadas), formato: Number(formatoSelect.value) });
+  }
+  formatoSelect.addEventListener('change', atualizarContador);
+
+  function mostrarResumoValidacao(relatorio){
+    const cfg = relatorio.contagens;
+    let linhas = [];
+    for(const cat of Object.keys(FORMATOS_LABEL)){
+      linhas.push('<span class="categoria">' + FORMATOS_LABEL[cat] + ':</span> ' + (cfg[cat]||0));
+    }
+    linhas.push('<span class="categoria">Sem tipo identificado:</span> ' + (cfg.desconhecido||0));
+    let html = linhas.join(' &nbsp;·&nbsp; ') + '<br>';
+    if(relatorio.avisos.length === 0){
+      html += '<span class="ok">✓ Dentro das faixas oficiais do formato de ' + relatorio.formato + ' cartas.</span>';
+    } else {
+      html += relatorio.avisos.map(a => '<span class="aviso">⚠ ' + a + '</span>').join('<br>');
+    }
+    resumoValidacao.innerHTML = html;
   }
 
   limparSelecaoBtn.addEventListener('click', () => {
@@ -461,7 +643,7 @@
       alert('Selecione pelo menos uma carta pro seu baralho.');
       return;
     }
-    socket.emit('montar-baralho', Array.from(selecionadas));
+    socket.emit('montar-baralho', { cartas: Array.from(selecionadas), formato: Number(formatoSelect.value) });
     deckBuilderOverlay.style.display = 'none';
     jogoArea.classList.add('show');
     headerControls.style.display = 'flex';
@@ -472,8 +654,328 @@
     if(socket) socket.emit('comprar-carta');
   });
 
-  // ---------------- Renderização ----------------
+  proximaFaseBtn.addEventListener('click', () => {
+    if(socket) socket.emit('proxima-fase');
+  });
+
+  // ---------------- Menu de ação genérico (fixed position) ----------------
+  function abrirAcaoMenu(x, y, titulo, itens){
+    acaoMenu.innerHTML = '';
+    if(titulo){
+      const t = document.createElement('div');
+      t.className = 'tituloMenu';
+      t.textContent = titulo;
+      acaoMenu.appendChild(t);
+    }
+    for(const item of itens){
+      const btn = document.createElement('button');
+      btn.textContent = item.label;
+      btn.disabled = !!item.disabled;
+      btn.onclick = () => { fecharAcaoMenu(); item.onClick && item.onClick(); };
+      acaoMenu.appendChild(btn);
+    }
+    const maxX = window.innerWidth - 190;
+    const maxY = window.innerHeight - 40;
+    acaoMenu.style.left = Math.min(x, maxX) + 'px';
+    acaoMenu.style.top = Math.min(y, maxY) + 'px';
+    acaoMenu.classList.add('show');
+  }
+  function fecharAcaoMenu(){ acaoMenu.classList.remove('show'); }
+  document.addEventListener('click', (e) => {
+    if(!acaoMenu.contains(e.target)) fecharAcaoMenu();
+  });
+
+  // ---------------- Painel de zona (limbo/abismo/descarte) ----------------
+  function abrirPainelZona(titulo, cartas){
+    painelZonaTitulo.textContent = titulo;
+    painelZonaGrid.innerHTML = '';
+    for(const c of cartas){
+      const img = document.createElement('img');
+      img.src = 'images/cartas/' + c.img;
+      painelZonaGrid.appendChild(img);
+    }
+    painelZonaOverlay.style.display = 'flex';
+  }
+  fecharPainelZonaBtn.addEventListener('click', () => { painelZonaOverlay.style.display = 'none'; });
+
+  // ---------------- Modo de seleção na mão (pra reconstruir reino) ----------------
+  function iniciarModoSelecao(tipo, extra, textoInstrucao, quantidadeNecessaria){
+    modoSelecao = { tipo, extra, indices: new Set(), quantidade: quantidadeNecessaria };
+    modoSelecaoTexto.textContent = textoInstrucao;
+    modoSelecaoBar.classList.add('show');
+    renderizarMao();
+  }
+  function cancelarModoSelecao(){
+    modoSelecao = null;
+    modoSelecaoBar.classList.remove('show');
+    renderizarMao();
+  }
+  modoCancelarBtn.addEventListener('click', cancelarModoSelecao);
+  modoConfirmarBtn.addEventListener('click', () => {
+    if(!modoSelecao) return;
+    if(modoSelecao.indices.size !== modoSelecao.quantidade){
+      alert('Selecione exatamente ' + modoSelecao.quantidade + ' carta(s) da mão.');
+      return;
+    }
+    if(modoSelecao.tipo === 'reconstruir'){
+      socket.emit('reconstruir-reino', { posicao: modoSelecao.extra.posicao, indicesDescarte: Array.from(modoSelecao.indices) });
+    }
+    cancelarModoSelecao();
+  });
+
+  // ---------------- Renderização: turno/fase ----------------
+  function renderizarTurno(){
+    const t = estadoAtual.turno || {};
+    faseTexto.textContent = NOMES_FASE[t.fase || 0] || ('Etapa ' + t.fase);
+    const nomeDaVez = (estadoAtual.jogadores[t.jogadorDaVez] || {}).name;
+    const souEuAgora = socket && t.jogadorDaVez === socket.id;
+    vezTexto.textContent = souEuAgora ? 'É a sua vez' : (nomeDaVez ? ('Vez de: ' + nomeDaVez) : '—');
+    proximaFaseBtn.disabled = !souEuAgora;
+    proximaFaseBtn.textContent = (t.fase === 6) ? '🔔 Bater na mesa (fim de turno)' : 'Próxima etapa ▶';
+  }
+
+  // ---------------- Renderização: cartas-regra globais ----------------
+  function renderizarCartasRegra(){
+    cartasRegraArea.querySelectorAll('.miniCartaRegra').forEach(el => el.remove());
+    for(const carta of (estadoAtual.cartasRegraEmJogo || [])){
+      const div = document.createElement('div');
+      div.className = 'miniCartaRegra';
+      const img = document.createElement('img');
+      img.src = 'images/cartas/' + carta.img;
+      div.appendChild(img);
+      const dono = document.createElement('div');
+      dono.className = 'dono';
+      dono.textContent = (estadoAtual.jogadores[carta.dono] || {}).name || '?';
+      div.appendChild(dono);
+      div.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const souDono = carta.dono === socket.id;
+        abrirAcaoMenu(e.clientX, e.clientY, metaDaCarta(carta.img).nome, [
+          { label:'Descartar (vai pro Abismo)', disabled: !souDono, onClick: () => socket.emit('descartar-carta-regra', { id: carta.id }) },
+        ]);
+      });
+      cartasRegraArea.appendChild(div);
+    }
+  }
+
+  // ---------------- Renderização: boards dos jogadores ----------------
+  function renderizarBoards(){
+    boardsEl.innerHTML = '';
+    const ids = (estadoAtual.turno && estadoAtual.turno.ordem && estadoAtual.turno.ordem.length)
+      ? estadoAtual.turno.ordem
+      : Object.keys(estadoAtual.jogadores);
+    for(const id of ids){
+      const jog = estadoAtual.jogadores[id];
+      if(!jog) continue;
+      const souEu = socket && id === socket.id;
+      const davez = estadoAtual.turno && estadoAtual.turno.jogadorDaVez === id;
+
+      const board = document.createElement('div');
+      board.className = 'playerBoard' + (souEu ? ' souEu' : '') + (davez ? ' davez' : '');
+
+      const header = document.createElement('div');
+      header.className = 'boardHeader';
+      header.innerHTML = '<span class="nome">' + jog.name + (souEu ? ' (você)' : '') + '</span>' +
+        (davez ? '<span class="tagVez">NA VEZ</span>' : '') +
+        (jog.ausente ? '<span class="tagAusente">ausente</span>' : '') +
+        '<span style="font-size:10px;color:var(--text-dim);margin-left:auto;">' + (jog.formato ? ('formato ' + jog.formato) : '') + '</span>';
+      board.appendChild(header);
+
+      const grid = document.createElement('div');
+      grid.className = 'boardGrid';
+
+      // Formação
+      const formacaoWrap = document.createElement('div');
+      const formLabel = document.createElement('div');
+      formLabel.className = 'zonaLabel';
+      formLabel.textContent = 'Formação';
+      formacaoWrap.appendChild(formLabel);
+      const formacaoGrid = document.createElement('div');
+      formacaoGrid.className = 'formacaoGrid';
+      for(const pos of POSICOES){
+        const slotData = jog.formacao ? jog.formacao[pos] : null;
+        const slotEl = document.createElement('div');
+        slotEl.className = 'slotFormacao slot' + pos + (slotData && slotData.reino ? ' temReino' : '') + (slotData && slotData.arrasada ? ' arrasada' : '');
+        const label = document.createElement('span');
+        label.className = 'posLabel';
+        label.textContent = pos;
+        slotEl.appendChild(label);
+        if(slotData && slotData.reino){
+          const img = document.createElement('img');
+          img.className = 'imgReino';
+          img.src = 'images/cartas/' + slotData.reino;
+          slotEl.appendChild(img);
+          slotEl.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if(!souEu) return;
+            const meta = metaDaCarta(slotData.reino);
+            if(slotData.arrasada){
+              abrirAcaoMenu(e.clientX, e.clientY, (meta.nome||'Reino') + ' (arrasado)', [
+                { label:'Reconstruir (descartar 3 cartas da mão)', onClick: () => iniciarModoSelecao('reconstruir', { posicao: pos }, 'Escolha 3 cartas da mão pra reconstruir o reino ' + pos, 3) },
+              ]);
+            } else {
+              abrirAcaoMenu(e.clientX, e.clientY, meta.nome || 'Reino', [
+                { label:'Arrasar reino', onClick: () => socket.emit('arrasar-reino', { posicao: pos }) },
+              ]);
+            }
+          });
+          if(slotData.fortaleza){
+            const badge = document.createElement('div');
+            badge.className = 'badgeFortaleza';
+            const bimg = document.createElement('img');
+            bimg.src = 'images/cartas/' + slotData.fortaleza;
+            badge.appendChild(bimg);
+            badge.addEventListener('click', (e) => {
+              e.stopPropagation();
+              if(!souEu) return;
+              abrirAcaoMenu(e.clientX, e.clientY, metaDaCarta(slotData.fortaleza).nome || 'Fortaleza', [
+                { label:'Descartar fortaleza', onClick: () => socket.emit('descartar-fortaleza', { posicao: pos }) },
+              ]);
+            });
+            slotEl.appendChild(badge);
+          }
+        } else if(souEu){
+          slotEl.addEventListener('click', (e) => {
+            e.stopPropagation();
+            abrirAcaoMenu(e.clientX, e.clientY, 'Posição ' + pos + ' vazia', [
+              { label:'(jogue um reino a partir da sua mão)', disabled:true },
+            ]);
+          });
+        }
+        formacaoGrid.appendChild(slotEl);
+      }
+      formacaoWrap.appendChild(formacaoGrid);
+      grid.appendChild(formacaoWrap);
+
+      // Poço
+      const pocoWrap = document.createElement('div');
+      const pocoLabel = document.createElement('div');
+      pocoLabel.className = 'zonaLabel';
+      pocoLabel.textContent = 'Poço';
+      pocoWrap.appendChild(pocoLabel);
+      const pocoStrip = document.createElement('div');
+      pocoStrip.className = 'pocoStrip';
+      for(const carta of (jog.poco || [])){
+        const el = document.createElement('div');
+        el.className = 'cartaPoco' + (carta.girada ? ' girada' : '');
+        const img = document.createElement('img');
+        img.src = 'images/cartas/' + carta.img;
+        el.appendChild(img);
+        if(carta.anexos && carta.anexos.length){
+          const badge = document.createElement('div');
+          badge.className = 'anexoCount';
+          badge.textContent = carta.anexos.length;
+          el.appendChild(badge);
+        }
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if(!souEu){
+            abrirAcaoMenu(e.clientX, e.clientY, metaDaCarta(carta.img).nome || 'Carta no poço', [{label:'(carta de outro jogador)', disabled:true}]);
+            return;
+          }
+          abrirAcaoMenu(e.clientX, e.clientY, metaDaCarta(carta.img).nome || 'Carta no poço', [
+            { label:'Girar', onClick: () => socket.emit('girar-carta-poco', { pocoId: carta.id }) },
+            { label:'Anexar carta da mão...', onClick: () => iniciarAnexacao(carta.id) },
+            { label:'Mover pra Limbo', onClick: () => moverCartaZona('poco', carta.id, 'limbo') },
+            { label:'Mover pra Abismo', onClick: () => moverCartaZona('poco', carta.id, 'abismo') },
+            { label:'Mover pra Descarte', onClick: () => moverCartaZona('poco', carta.id, 'descarte') },
+            { label:'Devolver pra mão', onClick: () => moverCartaZona('poco', carta.id, 'mao') },
+          ]);
+        });
+        pocoStrip.appendChild(el);
+      }
+      pocoWrap.appendChild(pocoStrip);
+      grid.appendChild(pocoWrap);
+
+      // Pilhas: limbo / abismo / descarte
+      const pilhasWrap = document.createElement('div');
+      const pilhasLabel = document.createElement('div');
+      pilhasLabel.className = 'zonaLabel';
+      pilhasLabel.textContent = 'Outras zonas';
+      pilhasWrap.appendChild(pilhasLabel);
+      const pilhas = document.createElement('div');
+      pilhas.className = 'pilhasZonas';
+      for(const zona of [['limbo','Limbo'], ['abismo','Abismo'], ['descarte','Descarte']]){
+        const [chave, rotulo] = zona;
+        const lista = jog[chave] || [];
+        const pz = document.createElement('div');
+        pz.className = 'pilhaZona';
+        const caixa = document.createElement('div');
+        caixa.className = 'caixa';
+        caixa.textContent = lista.length;
+        pz.appendChild(caixa);
+        const rot = document.createElement('div');
+        rot.className = 'rotulo';
+        rot.textContent = rotulo;
+        pz.appendChild(rot);
+        pz.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if(!souEu){
+            abrirPainelZona(rotulo + ' de ' + jog.name, lista);
+            return;
+          }
+          if(lista.length === 0){ abrirPainelZona(rotulo, lista); return; }
+          abrirAcaoMenu(e.clientX, e.clientY, rotulo + ' (' + lista.length + ')', [
+            { label:'Ver cartas', onClick: () => abrirPainelZonaComAcoes(rotulo, chave, lista) },
+          ]);
+        });
+        pilhas.appendChild(pz);
+      }
+      pilhasWrap.appendChild(pilhas);
+      grid.appendChild(pilhasWrap);
+
+      board.appendChild(grid);
+      boardsEl.appendChild(board);
+    }
+  }
+
+  function abrirPainelZonaComAcoes(titulo, zona, cartas){
+    painelZonaTitulo.textContent = titulo;
+    painelZonaGrid.innerHTML = '';
+    for(const c of cartas){
+      const wrap = document.createElement('div');
+      const img = document.createElement('img');
+      img.src = 'images/cartas/' + c.img;
+      img.style.cursor = 'pointer';
+      img.title = 'Clique pra mover essa carta';
+      img.addEventListener('click', () => {
+        abrirAcaoMenu(window.innerWidth/2 - 90, window.innerHeight/2, metaDaCarta(c.img).nome || titulo, [
+          { label:'Mover pra Poço', onClick: () => moverCartaZona(zona, c.id, 'poco') },
+          { label:'Mover pra Limbo', onClick: () => moverCartaZona(zona, c.id, 'limbo') },
+          { label:'Mover pra Abismo', onClick: () => moverCartaZona(zona, c.id, 'abismo') },
+          { label:'Mover pra Descarte', onClick: () => moverCartaZona(zona, c.id, 'descarte') },
+          { label:'Devolver pra mão', onClick: () => moverCartaZona(zona, c.id, 'mao') },
+        ]);
+        painelZonaOverlay.style.display = 'none';
+      });
+      wrap.appendChild(img);
+      painelZonaGrid.appendChild(wrap);
+    }
+    painelZonaOverlay.style.display = 'flex';
+  }
+
+  function moverCartaZona(origemZona, origemId, destinoZona){
+    if(origemZona === destinoZona) return;
+    socket.emit('mover-carta', { origemZona, origemId, destinoZona });
+  }
+
+  let anexacaoPocoId = null;
+  function iniciarAnexacao(pocoId){
+    anexacaoPocoId = pocoId;
+    iniciarModoSelecao('anexar', { pocoId }, 'Clique numa carta da mão pra anexar', 1);
+  }
+
+  // ---------------- Renderização geral ----------------
+  function renderizarTudo(){
+    renderizarTurno();
+    renderizarCartasRegra();
+    renderizarBoards();
+    renderizarJogadores();
+    atualizarConexoes();
+  }
+
   function renderizarJogadores(){
+    if(!socket) return;
     const eu = estadoAtual.jogadores[socket.id];
     if(eu) baralhoContador.textContent = eu.baralhoCount + ' carta(s)';
   }
@@ -482,118 +984,65 @@
     minhaMaoEl.innerHTML = '';
     minhaMao.forEach((arquivo, indice) => {
       const div = document.createElement('div');
-      div.className = 'cartaMao';
+      div.className = 'cartaMao' + (modoSelecao && modoSelecao.indices.has(indice) ? ' selecionadaTemp' : '');
+      const meta = metaDaCarta(arquivo);
+      div.title = meta.nome ? (meta.nome + (meta.tipo ? ' — ' + meta.tipo : '')) : 'Tipo não identificado';
       const img = document.createElement('img');
       img.src = 'images/cartas/' + arquivo;
       div.appendChild(img);
-      aplicarOrientacao(div, img);
-      div.addEventListener('click', () => {
-        const x = 35 + Math.random()*30;
-        const y = 35 + Math.random()*30;
-        socket.emit('jogar-carta', { indice, x, y });
+      div.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if(modoSelecao && modoSelecao.tipo === 'reconstruir'){
+          if(modoSelecao.indices.has(indice)) modoSelecao.indices.delete(indice);
+          else if(modoSelecao.indices.size < modoSelecao.quantidade) modoSelecao.indices.add(indice);
+          renderizarMao();
+          return;
+        }
+        if(modoSelecao && modoSelecao.tipo === 'anexar'){
+          socket.emit('anexar-carta-poco', { indiceMao: indice, pocoId: anexacaoPocoId });
+          cancelarModoSelecao();
+          return;
+        }
+        abrirMenuJogarCarta(e, indice, arquivo);
       });
       minhaMaoEl.appendChild(div);
     });
   }
 
-  let arrastando = null;
-  function renderizarMesa(){
-    // remove cartas que não existem mais
-    mesa.querySelectorAll('.cartaMesa').forEach(el => {
-      if(!estadoAtual.mesa[el.dataset.id]) el.remove();
-    });
-
-    for(const id of Object.keys(estadoAtual.mesa)){
-      const carta = estadoAtual.mesa[id];
-      let el = mesa.querySelector('[data-id="' + id + '"]');
-      if(!el){
-        el = document.createElement('div');
-        el.className = 'cartaMesa';
-        el.dataset.id = id;
-        const img = document.createElement('img');
-        img.src = 'images/cartas/' + carta.img;
-        el.appendChild(img);
-        aplicarOrientacao(el, img);
-        el.addEventListener('pointerdown', (e) => iniciarArraste(e, el, id));
-        mesa.appendChild(el);
-      }
-      if(arrastando !== id){
-        el.style.left = carta.x + '%';
-        el.style.top = carta.y + '%';
-      }
-      el.classList.toggle('girada', !!carta.girada);
+  function abrirMenuJogarCarta(e, indice, arquivo){
+    const meta = metaDaCarta(arquivo);
+    const ehReinoConhecido = meta.tipo === 'Reino';
+    const itens = [];
+    if(ehReinoConhecido || !meta.tipo){
+      itens.push({ label: '▸ Jogar como Reino em...', onClick: () => abrirSubmenuPosicao(e, indice, 'reino') });
     }
+    if(!ehReinoConhecido){
+      itens.push({ label: '▸ Jogar como Fortaleza em...', onClick: () => abrirSubmenuPosicao(e, indice, 'fortaleza') });
+      itens.push({ label: 'Colocar no Poço', onClick: () => socket.emit('jogar-no-poco', { indiceMao: indice }) });
+      itens.push({ label: 'Jogar Carta-regra', onClick: () => socket.emit('jogar-carta-regra', { indiceMao: indice }) });
+    }
+    itens.push({ label: 'Descartar', onClick: () => socket.emit('descartar-da-mao', { indice }) });
+    abrirAcaoMenu(e.clientX, e.clientY, meta.nome || 'Carta (tipo desconhecido)', itens);
   }
 
-  function iniciarArraste(e, el, id){
-    const carta = estadoAtual.mesa[id];
-    if(!carta || carta.dono !== socket.id){
-      abrirMenuCarta(e, id, false);
-      return;
-    }
-    e.preventDefault();
-    const inicioX = e.clientX, inicioY = e.clientY;
-    let moveu = false;
-    arrastando = id;
-    el.classList.add('arrastando');
-
-    function mover(ev){
-      const dx = ev.clientX - inicioX, dy = ev.clientY - inicioY;
-      if(Math.abs(dx) > 4 || Math.abs(dy) > 4) moveu = true;
-      const rect = mesa.getBoundingClientRect();
-      const novoX = Math.max(2, Math.min(98, ((ev.clientX - rect.left) / rect.width) * 100));
-      const novoY = Math.max(2, Math.min(98, ((ev.clientY - rect.top) / rect.height) * 100));
-      el.style.left = novoX + '%';
-      el.style.top = novoY + '%';
-    }
-    function soltar(ev){
-      window.removeEventListener('pointermove', mover);
-      window.removeEventListener('pointerup', soltar);
-      el.classList.remove('arrastando');
-      arrastando = null;
-      if(moveu){
-        const rect = mesa.getBoundingClientRect();
-        const x = Math.max(2, Math.min(98, ((ev.clientX - rect.left) / rect.width) * 100));
-        const y = Math.max(2, Math.min(98, ((ev.clientY - rect.top) / rect.height) * 100));
-        socket.emit('mover-carta-mesa', { cartaId: id, x, y });
+  function abrirSubmenuPosicao(e, indice, tipoJogada){
+    const eu = estadoAtual.jogadores[socket.id];
+    const itens = POSICOES.map(pos => {
+      const slot = eu && eu.formacao ? eu.formacao[pos] : null;
+      let habilitado = true, motivo = '';
+      if(tipoJogada === 'reino'){
+        if(slot && slot.reino && !slot.arrasada){ habilitado = false; motivo=' (ocupada)'; }
       } else {
-        abrirMenuCarta(ev, id, true);
+        if(!slot || !slot.reino || slot.arrasada){ habilitado = false; motivo=' (sem reino)'; }
+        else if(slot.fortaleza){ habilitado = false; motivo=' (já tem fortaleza)'; }
       }
-    }
-    window.addEventListener('pointermove', mover);
-    window.addEventListener('pointerup', soltar);
+      return { label: 'Posição ' + pos + motivo, disabled: !habilitado, onClick: () => {
+        if(tipoJogada === 'reino') socket.emit('jogar-reino', { indiceMao: indice, posicao: pos });
+        else socket.emit('jogar-fortaleza', { indiceMao: indice, posicao: pos });
+      }};
+    });
+    abrirAcaoMenu(e.clientX, e.clientY, tipoJogada === 'reino' ? 'Jogar reino em:' : 'Jogar fortaleza em:', itens);
   }
-
-  function abrirMenuCarta(e, id, souDono){
-    menuCartaMesa.innerHTML = '';
-    if(souDono){
-      const btnGirar = document.createElement('button');
-      btnGirar.textContent = '🔄 Girar';
-      btnGirar.onclick = () => { socket.emit('girar-carta-mesa', { cartaId: id }); fecharMenu(); };
-      const btnDevolver = document.createElement('button');
-      btnDevolver.textContent = '↩ Devolver pra mão';
-      btnDevolver.onclick = () => { socket.emit('devolver-carta-mesa', { cartaId: id }); fecharMenu(); };
-      const btnDescartar = document.createElement('button');
-      btnDescartar.textContent = '🗑 Descartar';
-      btnDescartar.onclick = () => { socket.emit('descartar-carta-mesa', { cartaId: id }); fecharMenu(); };
-      menuCartaMesa.appendChild(btnGirar);
-      menuCartaMesa.appendChild(btnDevolver);
-      menuCartaMesa.appendChild(btnDescartar);
-    } else {
-      const aviso = document.createElement('button');
-      aviso.textContent = 'Carta de outro jogador';
-      aviso.disabled = true;
-      menuCartaMesa.appendChild(aviso);
-    }
-    const rectMesa = mesa.getBoundingClientRect();
-    menuCartaMesa.style.left = (e.clientX - rectMesa.left) + 'px';
-    menuCartaMesa.style.top = (e.clientY - rectMesa.top) + 'px';
-    menuCartaMesa.classList.add('show');
-  }
-  function fecharMenu(){ menuCartaMesa.classList.remove('show'); }
-  document.addEventListener('click', (e) => {
-    if(!menuCartaMesa.contains(e.target)) fecharMenu();
-  });
 
   // ---------------- Chat ----------------
   toggleChatBtn.addEventListener('click', () => {
@@ -762,6 +1211,7 @@
 
   let membrosAnteriores = new Set();
   function atualizarConexoes(){
+    if(!socket) return;
     const atuais = new Set(Object.keys(estadoAtual.jogadores).filter(id => id !== socket.id));
     for(const id of atuais){
       if(!membrosAnteriores.has(id) && micDisponivel && socket.id < id) iniciarChamada(id);
@@ -790,8 +1240,6 @@
       const pc = peerConnections[from];
       if(pc){ try{ await pc.addIceCandidate(new RTCIceCandidate(candidate)); }catch(e){} }
     });
-
-    s.on('estado', () => { atualizarConexoes(); });
   }
 
   leaveBtn.addEventListener('click', () => {
