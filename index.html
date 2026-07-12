@@ -715,7 +715,14 @@
       const btn = document.createElement('button');
       btn.textContent = item.label;
       btn.disabled = !!item.disabled;
-      btn.onclick = () => { fecharAcaoMenu(); item.onClick && item.onClick(); };
+      // stopPropagation é essencial: sem isso, o clique "borbulha" até o listener
+      // de document que fecha o menu ao clicar fora, e fecha o SUBMENU que acabou
+      // de abrir (ex: "Jogar como Reino em..." -> lista de posições) no mesmo clique.
+      btn.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        fecharAcaoMenu();
+        item.onClick && item.onClick();
+      });
       acaoMenu.appendChild(btn);
     }
     const maxX = window.innerWidth - 190;
