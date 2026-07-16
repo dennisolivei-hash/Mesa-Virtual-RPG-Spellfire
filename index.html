@@ -445,11 +445,19 @@
 
 (function(){
   // ======================= CONFIGURAÇÃO =======================
+  // Busca direto no GitHub (raw) em vez do arquivo publicado pelo Vercel:
+  // o raw.githubusercontent.com reflete o commit mais recente na hora,
+  // sem depender de um novo deploy do site pra pegar a URL nova do túnel.
   async function buscarServerUrl(){
     try {
-      const resp = await fetch('./config.json', { cache: 'no-store' });
+      const resp = await fetch('https://raw.githubusercontent.com/dennisolivei-hash/mesa-virtual-rpg-spellfire/main/config.json?t=' + Date.now(), { cache: 'no-store' });
       const data = await resp.json();
-      return data.serverUrl || null;
+      if (data && data.serverUrl) return data.serverUrl;
+    } catch(e){ /* segue pro fallback abaixo */ }
+    try {
+      const resp2 = await fetch('./config.json', { cache: 'no-store' });
+      const data2 = await resp2.json();
+      return data2.serverUrl || null;
     } catch(e){
       return null;
     }
